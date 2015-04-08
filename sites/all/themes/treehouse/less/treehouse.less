@@ -164,7 +164,22 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 			}
 			img { .w(100%); .h(auto); }
 			p { .m(0px); }
+			.sidebar-menu {
+				h2.block-title { .size(18px); .mb(0px); .lh(22px); .blue; .ls(1px); }
+				.block-content { .p(15px 0); border-top: 4px solid @blue; border-bottom: 4px solid @blue; }
+				ul { .m0; .p0; 
+					li { .list-none; .m0; .p0; 
+						a { .blue; .raleway-bold; .size(16px); .lh(14px); .block; .p(5px 0); 
+							&.active { .black; }
+						}
+					}
+				}
+			}
 		}
+	}
+	.field-name-body {
+		a { .blue; }
+		img { .w100; .h(auto); }
 	}
 	@media (max-width:1000px) { .ml(180px); }
 }

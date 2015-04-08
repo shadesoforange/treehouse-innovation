@@ -956,6 +956,48 @@ a.button {
 #content #sidebar .region p {
   margin: 0px;
 }
+#content #sidebar .region .sidebar-menu h2.block-title {
+  font-size: 18px;
+  margin-bottom: 0px;
+  line-height: 22px;
+  color: #47a9e1;
+  letter-spacing: 1px;
+}
+#content #sidebar .region .sidebar-menu .block-content {
+  padding: 15px 0;
+  border-top: 4px solid #47a9e1;
+  border-bottom: 4px solid #47a9e1;
+}
+#content #sidebar .region .sidebar-menu ul {
+  margin: 0px;
+  padding: 0px;
+}
+#content #sidebar .region .sidebar-menu ul li {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+#content #sidebar .region .sidebar-menu ul li a {
+  color: #47a9e1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 14px;
+  display: block;
+  padding: 5px 0;
+}
+#content #sidebar .region .sidebar-menu ul li a.active {
+  color: #000000;
+}
+#content .field-name-body a {
+  color: #47a9e1;
+}
+#content .field-name-body img {
+  width: 100%;
+  height: auto;
+}
 @media (max-width: 1000px) {
   #content {
     margin-left: 180px;
