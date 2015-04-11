@@ -807,7 +807,7 @@ a.button.bg-yellow {
   margin: 0px;
 }
 .front article.node-3 {
-  padding: 120px 55% 120px 50px;
+  padding: 120px 55% 0px 50px;
   background: url("../images/wood-light-half.jpg") no-repeat center center;
   background-size: 100% auto;
 }
@@ -880,7 +880,7 @@ a.button.bg-yellow {
   }
 }
 .front .case-studies {
-  padding: 50px 0;
+  padding: 50px 0 20px;
   margin-bottom: 0px;
 }
 .front .case-studies h2.block-title {
@@ -1035,6 +1035,48 @@ a.button.bg-yellow {
 }
 #content #sidebar .region .sidebar-menu ul li a.active {
   color: #000000;
+}
+#content #sidebar .region .block-menu.menu-leadership-learning {
+  background: url("../images/knowledge-green.svg") no-repeat left top;
+  background-size: 150px 150px;
+  padding-top: 150px;
+}
+#content #sidebar .region .block-menu.menu-leadership-learning h2.block-title {
+  color: #82af35;
+  font-size: 18px;
+}
+#content #sidebar .region .block-menu.menu-strategic-projects {
+  background: url("../images/empathise-blue.svg") no-repeat left top;
+  background-size: 170px 170px;
+  padding-top: 160px;
+}
+#content #sidebar .region .block-menu.menu-strategic-projects h2.block-title {
+  color: #47a9e1;
+  font-size: 18px;
+}
+#content #sidebar .region .block-menu.menu-workshops-events {
+  background: url("../images/recording-magenta.svg") no-repeat left top;
+  background-size: 160px 160px;
+  padding-top: 160px;
+}
+#content #sidebar .region .block-menu.menu-workshops-events h2.block-title {
+  color: #cb4d83;
+  font-size: 18px;
+}
+#content #sidebar .region .block-menu ul.menu {
+  border-bottom: 1px solid #aaaaaa;
+  margin: 0px;
+}
+#content #sidebar .region .block-menu ul.menu li {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+  border-top: 1px solid #aaaaaa;
+  margin: 0px;
+  padding: 8px 0;
+}
+#content #sidebar .region .block-menu ul.menu li a {
+  color: #000;
 }
 #content .field-name-body a {
   color: #47a9e1;

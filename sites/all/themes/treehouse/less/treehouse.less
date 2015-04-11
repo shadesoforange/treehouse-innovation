@@ -121,7 +121,7 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 	#content { background: #e7e2dc url("../images/test.jpg") no-repeat center bottom; background-size: auto 70%;
 		.node-page { .m0; }
 	}
-	article.node-3 { .p(120px 55% 120px 50px); background: url("../images/wood-light-half.jpg") no-repeat center center; background-size: 100% auto; 
+	article.node-3 { .p(120px 55% 0px 50px); background: url("../images/wood-light-half.jpg") no-repeat center center; background-size: 100% auto; 
 		p { .mb(36px); }
 		.button { .bg-blue; color: #fff !important; .script; .p(10px 20px); }
 	}
@@ -140,7 +140,7 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 			p { .size(14px); .lh(19px); }
 		}
 	}
-	.case-studies { .p(50px 0); .mb(0px);
+	.case-studies { .p(50px 0 20px); .mb(0px);
 		h2.block-title { .fl; .m(0px 0 30px 50px); .rel; z-index: 8; }
 	}
 	.quote { background: rgba(68,183,169,0.8); .cb; .m(0 15%);
@@ -188,6 +188,22 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 						a { .blue; .raleway-bold; .size(16px); .lh(14px); .block; .p(5px 0); 
 							&.active { .black; }
 						}
+					}
+				}
+			}
+			.block-menu {
+				&.menu-leadership-learning { background: url("../images/knowledge-green.svg") no-repeat left top; background-size: 150px 150px; .pt(150px);
+					h2.block-title { .green; .size(18px); }
+				}
+				&.menu-strategic-projects { background: url("../images/empathise-blue.svg") no-repeat left top; background-size: 170px 170px; .pt(160px);
+					h2.block-title { .blue; .size(18px); }
+				}
+				&.menu-workshops-events { background: url("../images/recording-magenta.svg") no-repeat left top; background-size: 160px 160px; .pt(160px);
+					h2.block-title { .magenta; .size(18px); }
+				}
+				ul.menu { border-bottom: 1px solid @ltgrey; .m0;
+					li { .list-none; border-top: 1px solid @ltgrey; .m0; .p(8px 0); 
+						a { color: #000; }
 					}
 				}
 			}
