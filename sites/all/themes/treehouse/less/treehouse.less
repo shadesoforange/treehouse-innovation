@@ -12,7 +12,7 @@ h3 { .size(22px); .lh(26px); .slab;
 	@media (max-width:1120px) { .size(20px); .lh(24px); }
 }
 
-body { background: @xltgrey; }
+body { background: @dkgrey2; }
 .block-block { .mb(0px); }
 a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px); .block; .fl; 
 	&.bg-green { .bg-green; }
@@ -164,7 +164,7 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 
 // Main content styles
 
-#main { .w100; .rel; z-index: 0; }
+#main { .w100; .rel; z-index: 0; background: @xltgrey; }
 
 #content { .w(auto); .ml(240px); z-index: 1; .rel;
 	.node-article { .m(50px 34% 30px 5%); }
@@ -201,9 +201,11 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 				&.menu-workshops-events { background: url("../images/recording-magenta.svg") no-repeat left top; background-size: 160px 160px; .pt(160px);
 					h2.block-title { .magenta; .size(18px); }
 				}
-				ul.menu { border-bottom: 1px solid @ltgrey; .m0;
-					li { .list-none; border-top: 1px solid @ltgrey; .m0; .p(8px 0); 
-						a { color: #000; }
+				ul.menu { border-bottom: 1px solid #ccc; .m0;
+					li { .list-none; border-top: 1px solid #ccc; .m0; .p(9px 0); 
+						a { color: @ltgrey; .size(14px);
+							&.active { .black; }
+						}
 					}
 				}
 			}
@@ -254,6 +256,24 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 	}
 }
 
+.design-thinking-academy { .bg-dkgrey; .p(50px 5%); 
+	.block-content { .p(0 280px 0 0); background: url("../images/learning-green-top.svg") no-repeat right top; background-size: 230px 230px; }
+	h2, h2.block-title { .ls(1px); }
+	table { .mt(30px);
+		th { .p(20px 20px 10px); .size(10px); .lh(13px); .upper; .ls(1px); .tl; .vbtm; .raleway-light; .ltgrey; 
+			p { .mb(0px); }
+		}
+		td { .p(30px 20px 20px); border-bottom: 1px solid @dkgrey; .tl; .vtop;  .bg-xltgrey;
+			p { .m(0 0 10px); .size(13px); .lh(16px); }
+			ul, ol { .m0; .p0;
+				li { .m(0 0 8px 18px); .size(13px); }
+			}
+			strong { .size(13px); .lh(16px); }
+			h3, h4, h5 { .size(15px); .lh(18px); .m(0px 0px 10px); .raleway-xbold; }
+		}
+	}
+}
+
 #block-views-nodequeue-2-block,
 #block-views-nodequeue-2-block-2 { .p(0 50px);
 	h2.block-title { }
@@ -280,7 +300,7 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 
 // Footer
 
-#footer { .w(auto); .ml(240px); background: @dkgrey2; .ltgrey; 
+#footer { .w(auto); .ml(240px); .ltgrey; 
 	@media (max-width: 1000px) { .ml(180px); }
 }
 .copyright { .raleway-bold; .p(10px 0); .m0; .size(12px); }

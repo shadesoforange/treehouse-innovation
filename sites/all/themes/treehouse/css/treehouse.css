@@ -81,6 +81,14 @@
 .bg-trans {
   background: transparent;
 }
+.bg-white {
+  background: #fff;
+  color: #000000;
+}
+.bg-xltgrey {
+  background: #eeeeee;
+  color: #000000;
+}
 .basefont,
 .sans,
 .raleway {
@@ -507,7 +515,7 @@ h3 {
   }
 }
 body {
-  background: #eeeeee;
+  background: #2a2a2a;
 }
 .block-block {
   margin-bottom: 0px;
@@ -956,6 +964,7 @@ a.button.bg-yellow {
   width: 100%;
   position: relative;
   z-index: 0;
+  background: #eeeeee;
 }
 #content {
   width: auto;
@@ -1064,19 +1073,23 @@ a.button.bg-yellow {
   font-size: 18px;
 }
 #content #sidebar .region .block-menu ul.menu {
-  border-bottom: 1px solid #aaaaaa;
+  border-bottom: 1px solid #ccc;
   margin: 0px;
 }
 #content #sidebar .region .block-menu ul.menu li {
   list-style: none;
   list-style-image: none;
   list-style-type: none;
-  border-top: 1px solid #aaaaaa;
+  border-top: 1px solid #ccc;
   margin: 0px;
-  padding: 8px 0;
+  padding: 9px 0;
 }
 #content #sidebar .region .block-menu ul.menu li a {
-  color: #000;
+  color: #aaaaaa;
+  font-size: 14px;
+}
+#content #sidebar .region .block-menu ul.menu li a.active {
+  color: #000000;
 }
 #content .field-name-body a {
   color: #47a9e1;
@@ -1214,6 +1227,74 @@ a.button.bg-yellow {
   color: #aaaaaa;
   margin: 0 0 6px;
 }
+.design-thinking-academy {
+  color: #fff !important;
+  background: #3d3d3d;
+  padding: 50px 5%;
+}
+.design-thinking-academy .block-content {
+  padding: 0 280px 0 0;
+  background: url("../images/learning-green-top.svg") no-repeat right top;
+  background-size: 230px 230px;
+}
+.design-thinking-academy h2,
+.design-thinking-academy h2.block-title {
+  letter-spacing: 1px;
+}
+.design-thinking-academy table {
+  margin-top: 30px;
+}
+.design-thinking-academy table th {
+  padding: 20px 20px 10px;
+  font-size: 10px;
+  line-height: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left;
+  vertical-align: bottom;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #aaaaaa;
+}
+.design-thinking-academy table th p {
+  margin-bottom: 0px;
+}
+.design-thinking-academy table td {
+  padding: 30px 20px 20px;
+  border-bottom: 1px solid #3d3d3d;
+  text-align: left;
+  vertical-align: top;
+  background: #eeeeee;
+  color: #000000;
+}
+.design-thinking-academy table td p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 16px;
+}
+.design-thinking-academy table td ul,
+.design-thinking-academy table td ol {
+  margin: 0px;
+  padding: 0px;
+}
+.design-thinking-academy table td ul li,
+.design-thinking-academy table td ol li {
+  margin: 0 0 8px 18px;
+  font-size: 13px;
+}
+.design-thinking-academy table td strong {
+  font-size: 13px;
+  line-height: 16px;
+}
+.design-thinking-academy table td h3,
+.design-thinking-academy table td h4,
+.design-thinking-academy table td h5 {
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0px 0px 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
 #block-views-nodequeue-2-block,
 #block-views-nodequeue-2-block-2 {
   padding: 0 50px;
@@ -1291,7 +1372,6 @@ a.button.bg-yellow {
 #footer {
   width: auto;
   margin-left: 240px;
-  background: #2a2a2a;
   color: #aaaaaa;
 }
 @media (max-width: 1000px) {
