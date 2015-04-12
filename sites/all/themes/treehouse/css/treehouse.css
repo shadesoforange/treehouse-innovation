@@ -583,6 +583,20 @@ a.button.bg-yellow {
   display: block;
   margin: 0 30px;
 }
+#navigation #mobile-menu-trigger {
+  display: none;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 40px;
+  background: url("../images/mobile-menu.svg") no-repeat 2% center;
+  background-size: 30px 30px;
+}
 #navigation #block-system-main-menu {
   width: 180px;
   padding: 8px 0;
@@ -650,7 +664,7 @@ a.button.bg-yellow {
 #navigation .social-contact a:visited {
   color: #555555;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1079px) {
   #navigation {
     width: 180px;
   }
@@ -667,6 +681,30 @@ a.button.bg-yellow {
     width: 150px;
   }
 }
+@media (max-width: 800px) {
+  #navigation {
+    position: relative;
+    width: 100%;
+    height: auto;
+    bottom: auto;
+    top: 0px;
+  }
+  #navigation #logo {
+    display: none;
+  }
+  #navigation #mobile-menu-trigger {
+    display: block;
+  }
+  #navigation #block-system-main-menu {
+    display: none;
+  }
+  #navigation .social-contact {
+    display: none;
+  }
+}
+#navigation p {
+  margin: 0px;
+}
 #header {
   position: relative;
   z-index: 0;
@@ -677,7 +715,7 @@ a.button.bg-yellow {
   width: auto;
   height: 750px;
   margin-left: 240px;
-  background: url("../images/hot-air-balloon.jpg") no-repeat right top;
+  background: #ffffff url("../images/hot-air-balloon.jpg") no-repeat right top;
   background-size: 100% auto;
   overflow: hidden;
 }
@@ -690,49 +728,32 @@ a.button.bg-yellow {
   line-height: 26px;
   margin: 0 0 14px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1079px) {
   #header .homepage-banner {
     margin-left: 180px;
   }
 }
-@media (max-width: 1250px) {
+@media (max-width: 800px) {
   #header .homepage-banner {
-    height: 650px;
-  }
-}
-@media (max-width: 1325px) {
-  #header .homepage-banner {
-    height: 700px;
+    margin-left: 0px;
+    top: auto;
+    height: auto;
   }
   #header .homepage-banner .block-content {
-    padding: 220px 0 0 50px;
-    width: 490px;
+    padding: 83px 20px 80px 20px;
+    width: auto;
   }
-}
-@media (min-width: 1500px) {
-  #header .homepage-banner {
-    height: 850px;
+  #header .homepage-banner .block-content h2 {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0 40% 20px 0;
   }
-  #header .homepage-banner .block-content {
-    padding: 280px 0 0 60px;
-    width: 550px;
+  #header .homepage-banner .block-content p {
+    font-size: 13px;
+    line-height: 16px;
   }
-  #header .homepage-banner h2 {
-    font-size: 36px;
-    line-height: 41px;
-  }
-}
-@media (min-width: 1650px) {
-  #header .homepage-banner {
-    height: 900px;
-  }
-  #header .homepage-banner .block-content {
-    padding: 280px 0 0 60px;
-    width: 550px;
-  }
-  #header .homepage-banner h2 {
-    font-size: 36px;
-    line-height: 41px;
+  #header .homepage-banner .block-content a.button {
+    font-size: 13px;
   }
 }
 #block-views-header-image-block,
@@ -778,7 +799,7 @@ a.button.bg-yellow {
     margin-right: 20%;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1079px) {
   #block-views-header-image-block,
   #block-views-header-image-block-1,
   #block-views-header-image-block-2 {
@@ -887,6 +908,52 @@ a.button.bg-yellow {
     line-height: 19px;
   }
 }
+.front .services-mobile {
+  display: none;
+  width: 100%;
+  float: none;
+  background: #fff;
+}
+.front .services-mobile .block-content {
+  padding: 15px;
+}
+.front .services-mobile .service {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 130px 15px 0;
+}
+.front .services-mobile .service.icon1 {
+  background: url("../images/knowledge-green.svg") no-repeat right center;
+  background-size: 120px 120px;
+}
+.front .services-mobile .service.icon2 {
+  background: url("../images/idea-orange.svg") no-repeat right center;
+  background-size: 120px 120px;
+}
+.front .services-mobile .service.icon3 {
+  background: url("../images/future-aqua.svg") no-repeat right center;
+  background-size: 120px 120px;
+  border-bottom: none;
+}
+.front .services-mobile a {
+  color: #000000;
+  text-decoration: none;
+}
+.front .services-mobile h3,
+.front .services-mobile h3 a {
+  margin-bottom: 10px;
+  font-family: 'Alfa Slab One', sans-serif;
+  font-weight: 400;
+}
+.front .services-mobile p,
+.front .services-mobile p a {
+  margin: 0 0 10px;
+}
+@media (max-width: 1200px) {
+  .front .services-mobile p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
 .front .case-studies {
   padding: 50px 0 20px;
   margin-bottom: 0px;
@@ -896,6 +963,14 @@ a.button.bg-yellow {
   margin: 0px 0 30px 50px;
   position: relative;
   z-index: 8;
+}
+.front .case-studies-mobile {
+  display: none;
+}
+.front .case-studies-mobile h2.block-title {
+  margin: 40px 2% 10px;
+  color: #ffffff;
+  letter-spacing: 1px;
 }
 .front .quote {
   background: rgba(68, 183, 169, 0.8);
@@ -956,9 +1031,95 @@ a.button.bg-yellow {
   text-align: center;
   margin: 0 0 40px;
 }
+.front .blog-mobile-homepage {
+  display: none;
+}
+.front .blog-mobile-homepage h2.block-title {
+  color: #ffffff;
+  margin: 30px 2% 10px;
+}
 .front #footer {
   clear: both;
   position: relative;
+}
+@media (max-width: 800px) {
+  .front .homepage-logos {
+    position: relative;
+    left: auto;
+    top: 0px;
+    margin: 0px;
+    height: auto;
+    width: 100%;
+    background: url("../images/box-dkgrey.svg") no-repeat center bottom;
+    background-size: 200% auto;
+  }
+  .front .homepage-logos .block-content {
+    padding: 15px 15px 40px;
+  }
+  .front .homepage-logos p {
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0 0 10px;
+  }
+  .front .homepage-logos img {
+    max-width: 100%;
+    height: auto;
+  }
+  .front article.node-3 {
+    padding: 40px 15px;
+    background: url("../images/wood-light.jpg") no-repeat center center;
+    background-size: auto 100%;
+    margin-top: -30px !important;
+  }
+  .front article.node-3 h2,
+  .front article.node-3 h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .front article.node-3 p {
+    margin-bottom: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .front .services {
+    display: none;
+  }
+  .front .services-mobile {
+    display: block;
+  }
+  .front .case-studies {
+    display: none;
+  }
+  .front .case-studies-mobile {
+    display: block;
+  }
+  .front .quote {
+    margin: 40px 10%;
+  }
+  .front .quote blockquote {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 20px;
+    margin: 0px;
+  }
+  .front .quote blockquote p {
+    margin: 0px;
+  }
+  .front .quote blockquote span {
+    width: auto;
+    font-size: 11px;
+  }
+  .front .feature-video {
+    display: none;
+  }
+  .front .blog-homepage {
+    display: none;
+  }
+  .front .blog-mobile-homepage {
+    display: block;
+  }
 }
 #main {
   width: 100%;
@@ -1098,9 +1259,14 @@ a.button.bg-yellow {
   width: 100%;
   height: auto;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1079px) {
   #content {
     margin-left: 180px;
+  }
+}
+@media (max-width: 800px) {
+  #content {
+    margin-left: 0px;
   }
 }
 .one-sidebar #content .node-article {
@@ -1117,7 +1283,7 @@ a.button.bg-yellow {
   margin-left: 240px;
   clear: both;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1079px) {
   #content-lower {
     margin-left: 180px;
   }
@@ -1369,14 +1535,62 @@ a.button.bg-yellow {
   line-height: 18px;
   color: #000000;
 }
+.mobile-teasers .view-content {
+  padding: 0 2%;
+}
+.mobile-teasers .views-row {
+  background: #fff;
+  height: 120px;
+  margin-bottom: 5px;
+}
+.mobile-teasers .teaser-image {
+  width: 100px;
+  height: 120px;
+  float: left;
+}
+.mobile-teasers .title {
+  margin: 0px 15px 15px 115px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  padding-top: 15px;
+}
+.mobile-teasers .subtitle {
+  margin: 0px 15px 15px 115px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+.mobile-teasers .meta {
+  display: none;
+  color: #555555;
+  font-size: 11px;
+  margin: 0px 0px 15px 115px;
+  line-height: 13px;
+}
+.mobile-teasers .excerpt {
+  margin: 0px 15px 15px 115px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
 #footer {
   width: auto;
   margin-left: 240px;
   color: #aaaaaa;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1079px) {
   #footer {
     margin-left: 180px;
+  }
+}
+@media (max-width: 800px) {
+  #footer {
+    margin-left: 0px;
   }
 }
 .copyright {
