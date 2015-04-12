@@ -697,6 +697,19 @@ a.button.bg-yellow {
   }
   #navigation #block-system-main-menu {
     display: none;
+    width: auto;
+    margin: 10px 10%;
+    height: 130px;
+    padding: 0px;
+    border-bottom: none;
+  }
+  #navigation #block-system-main-menu ul.menu li {
+    width: 50%;
+    float: left;
+    border-bottom: 1px solid #d6d6d6;
+  }
+  #navigation #block-system-main-menu ul.menu li a {
+    padding: 10px 0;
   }
   #navigation .social-contact {
     display: none;
@@ -740,7 +753,7 @@ a.button.bg-yellow {
     height: auto;
   }
   #header .homepage-banner .block-content {
-    padding: 83px 20px 80px 20px;
+    padding: 85px 20px 80px 20px;
     width: auto;
   }
   #header .homepage-banner .block-content h2 {
