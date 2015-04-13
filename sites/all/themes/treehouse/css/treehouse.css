@@ -583,7 +583,7 @@ a.button.bg-yellow {
   display: block;
   margin: 0 30px;
 }
-#navigation #mobile-menu {
+#navigation .mobile-menu {
   display: none;
 }
 #navigation #mobile-menu-trigger {
@@ -704,7 +704,7 @@ a.button.bg-yellow {
   #navigation #logo {
     display: none;
   }
-  #navigation #mobile-menu {
+  #navigation .mobile-menu {
     display: block;
   }
   #navigation #block-system-main-menu {
