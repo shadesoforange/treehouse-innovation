@@ -810,6 +810,36 @@ a.button.bg-yellow {
   font-size: 18px;
   margin: 0px;
 }
+@media (max-width: 800px) {
+  #block-views-header-image-block,
+  #block-views-header-image-block-1,
+  #block-views-header-image-block-2 {
+    padding-left: 0px;
+  }
+  #block-views-header-image-block .header-image,
+  #block-views-header-image-block-1 .header-image,
+  #block-views-header-image-block-2 .header-image {
+    padding: 50px 0 20px;
+  }
+  #block-views-header-image-block .header-image .header-content,
+  #block-views-header-image-block-1 .header-image .header-content,
+  #block-views-header-image-block-2 .header-image .header-content {
+    padding: 15px;
+    margin-right: 30%;
+  }
+  #block-views-header-image-block .header-image h1,
+  #block-views-header-image-block-1 .header-image h1,
+  #block-views-header-image-block-2 .header-image h1 {
+    font-size: 24px;
+    line-height: 27px;
+  }
+  #block-views-header-image-block .header-image p,
+  #block-views-header-image-block-1 .header-image p,
+  #block-views-header-image-block-2 .header-image p {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
 @media (max-width: 1240px) {
   #block-views-header-image-block .header-image .header-content,
   #block-views-header-image-block-1 .header-image .header-content,
@@ -850,6 +880,26 @@ a.button.bg-yellow {
   font-size: 18px;
   margin: 0px;
 }
+@media (max-width: 800px) {
+  #block-views-header-image-block-3 {
+    padding-left: 0px;
+  }
+  #block-views-header-image-block-3 .header-image {
+    padding: 50px 0 20px;
+  }
+  #block-views-header-image-block-3 .header-image .header-content {
+    padding: 15px;
+    margin-right: 30%;
+  }
+  #block-views-header-image-block-3 .header-image h1 {
+    font-size: 24px;
+    line-height: 27px;
+  }
+  #block-views-header-image-block-3 .header-image p {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
 .front h1#page-title {
   display: none;
 }
@@ -863,7 +913,7 @@ a.button.bg-yellow {
 .front article.node-3 {
   padding: 120px 55% 0px 50px;
   background: url("../images/wood-light-half.jpg") no-repeat center center;
-  background-size: 100% auto;
+  background-size: cover;
 }
 .front article.node-3 p {
   margin-bottom: 36px;
@@ -1292,6 +1342,30 @@ a.button.bg-yellow {
 @media (max-width: 800px) {
   #content {
     margin-left: 0px;
+  }
+  #content .node-article,
+  #content .node-case-study,
+  #content .node-page {
+    margin: 30px 15px;
+  }
+  #content #sidebar {
+    float: none;
+    clear: both;
+    width: auto;
+    margin: 0 15px;
+  }
+  #content #sidebar .region {
+    padding: 0px;
+  }
+  #content #sidebar .region .text .block-content {
+    padding: 15px 0;
+    border-top: 2px solid #47a9e1;
+    border-bottom: 2px solid #47a9e1;
+  }
+  #content #sidebar .region .text p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0px;
   }
 }
 .one-sidebar #content .node-article {

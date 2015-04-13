@@ -102,6 +102,13 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 		h1 { .m(6px 0); }
 		p { .size(18px); .m(0px); }
 	}
+	@media (max-width: 800px) { .pl(0px);
+		.header-image { .p(50px 0 20px);
+			.header-content { .p(15px); .mr(30%); }
+			h1 { .size(24px); .lh(27px); }
+			p { .size(13px); .lh(15px); }
+		}
+	}
 	@media (max-width:1240px) { 
 		.header-image {
 			.header-content { .mr(30%); }
@@ -122,6 +129,13 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 		h1 { .m(6px 0); }
 		p { .size(18px); .m(0px); }
 	}
+	@media (max-width: 800px) { .pl(0px);
+		.header-image { .p(50px 0 20px);
+			.header-content { .p(15px); .mr(30%); }
+			h1 { .size(24px); .lh(27px); }
+			p { .size(13px); .lh(15px); }
+		}
+	}
 }
 
 
@@ -132,7 +146,7 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 	#content { background: #e7e2dc url("../images/test.jpg") no-repeat center bottom; background-size: auto 70%;
 		.node-page { .m0; }
 	}
-	article.node-3 { .p(120px 55% 0px 50px); background: url("../images/wood-light-half.jpg") no-repeat center center; background-size: 100% auto; 
+	article.node-3 { .p(120px 55% 0px 50px); background: url("../images/wood-light-half.jpg") no-repeat center center; background-size: cover; 
 		p { .mb(36px); }
 		.button { .bg-blue; color: #fff !important; .script; .p(10px 20px); }
 	}
@@ -271,7 +285,17 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 		img { .w100; .h(auto); }
 	}
 	@media (max-width: 1079px) { .ml(180px); }
-	@media (max-width: 800px) { .ml(0px); }
+	@media (max-width: 800px) { .ml(0px); 
+		.node-article, .node-case-study, .node-page { .m(30px 15px); }
+		#sidebar { .fn; .cb; .w(auto); .m(0 15px); 
+			.region { .p0; 
+				.text { 
+					.block-content { .p(15px 0); border-top: 2px solid @blue; border-bottom: 2px solid @blue; }
+					p { .size(16px); .lh(20px); .mb(0px); }
+				}
+			}
+		}
+	}
 }
 
 .one-sidebar #content {
