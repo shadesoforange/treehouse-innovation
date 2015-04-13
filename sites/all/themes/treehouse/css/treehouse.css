@@ -583,19 +583,31 @@ a.button.bg-yellow {
   display: block;
   margin: 0 30px;
 }
-#navigation #mobile-menu-trigger {
+#navigation #mobile-menu {
   display: none;
+}
+#navigation #mobile-menu-trigger {
   height: 40px;
-  width: 100%;
+  width: 40px;
   text-align: center;
+  position: absolute;
+  left: 2%;
+  top: 0;
+  z-index: 99;
+  background: url("../images/mobile-menu.svg") no-repeat center center;
+  background-size: 30px 30px;
+}
+#navigation #mobile-home-link {
+  width: 100%;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 11px;
   line-height: 40px;
-  background: url("../images/mobile-menu.svg") no-repeat 2% center;
-  background-size: 30px 30px;
+  text-align: center;
+  color: #000000;
+  display: block;
 }
 #navigation #block-system-main-menu {
   width: 180px;
@@ -692,7 +704,7 @@ a.button.bg-yellow {
   #navigation #logo {
     display: none;
   }
-  #navigation #mobile-menu-trigger {
+  #navigation #mobile-menu {
     display: block;
   }
   #navigation #block-system-main-menu {
