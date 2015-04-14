@@ -1211,15 +1211,13 @@ a.button.bg-yellow {
   z-index: 1;
   position: relative;
 }
-#content .node-article {
-  margin: 50px 34% 30px 5%;
-}
-#content .node-case-study {
-  margin: 50px 34% 40px 5%;
-}
+#content .node-article,
+#content .node-case-study,
 #content .node-page {
-  margin: 50px 33% 30px 5%;
+  margin: 50px 25% 0 5%;
 }
+#content .node-article.hide-1,
+#content .node-case-study.hide-1,
 #content .node-page.hide-1 {
   display: none;
 }
