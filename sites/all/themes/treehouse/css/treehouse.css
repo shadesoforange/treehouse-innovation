@@ -1395,6 +1395,43 @@ a.button.bg-yellow {
     margin-left: 0px;
   }
 }
+#content-lower .about-detail {
+  background: url("../images/bg-about-block.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 50px 5%;
+}
+#content-lower .about-detail h2.block-title {
+  color: #fff !important;
+  background: #47a9e1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  font-size: 24px;
+  display: inline-block;
+}
+#content-lower .about-detail h3,
+#content-lower .about-detail h4 {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+#content-lower .about-detail .third {
+  width: 30%;
+  margin: 30px 3.333% 0 0;
+  float: left;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+#content-lower .about-detail .third p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #aaaaaa;
+}
 .services-overview {
   color: #fff !important;
   background: #3d3d3d;
