@@ -723,6 +723,9 @@ a.button.bg-yellow {
   #navigation #block-system-main-menu ul.menu li a {
     padding: 10px 0;
   }
+  #navigation #block-system-main-menu ul.menu li ul.menu {
+    display: none;
+  }
   #navigation .social-contact {
     display: none;
   }
@@ -1387,12 +1390,26 @@ a.button.bg-yellow {
     margin-left: 180px;
   }
 }
+@media (max-width: 800px) {
+  #content-lower {
+    margin-left: 0px;
+  }
+}
 .services-overview {
   color: #fff !important;
   background: #3d3d3d;
   min-height: 500px;
   height: auto;
   padding: 35px 5% 50px;
+}
+.services-overview h2.block-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin: 0 0 30px;
+  color: #aaaaaa;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 .services-overview table {
   border: 0px;
@@ -1418,58 +1435,6 @@ a.button.bg-yellow {
 .services-overview table td.spacer {
   width: 5%;
 }
-.services-overview table td.icon-knowledge {
-  background: url("../images/knowledge-green.svg") no-repeat left top;
-  background-size: 150px 150px;
-}
-.services-overview table td.icon-knowledge-yellow {
-  background: url("../images/knowledge-yellow.svg") no-repeat left top;
-  background-size: 150px 150px;
-}
-.services-overview table td.icon-idea {
-  background: url("../images/idea-orange.svg") no-repeat left top;
-  background-size: 150px 150px;
-}
-.services-overview table td.icon-future {
-  background: url("../images/future-aqua.svg") no-repeat left top;
-  background-size: 150px 150px;
-}
-.services-overview table td.icon-leadership {
-  background: url("../images/leadership-green.svg") no-repeat left top;
-  background-size: 160px 160px;
-}
-.services-overview table td.icon-learning {
-  background: url("../images/learning-orange.svg") no-repeat left top;
-  background-size: 190px 190px;
-}
-.services-overview table td.icon-recording {
-  background: url("../images/recording-aqua.svg") no-repeat left top;
-  background-size: 160px 160px;
-}
-.services-overview table td.icon-recording-magenta {
-  background: url("../images/recording-magenta.svg") no-repeat left top;
-  background-size: 160px 160px;
-}
-.services-overview table td.icon-sprint {
-  background: url("../images/sprint-yellow.svg") no-repeat left top;
-  background-size: 180px 180px;
-}
-.services-overview table td.icon-sprint-magenta {
-  background: url("../images/sprint-magenta.svg") no-repeat left top;
-  background-size: 180px 180px;
-}
-.services-overview table td.icon-empathise {
-  background: url("../images/empathise-blue.svg") no-repeat left top;
-  background-size: 170px 170px;
-}
-.services-overview table td.icon-ecosystem {
-  background: url("../images/ecosystem-magenta.svg") no-repeat left top;
-  background-size: 160px 160px;
-}
-.services-overview table td.icon-ecosystem-green {
-  background: url("../images/ecosystem-green.svg") no-repeat left top;
-  background-size: 160px 160px;
-}
 .services-overview table td h3 {
   margin-bottom: 6px;
   text-align: left;
@@ -1491,6 +1456,113 @@ a.button.bg-yellow {
   text-align: left;
   color: #aaaaaa;
   margin: 0 0 6px;
+}
+.services-overview .icon-knowledge {
+  background: url("../images/knowledge-green.svg") no-repeat left top;
+  background-size: 150px 150px;
+}
+.services-overview .icon-knowledge-yellow {
+  background: url("../images/knowledge-yellow.svg") no-repeat left top;
+  background-size: 150px 150px;
+}
+.services-overview .icon-idea {
+  background: url("../images/idea-orange.svg") no-repeat left top;
+  background-size: 150px 150px;
+}
+.services-overview .icon-future {
+  background: url("../images/future-aqua.svg") no-repeat left top;
+  background-size: 150px 150px;
+}
+.services-overview .icon-leadership {
+  background: url("../images/leadership-green.svg") no-repeat left top;
+  background-size: 160px 160px;
+}
+.services-overview .icon-learning {
+  background: url("../images/learning-orange.svg") no-repeat left top;
+  background-size: 190px 190px;
+}
+.services-overview .icon-recording {
+  background: url("../images/recording-aqua.svg") no-repeat left top;
+  background-size: 160px 160px;
+}
+.services-overview .icon-recording-magenta {
+  background: url("../images/recording-magenta.svg") no-repeat left top;
+  background-size: 160px 160px;
+}
+.services-overview .icon-sprint {
+  background: url("../images/sprint-yellow.svg") no-repeat left top;
+  background-size: 180px 180px;
+}
+.services-overview .icon-sprint-magenta {
+  background: url("../images/sprint-magenta.svg") no-repeat left top;
+  background-size: 180px 180px;
+}
+.services-overview .icon-empathise {
+  background: url("../images/empathise-blue.svg") no-repeat left top;
+  background-size: 170px 170px;
+}
+.services-overview .icon-ecosystem {
+  background: url("../images/ecosystem-magenta.svg") no-repeat left top;
+  background-size: 160px 160px;
+}
+.services-overview .icon-ecosystem-green {
+  background: url("../images/ecosystem-green.svg") no-repeat left top;
+  background-size: 160px 160px;
+}
+.services-overview.mobile {
+  display: none;
+  padding: 25px 0;
+}
+.services-overview .row {
+  clear: both;
+  border-bottom: 1px solid #555555;
+  padding: 0 20px 50px 90px;
+  margin-bottom: 20px;
+}
+.services-overview .row h3 {
+  margin-bottom: 6px;
+  letter-spacing: 0px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+.services-overview .row h4 {
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0 0 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+.services-overview .row p {
+  font-size: 11px;
+  line-height: 14px;
+  color: #aaaaaa;
+  margin: 0 0 6px;
+}
+.services-overview .row .button {
+  font-size: 13px;
+}
+@media (max-width: 800px) {
+  .services-overview.desktop {
+    display: none;
+  }
+  .services-overview.mobile {
+    display: block;
+  }
+  .services-overview .icon-knowledge,
+  .services-overview .icon-knowledge-yellow,
+  .services-overview .icon-idea,
+  .services-overview .icon-future,
+  .services-overview .icon-leadership,
+  .services-overview .icon-learning,
+  .services-overview .icon-recording,
+  .services-overview .icon-recording-magenta,
+  .services-overview .icon-sprint,
+  .services-overview .icon-sprint-magenta,
+  .services-overview .icon-empathise,
+  .services-overview .icon-ecosystem,
+  .services-overview .icon-ecosystem-green {
+    background-size: 80px 80px;
+  }
 }
 .design-thinking-academy {
   color: #fff !important;

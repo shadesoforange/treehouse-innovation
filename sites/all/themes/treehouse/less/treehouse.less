@@ -67,6 +67,7 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 			ul.menu {
 				li { .w50; .fl; border-bottom: 1px solid #d6d6d6; 
 					a { .p(10px 0); }
+					ul.menu { .hide; } 
 				}
 			}
 		}
@@ -306,9 +307,11 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 
 #content-lower { .w(auto); .ml(240px); .cb;
 	@media (max-width: 1079px) { .ml(180px); }
+	@media (max-width: 800px) { .ml(0px); }
 }
 
 .services-overview { .bg-dkgrey; min-height: 500px; .h(auto); .p(35px 5% 50px);
+	h2.block-title { .raleway-light; .size(20px); .m(0 0 30px); .ltgrey; .ls(5px); .upper; }
 	table { border: 0px;
 		td { .p(15px 0); .vtop;
 			&.top { .w(30%); border-bottom: 1px solid @grey; .pt(150px); }
@@ -316,23 +319,48 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 				a { color: #fff; .raleway-bold; }
 			}
 			&.spacer { .w(5%); }
-			&.icon-knowledge { background: url("../images/knowledge-green.svg") no-repeat left top; background-size: 150px 150px; }
-			&.icon-knowledge-yellow { background: url("../images/knowledge-yellow.svg") no-repeat left top; background-size: 150px 150px; }
-			&.icon-idea { background: url("../images/idea-orange.svg") no-repeat left top; background-size: 150px 150px; }
-			&.icon-future { background: url("../images/future-aqua.svg") no-repeat left top; background-size: 150px 150px; }
-			&.icon-leadership { background: url("../images/leadership-green.svg") no-repeat left top; background-size: 160px 160px; }
-			&.icon-learning { background: url("../images/learning-orange.svg") no-repeat left top; background-size: 190px 190px; }
-			&.icon-recording { background: url("../images/recording-aqua.svg") no-repeat left top; background-size: 160px 160px; }
-			&.icon-recording-magenta { background: url("../images/recording-magenta.svg") no-repeat left top; background-size: 160px 160px; }
-			&.icon-sprint { background: url("../images/sprint-yellow.svg") no-repeat left top; background-size: 180px 180px; }
-			&.icon-sprint-magenta { background: url("../images/sprint-magenta.svg") no-repeat left top; background-size: 180px 180px; }
-			&.icon-empathise { background: url("../images/empathise-blue.svg") no-repeat left top; background-size: 170px 170px; }
-			&.icon-ecosystem { background: url("../images/ecosystem-magenta.svg") no-repeat left top; background-size: 160px 160px; }
-			&.icon-ecosystem-green { background: url("../images/ecosystem-green.svg") no-repeat left top; background-size: 160px 160px; }
+			&
 			h3 { .mb(6px); .tl; .ls(0px); .raleway-xbold; }
 			h4 { .size(14px); .lh(17px); .m(0 0 24px); .tl; .raleway-light; }
 			p { .size(14px); .lh(19px); .tl; .ltgrey; .m(0 0 6px); }
 		}
+	}
+	.icon-knowledge { background: url("../images/knowledge-green.svg") no-repeat left top; background-size: 150px 150px; }
+	.icon-knowledge-yellow { background: url("../images/knowledge-yellow.svg") no-repeat left top; background-size: 150px 150px; }
+	.icon-idea { background: url("../images/idea-orange.svg") no-repeat left top; background-size: 150px 150px; }
+	.icon-future { background: url("../images/future-aqua.svg") no-repeat left top; background-size: 150px 150px; }
+	.icon-leadership { background: url("../images/leadership-green.svg") no-repeat left top; background-size: 160px 160px; }
+	.icon-learning { background: url("../images/learning-orange.svg") no-repeat left top; background-size: 190px 190px; }
+	.icon-recording { background: url("../images/recording-aqua.svg") no-repeat left top; background-size: 160px 160px; }
+	.icon-recording-magenta { background: url("../images/recording-magenta.svg") no-repeat left top; background-size: 160px 160px; }
+	.icon-sprint { background: url("../images/sprint-yellow.svg") no-repeat left top; background-size: 180px 180px; }
+	.icon-sprint-magenta { background: url("../images/sprint-magenta.svg") no-repeat left top; background-size: 180px 180px; }
+	.icon-empathise { background: url("../images/empathise-blue.svg") no-repeat left top; background-size: 170px 170px; }
+	.icon-ecosystem { background: url("../images/ecosystem-magenta.svg") no-repeat left top; background-size: 160px 160px; }
+	.icon-ecosystem-green { background: url("../images/ecosystem-green.svg") no-repeat left top; background-size: 160px 160px; }
+	&.mobile { .hide; .p(25px 0); }
+	.row { .cb; border-bottom: 1px solid @grey; .p(0 20px 50px 90px); .mb(20px); 
+		h3 { .mb(6px); .ls(0px); .raleway-xbold; }
+		h4 { .size(13px); .lh(16px); .m(0 0 15px); .raleway-light; }
+		p { .size(11px); .lh(14px); .ltgrey; .m(0 0 6px); }
+		.button { .size(13px); }
+	}
+	@media (max-width: 800px) {
+		&.desktop { .hide; }
+		&.mobile { .show; }
+		.icon-knowledge,
+		.icon-knowledge-yellow,
+		.icon-idea,
+		.icon-future,
+		.icon-leadership,
+		.icon-learning,
+		.icon-recording,
+		.icon-recording-magenta,
+		.icon-sprint,
+		.icon-sprint-magenta,
+		.icon-empathise,
+		.icon-ecosystem,
+		.icon-ecosystem-green { background-size: 80px 80px; }
 	}
 }
 
