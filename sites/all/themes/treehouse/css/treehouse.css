@@ -1444,6 +1444,18 @@ a.button.bg-yellow {
   line-height: 21px;
   color: #aaaaaa;
 }
+@media (max-width: 800px) {
+  #content-lower .about-detail h2.block-title {
+    font-size: 18px;
+    letter-spacing: 0px;
+    padding: 10px;
+    display: block;
+  }
+  #content-lower .about-detail .third {
+    width: 100%;
+    float: none;
+  }
+}
 .services-overview {
   color: #fff !important;
   background: #3d3d3d;
