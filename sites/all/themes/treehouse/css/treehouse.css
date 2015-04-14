@@ -813,6 +813,27 @@ a.button.bg-yellow {
   font-size: 18px;
   margin: 0px;
 }
+@media (max-width: 1240px) {
+  #block-views-header-image-block .header-image .header-content,
+  #block-views-header-image-block-1 .header-image .header-content,
+  #block-views-header-image-block-2 .header-image .header-content {
+    margin-right: 30%;
+  }
+}
+@media (max-width: 1120px) {
+  #block-views-header-image-block .header-image .header-content,
+  #block-views-header-image-block-1 .header-image .header-content,
+  #block-views-header-image-block-2 .header-image .header-content {
+    margin-right: 20%;
+  }
+}
+@media (max-width: 1079px) {
+  #block-views-header-image-block,
+  #block-views-header-image-block-1,
+  #block-views-header-image-block-2 {
+    padding-left: 180px;
+  }
+}
 @media (max-width: 800px) {
   #block-views-header-image-block,
   #block-views-header-image-block-1,
@@ -841,27 +862,6 @@ a.button.bg-yellow {
   #block-views-header-image-block-2 .header-image p {
     font-size: 13px;
     line-height: 15px;
-  }
-}
-@media (max-width: 1240px) {
-  #block-views-header-image-block .header-image .header-content,
-  #block-views-header-image-block-1 .header-image .header-content,
-  #block-views-header-image-block-2 .header-image .header-content {
-    margin-right: 30%;
-  }
-}
-@media (max-width: 1120px) {
-  #block-views-header-image-block .header-image .header-content,
-  #block-views-header-image-block-1 .header-image .header-content,
-  #block-views-header-image-block-2 .header-image .header-content {
-    margin-right: 20%;
-  }
-}
-@media (max-width: 1079px) {
-  #block-views-header-image-block,
-  #block-views-header-image-block-1,
-  #block-views-header-image-block-2 {
-    padding-left: 180px;
   }
 }
 #block-views-header-image-block-3 {
@@ -1230,49 +1230,49 @@ a.button.bg-yellow {
 #content #sidebar .region {
   padding: 30px;
 }
-#content #sidebar .region .text .block-content {
+#content #sidebar .text .block-content {
   padding: 15px 0;
   border-top: 4px solid #47a9e1;
   border-bottom: 4px solid #47a9e1;
 }
-#content #sidebar .region .text p {
+#content #sidebar .text p {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   color: #47a9e1;
   font-size: 22px;
   line-height: 24px;
 }
-#content #sidebar .region img {
+#content #sidebar img {
   width: 100%;
   height: auto;
 }
-#content #sidebar .region p {
+#content #sidebar p {
   margin: 0px;
 }
-#content #sidebar .region .sidebar-menu h2.block-title {
+#content #sidebar .sidebar-menu h2.block-title {
   font-size: 18px;
   margin-bottom: 0px;
   line-height: 22px;
   color: #47a9e1;
   letter-spacing: 1px;
 }
-#content #sidebar .region .sidebar-menu .block-content {
+#content #sidebar .sidebar-menu .block-content {
   padding: 15px 0;
   border-top: 4px solid #47a9e1;
   border-bottom: 4px solid #47a9e1;
 }
-#content #sidebar .region .sidebar-menu ul {
+#content #sidebar .sidebar-menu ul {
   margin: 0px;
   padding: 0px;
 }
-#content #sidebar .region .sidebar-menu ul li {
+#content #sidebar .sidebar-menu ul li {
   list-style: none;
   list-style-image: none;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
 }
-#content #sidebar .region .sidebar-menu ul li a {
+#content #sidebar .sidebar-menu ul li a {
   color: #47a9e1;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -1281,41 +1281,41 @@ a.button.bg-yellow {
   display: block;
   padding: 5px 0;
 }
-#content #sidebar .region .sidebar-menu ul li a.active {
+#content #sidebar .sidebar-menu ul li a.active {
   color: #000000;
 }
-#content #sidebar .region .block-menu.menu-leadership-learning {
+#content #sidebar .block-menu.menu-leadership-learning {
   background: url("../images/knowledge-green.svg") no-repeat left top;
   background-size: 150px 150px;
   padding-top: 150px;
 }
-#content #sidebar .region .block-menu.menu-leadership-learning h2.block-title {
+#content #sidebar .block-menu.menu-leadership-learning h2.block-title {
   color: #82af35;
   font-size: 18px;
 }
-#content #sidebar .region .block-menu.menu-strategic-projects {
+#content #sidebar .block-menu.menu-strategic-projects {
   background: url("../images/empathise-blue.svg") no-repeat left top;
   background-size: 170px 170px;
   padding-top: 160px;
 }
-#content #sidebar .region .block-menu.menu-strategic-projects h2.block-title {
+#content #sidebar .block-menu.menu-strategic-projects h2.block-title {
   color: #47a9e1;
   font-size: 18px;
 }
-#content #sidebar .region .block-menu.menu-workshops-events {
+#content #sidebar .block-menu.menu-workshops-events {
   background: url("../images/recording-magenta.svg") no-repeat left top;
   background-size: 160px 160px;
   padding-top: 160px;
 }
-#content #sidebar .region .block-menu.menu-workshops-events h2.block-title {
+#content #sidebar .block-menu.menu-workshops-events h2.block-title {
   color: #cb4d83;
   font-size: 18px;
 }
-#content #sidebar .region .block-menu ul.menu {
+#content #sidebar .block-menu ul.menu {
   border-bottom: 1px solid #ccc;
   margin: 0px;
 }
-#content #sidebar .region .block-menu ul.menu li {
+#content #sidebar .block-menu ul.menu li {
   list-style: none;
   list-style-image: none;
   list-style-type: none;
@@ -1323,12 +1323,17 @@ a.button.bg-yellow {
   margin: 0px;
   padding: 9px 0;
 }
-#content #sidebar .region .block-menu ul.menu li a {
+#content #sidebar .block-menu ul.menu li a {
   color: #aaaaaa;
   font-size: 14px;
 }
-#content #sidebar .region .block-menu ul.menu li a.active {
+#content #sidebar .block-menu ul.menu li a.active {
   color: #000000;
+}
+@media (max-width: 800px) {
+  #content #sidebar {
+    display: none;
+  }
 }
 #content .field-name-body a {
   color: #47a9e1;
@@ -1379,6 +1384,13 @@ a.button.bg-yellow {
 }
 .one-sidebar #content .node-page {
   margin-right: 37%;
+}
+@media (max-width: 800px) {
+  .one-sidebar #content .node-article,
+  .one-sidebar #content .node-case-study,
+  .one-sidebar #content .node-page {
+    margin-right: 5%;
+  }
 }
 #content-lower {
   width: auto;
@@ -1577,6 +1589,12 @@ a.button.bg-yellow {
 }
 .services-overview .row .button {
   font-size: 13px;
+}
+.services-overview .row ul li a {
+  color: #ffffff;
+}
+.services-overview .row ul li a:visited {
+  color: #ffffff;
 }
 @media (max-width: 800px) {
   .services-overview.desktop {
