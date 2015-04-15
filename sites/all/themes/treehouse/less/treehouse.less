@@ -14,7 +14,7 @@ h3 { .size(22px); .lh(26px); .slab;
 
 body { background: @dkgrey2; }
 .block-block { .mb(0px); }
-a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px); .block; .fl; 
+a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px); .block; .fl; .radius(3px); 
 	&.bg-green { .bg-green; }
 	&.bg-aqua { .bg-aqua; }
 	&.bg-magenta { .bg-magenta; }
@@ -183,9 +183,7 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 	.case-studies { .p(50px 0 20px); .mb(0px);
 		h2.block-title { .fl; .m(0px 0 30px 50px); .rel; z-index: 8; }
 	}
-	.case-studies-mobile { .hide; 
-		h2.block-title { .m(40px 2% 10px); .white; .ls(1px); }
-	}
+	.case-studies-mobile h2.block-title { .m(40px 2% 10px); .white; .ls(1px); }
 	.quote { background: rgba(68,183,169,0.8); .cb; .m(0 15%);
 		.block-content { .tc; /*background: url("../images/speech-bubble-white20.svg") no-repeat center center; background-size: 400px 320px;*/ .white; }
 		blockquote { .size(26px); .lh(31px); .p(30px 50px);
@@ -201,9 +199,7 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 	.blog-homepage { .p(180px 0 80px); .cb; .mb(0px);
 		h2.block-title { .white; .tc; .m(0 0 40px); }
 	}
-	.blog-mobile-homepage { .hide; 
-		h2.block-title { .white; .m(30px 2% 10px); }
-	}
+	.blog-mobile-homepage h2.block-title { .white; }
 	#footer { .cb; .rel; }
 	@media (max-width:800px) { 
 		.homepage-logos { .rel; left: auto; top: 0px; .m(0px); .h(auto); .w(100%); background: url("../images/box-dkgrey.svg") no-repeat center bottom; background-size: 200% auto;
@@ -217,8 +213,6 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 		}
 		.services { .hide; }
 		.services-mobile { .show; }
-		.case-studies { .hide; }
-		.case-studies-mobile { .show; }
 		.quote { .m(40px 10%); 
 			blockquote { .size(18px); .lh(20px); .p(20px); .m0; 
 				p { .m0; }
@@ -226,8 +220,6 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 			}
 		}
 		.feature-video { .hide; }
-		.blog-homepage { .hide; }
-		.blog-mobile-homepage { .show; }
 	}
 }
 
@@ -282,6 +274,15 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 	.field-name-body {
 		a { .blue; }
 		img { .w100; .h(auto); }
+	}
+	.block-webform { .m(40px 5%);
+		h2.block-title { .hide; }
+		label { .raleway-med; .size(14px); }
+		input { background: #fff; .radius(3px); border: 1px solid #ccc; .p(10px); .size(16px); .lh(16px); max-width: 400px;
+			&.form-submit { .bg-blue; -webkit-appearance: none; .script; .p(10px 25px); border: none; .radius(3px); }
+		}
+		textarea { background: #fff; .radius(3px); border: 1px solid #ccc; .p(10px); .size(16px); .lh(24px); max-width: 400px; }
+		.form-item, .webform-component { max-width: 400px; }
 	}
 	@media (max-width: 1079px) { .ml(180px); }
 	@media (max-width: 800px) { .ml(0px); 
@@ -413,6 +414,7 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 }
 
 .teaser-grid {
+	h2.block-title { .m(30px 2% 10px); }
 	.view-content { .cb; .p(0 2%); }
 	table { border-spacing: 15px; border-collapse: separate; }
 	td { background: #fff; .vtop; .p0; .w(33.333%); }
@@ -421,8 +423,10 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 	.subtitle { .m(0 20px 20px); .raleway; .size(15px); .lh(19px); .black; }
 	.meta { .grey; .size(11px); .m(0 20px 20px); }
 	.excerpt { .m(0 20px 30px); .size(14px); .lh(18px); .black; }
+	@media (max-width: 800px) { .hide; }
 }
-.mobile-teasers {
+.mobile-teasers { .hide;
+	h2.block-title { .m(30px 2% 10px); }
 	.view-content { .p(0 2%); }
 	.views-row { background: #fff; .h(120px); .mb(5px); }
 	.teaser-image { .w(100px); .h(120px); .fl; }
@@ -430,6 +434,7 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 	.subtitle { .m(0px 15px 15px 115px); .raleway; .size(12px); .lh(14px); .black; }
 	.meta { .hide; .grey; .size(11px); .m(0px 0px 15px 115px); .lh(13px); }
 	.excerpt { .m(0px 15px 15px 115px); .size(11px); .lh(13px); .black; }
+	@media (max-width: 800px) { .show; }
 }
 
 

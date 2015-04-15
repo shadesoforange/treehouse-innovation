@@ -530,6 +530,9 @@ a.button {
   font-size: 16px;
   display: block;
   float: left;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
 }
 a.button.bg-green {
   color: #fff !important;
@@ -1042,9 +1045,6 @@ a.button.bg-yellow {
   position: relative;
   z-index: 8;
 }
-.front .case-studies-mobile {
-  display: none;
-}
 .front .case-studies-mobile h2.block-title {
   margin: 40px 2% 10px;
   color: #ffffff;
@@ -1109,12 +1109,8 @@ a.button.bg-yellow {
   text-align: center;
   margin: 0 0 40px;
 }
-.front .blog-mobile-homepage {
-  display: none;
-}
 .front .blog-mobile-homepage h2.block-title {
   color: #ffffff;
-  margin: 30px 2% 10px;
 }
 .front #footer {
   clear: both;
@@ -1167,12 +1163,6 @@ a.button.bg-yellow {
   .front .services-mobile {
     display: block;
   }
-  .front .case-studies {
-    display: none;
-  }
-  .front .case-studies-mobile {
-    display: block;
-  }
   .front .quote {
     margin: 40px 10%;
   }
@@ -1191,12 +1181,6 @@ a.button.bg-yellow {
   }
   .front .feature-video {
     display: none;
-  }
-  .front .blog-homepage {
-    display: none;
-  }
-  .front .blog-mobile-homepage {
-    display: block;
   }
 }
 #main {
@@ -1339,6 +1323,55 @@ a.button.bg-yellow {
 #content .field-name-body img {
   width: 100%;
   height: auto;
+}
+#content .block-webform {
+  margin: 40px 5%;
+}
+#content .block-webform h2.block-title {
+  display: none;
+}
+#content .block-webform label {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+#content .block-webform input {
+  background: #fff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  max-width: 400px;
+}
+#content .block-webform input.form-submit {
+  color: #fff !important;
+  background: #47a9e1;
+  -webkit-appearance: none;
+  font-family: 'Permanent Marker', sans-serif;
+  font-weight: 400;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+#content .block-webform textarea {
+  background: #fff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 400px;
+}
+#content .block-webform .form-item,
+#content .block-webform .webform-component {
+  max-width: 400px;
 }
 @media (max-width: 1079px) {
   #content {
@@ -1725,6 +1758,9 @@ a.button.bg-yellow {
   line-height: 19px;
   margin: 0 15% 40px 0;
 }
+.teaser-grid h2.block-title {
+  margin: 30px 2% 10px;
+}
 .teaser-grid .view-content {
   clear: both;
   padding: 0 2%;
@@ -1771,6 +1807,17 @@ a.button.bg-yellow {
   line-height: 18px;
   color: #000000;
 }
+@media (max-width: 800px) {
+  .teaser-grid {
+    display: none;
+  }
+}
+.mobile-teasers {
+  display: none;
+}
+.mobile-teasers h2.block-title {
+  margin: 30px 2% 10px;
+}
 .mobile-teasers .view-content {
   padding: 0 2%;
 }
@@ -1813,6 +1860,11 @@ a.button.bg-yellow {
   font-size: 11px;
   line-height: 13px;
   color: #000000;
+}
+@media (max-width: 800px) {
+  .mobile-teasers {
+    display: block;
+  }
 }
 #footer {
   width: auto;
