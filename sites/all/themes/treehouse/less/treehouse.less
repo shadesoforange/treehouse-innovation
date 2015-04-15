@@ -402,15 +402,25 @@ a.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px
 	}
 }
 
-#block-views-nodequeue-2-block,
-#block-views-nodequeue-2-block-2 { .p(0 50px);
-	h2.block-title { }
+.team-members { .p(0 50px);
+	h2.block-title { .mb(20px); }
 	td { vertical-align: top; }
 	.views-field-field-image { .fl; }
-	.views-field-title { .m(50px 15% 70px 150px); 
+	.views-field-title { .p(50px 15% 70px 150px); 
 		.field-content { .raleway-xbold; .size(20px); }
 	}
 	.views-field-body { .size(14px); .lh(19px); .m(0 15% 40px 0); }
+	&.mobile { .hide; 
+		.views-field-field-image { .w(100px);
+			img { .w100; .h(auto); }
+		}
+		.views-field-title { .p(40px 5% 30px 110px); }
+		.views-field-body { .m(0 0 30px); }
+	}
+	@media (max-width: 800px) { .p(0 5% 0 5%);
+		&.desktop { .hide; }
+		&.mobile { .show; }
+	}
 }
 
 .teaser-grid {
