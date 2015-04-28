@@ -916,15 +916,15 @@ a.button.bg-yellow {
 .front #content .node-page {
   margin: 0px;
 }
-.front article.node-3 {
+.front article {
   padding: 120px 55% 0px 50px;
   background: url("../images/wood-light-half.jpg") no-repeat center center;
   background-size: cover;
 }
-.front article.node-3 p {
+.front article p {
   margin-bottom: 36px;
 }
-.front article.node-3 .button {
+.front article .button {
   background: #47a9e1;
   color: #fff !important;
   font-family: 'Permanent Marker', sans-serif;
