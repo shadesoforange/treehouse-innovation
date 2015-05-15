@@ -14,7 +14,7 @@
   color: #c63936;
 }
 .xltgrey {
-  color: #eeeeee;
+  color: #dddddd;
 }
 .white {
   color: #ffffff;
@@ -86,30 +86,30 @@
   color: #000000;
 }
 .bg-xltgrey {
-  background: #eeeeee;
+  background: #dddddd;
   color: #000000;
 }
 .basefont,
 .sans,
-.raleway {
-  font-family: 'Raleway', sans-serif;
+.roboto {
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-.raleway-light {
-  font-family: 'Raleway', sans-serif;
+.roboto-light {
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-.raleway-med {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+.roboto-med {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
-.raleway-bold {
-  font-family: 'Raleway', sans-serif;
+.roboto-bold {
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
-.raleway-xbold {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+.roboto-xbold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 .slab,
 .serif {
@@ -125,7 +125,7 @@ div,
 p,
 span,
 a {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 small,
@@ -574,17 +574,15 @@ a.button.bg-yellow {
   overflow-y: auto;
 }
 #navigation .region-navigation {
-  position: relative;
-  top: 10%;
   height: auto;
 }
 #navigation #logo {
-  width: 180px;
-  height: 180px;
+  width: 170px;
+  height: 170px;
   background: url("../images/treehouse-logo.svg") no-repeat center center;
-  background-size: 180px 180px;
+  background-size: 170px 170px;
   display: block;
-  margin: 0 30px;
+  margin: 35px;
 }
 #navigation .mobile-menu {
   display: none;
@@ -602,7 +600,7 @@ a.button.bg-yellow {
 }
 #navigation #mobile-home-link {
   width: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -613,11 +611,10 @@ a.button.bg-yellow {
   display: block;
 }
 #navigation #block-system-main-menu {
-  width: 180px;
+  width: 100%;
   padding: 8px 0;
-  margin: 30px auto 0px;
-  border-top: 1px solid #d6d6d6;
-  border-bottom: 1px solid #d6d6d6;
+  margin: 0px;
+  border-top: 1px solid #dddddd;
 }
 #navigation #block-system-main-menu ul.menu {
   margin: 0px;
@@ -633,33 +630,42 @@ a.button.bg-yellow {
   margin: 0px;
 }
 #navigation #block-system-main-menu ul.menu li a {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 12px;
   line-height: 12px;
-  color: #000000;
+  color: #aaaaaa;
   display: block;
-  padding: 8px 0;
+  padding: 16px 30px;
+  border-bottom: 1px solid #dddddd;
 }
 #navigation #block-system-main-menu ul.menu li a:visited {
-  color: #000000;
+  color: #aaaaaa;
 }
 #navigation #block-system-main-menu ul.menu li a:hover {
   color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+#navigation #block-system-main-menu ul.menu li a.active {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 #navigation #block-system-main-menu ul.menu li ul.menu {
   padding-bottom: 4px;
 }
 #navigation #block-system-main-menu ul.menu li ul.menu li a {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   color: #555555;
   font-size: 11px;
   line-height: 11px;
   padding: 0 0 8px;
   text-transform: none;
+  border-bottom: none;
 }
 #navigation #block-system-main-menu ul.menu li ul.menu li a:hover {
   color: #000000;
@@ -1152,8 +1158,8 @@ a.button.bg-yellow {
   }
   .front article.node-3 p {
     margin-bottom: 25px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 12px;
     line-height: 15px;
   }
@@ -1187,7 +1193,7 @@ a.button.bg-yellow {
   width: 100%;
   position: relative;
   z-index: 0;
-  background: #eeeeee;
+  background: #dddddd;
 }
 #content {
   width: auto;
@@ -1198,7 +1204,7 @@ a.button.bg-yellow {
 #content .node-article,
 #content .node-case-study,
 #content .node-page {
-  margin: 50px 25% 0 5%;
+  margin: 50px 25% 30px 5%;
 }
 #content .node-article.hide-1,
 #content .node-case-study.hide-1,
@@ -1218,8 +1224,8 @@ a.button.bg-yellow {
   border-bottom: 4px solid #47a9e1;
 }
 #content #sidebar .text p {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   color: #47a9e1;
   font-size: 22px;
   line-height: 24px;
@@ -1256,7 +1262,7 @@ a.button.bg-yellow {
 }
 #content #sidebar .sidebar-menu ul li a {
   color: #47a9e1;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 14px;
@@ -1331,8 +1337,8 @@ a.button.bg-yellow {
   display: none;
 }
 #content .block-webform label {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 14px;
 }
 #content .block-webform input {
@@ -1446,8 +1452,8 @@ a.button.bg-yellow {
 #content-lower .about-detail h2.block-title {
   color: #fff !important;
   background: #47a9e1;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   letter-spacing: 1px;
   padding: 10px 20px;
   font-size: 24px;
@@ -1457,7 +1463,7 @@ a.button.bg-yellow {
 #content-lower .about-detail h4 {
   color: #ffffff;
   font-size: 20px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 #content-lower .about-detail .third {
@@ -1465,11 +1471,11 @@ a.button.bg-yellow {
   margin: 30px 3.333% 0 0;
   float: left;
   color: #ffffff;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 #content-lower .about-detail .third p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
@@ -1495,7 +1501,7 @@ a.button.bg-yellow {
   padding: 35px 5% 50px;
 }
 .services-overview h2.block-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 20px;
   margin: 0 0 30px;
@@ -1521,7 +1527,7 @@ a.button.bg-yellow {
 }
 .services-overview table td.list a {
   color: #fff;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 .services-overview table td.spacer {
@@ -1531,15 +1537,15 @@ a.button.bg-yellow {
   margin-bottom: 6px;
   text-align: left;
   letter-spacing: 0px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 .services-overview table td h4 {
   font-size: 14px;
   line-height: 17px;
   margin: 0 0 24px;
   text-align: left;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 .services-overview table td p {
@@ -1614,14 +1620,14 @@ a.button.bg-yellow {
 .services-overview .row h3 {
   margin-bottom: 6px;
   letter-spacing: 0px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 .services-overview .row h4 {
   font-size: 13px;
   line-height: 16px;
   margin: 0 0 15px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 .services-overview .row p {
@@ -1687,7 +1693,7 @@ a.button.bg-yellow {
   letter-spacing: 1px;
   text-align: left;
   vertical-align: bottom;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #aaaaaa;
 }
@@ -1699,7 +1705,7 @@ a.button.bg-yellow {
   border-bottom: 1px solid #3d3d3d;
   text-align: left;
   vertical-align: top;
-  background: #eeeeee;
+  background: #dddddd;
   color: #000000;
 }
 .design-thinking-academy table td p {
@@ -1727,8 +1733,8 @@ a.button.bg-yellow {
   font-size: 15px;
   line-height: 18px;
   margin: 0px 0px 10px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 .team-members {
   padding: 0 50px;
@@ -1746,8 +1752,8 @@ a.button.bg-yellow {
   padding: 50px 15% 70px 150px;
 }
 .team-members .views-field-title .field-content {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 20px;
 }
 .team-members .views-field-body {
@@ -1807,14 +1813,14 @@ a.button.bg-yellow {
 }
 .teaser-grid .title {
   margin: 0 20px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 20px;
   color: #000000;
 }
 .teaser-grid .subtitle {
   margin: 0 20px 20px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 19px;
@@ -1857,8 +1863,8 @@ a.button.bg-yellow {
 }
 .mobile-teasers .title {
   margin: 0px 15px 15px 115px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   color: #000000;
@@ -1866,7 +1872,7 @@ a.button.bg-yellow {
 }
 .mobile-teasers .subtitle {
   margin: 0px 15px 15px 115px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
@@ -1906,7 +1912,7 @@ a.button.bg-yellow {
   }
 }
 .copyright {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   padding: 10px 0;
   margin: 0px;
