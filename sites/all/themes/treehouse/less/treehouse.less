@@ -33,11 +33,20 @@ body { background: @dkgrey2; }
 				a { .roboto-light; .upper; .ls(1px); .size(12px); .lh(12px); .grey; .block; .p(16px 20px); 
 					&:visited { .black; }
 					&:hover { .black; }
-					&.active { .black; }
+					&.active-trail { .black;  
+						&.services { border-left: 10px solid @blue; .p(16px 20px 16px 10px); }
+						&.case-studies { border-left: 10px solid @aqua; .p(16px 20px 16px 10px); }
+						&.blog { border-left: 10px solid @magenta; .p(16px 20px 16px 10px); }
+						&.team { border-left: 10px solid @red; .p(16px 20px 16px 10px); }
+						&.about { border-left: 10px solid @orange; .p(16px 20px 16px 10px); }
+						&.contact { border-left: 10px solid @green; .p(16px 20px 16px 10px); }
+					}
 				}
 				ul.menu { .pb(15px); 
 					li { border-bottom: none;
-						a { .roboto-light; .grey; .size(11px); .lh(11px); .p(3px 20px); .tt-none;  }
+						a { .roboto-light; .grey; .size(11px); .lh(11px); .p(3px 20px); .tt-none; 
+							&.active { }
+						}
 						&:hover { .black; }
 					}
 				}
@@ -214,7 +223,10 @@ body { background: @dkgrey2; }
 		a { .blue; }
 	}
 }
-.section-what-we-do .breadcrumb { background: @dkgrey; color: #666;
+.page-node-1 .breadcrumb,
+.page-node-31 .breadcrumb,
+.page-node-32 .breadcrumb,
+.page-node-33 .breadcrumb { background: @dkgrey; color: #666;
 	li a { .ltgrey; }
 }
 
@@ -297,6 +309,7 @@ body { background: @dkgrey2; }
 	@media (max-width: 800px) {
 		.node-article, .node-case-study, .node-page { .mr(5%); }
 	}
+	.field-name-body { .mr(0px); }
 }
 
 #content-lower { .w(auto); .ml(240px); .cb;
