@@ -472,14 +472,17 @@ a.button,
 	}
 }
 
-.team-members { .p(0 50px);
-	h2.block-title { .mb(20px); }
-	td { vertical-align: top; }
+.team-members { .p(0 13%);
+	h2.block-title { .m(20px 30px); .tc; border-bottom: 1px solid @grey; .pb(10px); }
+	table { .w100; }
+	td { vertical-align: top; .w(50%); .p(0 30px); }
 	.views-field-field-image { .fl; }
-	.views-field-title { .p(50px 15% 70px 150px); 
+	.views-field-title { .p(50px 0 70px 150px); 
 		.field-content { .roboto-xbold; .size(20px); }
 	}
-	.views-field-body { .size(14px); .lh(19px); .m(0 15% 40px 0); }
+	.views-field-body { .size(14px); .lh(19px); .m(0 0 40px 0); .roboto-light; 
+		p { .m(0 0 10px); }
+	}
 	&.mobile { .hide; 
 		.views-field-field-image { .w(100px);
 			img { .w100; .h(auto); }

@@ -1998,19 +1998,27 @@ a.button.white,
   font-weight: 700;
 }
 .team-members {
-  padding: 0 50px;
+  padding: 0 13%;
 }
 .team-members h2.block-title {
-  margin-bottom: 20px;
+  margin: 20px 30px;
+  text-align: center;
+  border-bottom: 1px solid #555555;
+  padding-bottom: 10px;
+}
+.team-members table {
+  width: 100%;
 }
 .team-members td {
   vertical-align: top;
+  width: 50%;
+  padding: 0 30px;
 }
 .team-members .views-field-field-image {
   float: left;
 }
 .team-members .views-field-title {
-  padding: 50px 15% 70px 150px;
+  padding: 50px 0 70px 150px;
 }
 .team-members .views-field-title .field-content {
   font-family: 'Roboto', sans-serif;
@@ -2020,7 +2028,12 @@ a.button.white,
 .team-members .views-field-body {
   font-size: 14px;
   line-height: 19px;
-  margin: 0 15% 40px 0;
+  margin: 0 0 40px 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.team-members .views-field-body p {
+  margin: 0 0 10px;
 }
 .team-members.mobile {
   display: none;
