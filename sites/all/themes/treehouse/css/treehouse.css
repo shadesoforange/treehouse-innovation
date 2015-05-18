@@ -1669,6 +1669,9 @@ body {
   font-size: 16px;
   line-height: 21px;
 }
+.services-overview .accordion .header .ui-icon {
+  display: none;
+}
 .services-overview .accordion .header .icon {
   margin: 0 30px 0 0;
   float: left;
