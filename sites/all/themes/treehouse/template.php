@@ -7,6 +7,10 @@
  * @see https://drupal.org/node/1728096
  */
 
+function treehouse_preprocess_page(&$vars) {
+   drupal_add_library('system', 'ui');
+  drupal_add_library('system', 'ui.accordion');
+}
 
 /**
  * Override or insert variables into the maintenance page template.

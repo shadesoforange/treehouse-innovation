@@ -26,6 +26,8 @@ Drupal.behaviors.my_custom_behavior = {
 		$('#block-system-main-menu').slideToggle(200);
 	});
 	
+	$('.accordion').accordion({header:'.header',active: 'false'});
+	
   }
 };
 
