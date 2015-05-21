@@ -104,7 +104,7 @@ body { background: @dkgrey2; }
 			}
 		}
 	}
-	.homepage-logos { .rel; top: -180px; z-index: 10; .tc; .ltgrey; .w(auto); background: rgba(0,0,0,0.8); .p(12px 100px 0); .m(0 50px); 
+	.homepage-logos { .rel; top: -180px; z-index: 10; .tc; .ltgrey; .w(auto); background: rgba(0,0,0,0.8); .p(12px 30px 0); .m(0 50px); 
 		p { .m(10px 0); }
 	}
 }
@@ -138,7 +138,7 @@ body { background: @dkgrey2; }
 			.field-name-body { .m0; .p(70px 15%); /*background: rgba(0,0,0,0.7);*/ }
 			h2, h3 { .white; .size(40px); .lh(43px); }
 			p { .mb(36px); .white; .roboto-light; }
-			.button { .bg-red; .inline-block; color: #fff !important; .script; .p(10px 20px); .fn; }
+			.button { .bg-red; .inline-block; color: #fff !important; .p(10px 20px); .fn; }
 		}
 	}
 	#content-lower { background: #e7e2dc url("../images/fog-mountains.jpg") no-repeat center bottom; background-size: auto 70%; }
@@ -156,7 +156,7 @@ body { background: @dkgrey2; }
 		@media (max-width: 1200px) {
 			p { .size(14px); .lh(19px); }
 		}
-		.button { .bg-grey; .white; .script; .p(8px 16px); }
+		.button { .bg-grey; .white; .p(8px 16px); }
 	}
 	.services-mobile { .hide; .w100; .fn; background: #fff; 
 		.block-content { .p(15px); }
@@ -458,7 +458,7 @@ body { background: @dkgrey2; }
 
 // Buttons
 a.button,
-.button { -webkit-appearance: none; .bg-blue; .script; .p(8px 16px); .size(16px); .inline-block; .radius(3px); border: none;
+.button { -webkit-appearance: none; .bg-blue; .upper; .p(9px 16px); .size(13px); .inline-block; .radius(3px); border: none;
 	&.bg-green, &.green { .bg-green; }
 	&.bg-aqua, &.aqua { .bg-aqua; }
 	&.bg-magenta, &.magenta { .bg-magenta; }
@@ -470,20 +470,20 @@ a.button,
 	&.bg-white, &.white { background: #fff; .dkgrey; }
 }
 
-.design-thinking-academy { .bg-dkgrey; .p(50px 5%); 
-	.block-content { .p(0 280px 0 0); background: url("../images/icons/learning-green-top.svg") no-repeat right top; background-size: 230px 230px; }
-	h2, h2.block-title { .ls(1px); }
-	table { .mt(30px);
-		th { .p(20px 20px 10px); .size(10px); .lh(13px); .upper; .ls(1px); .tl; .vbtm; .roboto-light; .ltgrey; 
-			p { .mb(0px); }
-		}
-		td { .p(30px 20px 20px); border-bottom: 1px solid @dkgrey; .tl; .vtop;  .bg-xltgrey;
-			p { .m(0 0 10px); .size(13px); .lh(16px); }
-			ul, ol { .m0; .p0;
-				li { .m(0 0 8px 18px); .size(13px); }
+.design-thinking-academy { background: url("../images/green-leaves.jpg") no-repeat center bottom; background-size: cover; .p(50px 10%); 
+	h2 { .white; .tc; }
+	p { .white; .tc; .p(0 100px); }
+	table { border-collapse: separate; border-spacing: 15px;
+		td { .p(30px 40px); .tl; .vtop; background: #fff; .w(50%);
+			p { .m(0 0 10px); .p0; .tl; .size(13px); .lh(16px); color: @dkgrey; .roboto-light;
+				&.meta { .roboto-bold; .mb(20px); }
+			}
+			ul, ol { .m(0 0 10px); .p0;
+				li { .m(0 0 4px 0); .size(13px); color: @dkgrey; .roboto-light; .list-none; }
 			}
 			strong { .size(13px); .lh(16px); }
-			h3, h4, h5 { .size(15px); .lh(18px); .m(0px 0px 10px); .roboto-xbold; }
+			h3 { .size(22px); .m(0 0 10px); }
+			.button { .mt(15px); .p(7px 16px); .bg-green; }
 		}
 	}
 }

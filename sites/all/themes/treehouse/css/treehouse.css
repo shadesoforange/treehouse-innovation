@@ -822,7 +822,7 @@ body {
   color: #aaaaaa;
   width: auto;
   background: rgba(0, 0, 0, 0.8);
-  padding: 12px 100px 0;
+  padding: 12px 30px 0;
   margin: 0 50px;
 }
 #header .homepage-logos p {
@@ -931,8 +931,6 @@ body {
   background: #c63936;
   display: inline-block;
   color: #fff !important;
-  font-family: 'Carter One', sans-serif;
-  font-weight: 400;
   padding: 10px 20px;
   float: none;
 }
@@ -990,8 +988,6 @@ body {
 .front .services .button {
   background: rgba(60, 60, 60, 0.5);
   color: #ffffff;
-  font-family: 'Carter One', sans-serif;
-  font-weight: 400;
   padding: 8px 16px;
 }
 .front .services-mobile {
@@ -1901,10 +1897,9 @@ a.button,
   -webkit-appearance: none;
   color: #fff !important;
   background: #47a9e1;
-  font-family: 'Carter One', sans-serif;
-  font-weight: 400;
-  padding: 8px 16px;
-  font-size: 16px;
+  text-transform: uppercase;
+  padding: 9px 16px;
+  font-size: 13px;
   display: inline-block;
   border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -1977,72 +1972,74 @@ a.button.white,
   color: #3d3d3d;
 }
 .design-thinking-academy {
-  color: #fff !important;
-  background: #3d3d3d;
-  padding: 50px 5%;
+  background: url("../images/green-leaves.jpg") no-repeat center bottom;
+  background-size: cover;
+  padding: 50px 10%;
 }
-.design-thinking-academy .block-content {
-  padding: 0 280px 0 0;
-  background: url("../images/icons/learning-green-top.svg") no-repeat right top;
-  background-size: 230px 230px;
+.design-thinking-academy h2 {
+  color: #ffffff;
+  text-align: center;
 }
-.design-thinking-academy h2,
-.design-thinking-academy h2.block-title {
-  letter-spacing: 1px;
+.design-thinking-academy p {
+  color: #ffffff;
+  text-align: center;
+  padding: 0 100px;
 }
 .design-thinking-academy table {
-  margin-top: 30px;
-}
-.design-thinking-academy table th {
-  padding: 20px 20px 10px;
-  font-size: 10px;
-  line-height: 13px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: left;
-  vertical-align: bottom;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #aaaaaa;
-}
-.design-thinking-academy table th p {
-  margin-bottom: 0px;
+  border-collapse: separate;
+  border-spacing: 15px;
 }
 .design-thinking-academy table td {
-  padding: 30px 20px 20px;
-  border-bottom: 1px solid #3d3d3d;
+  padding: 30px 40px;
   text-align: left;
   vertical-align: top;
-  background: #eeeeee;
-  color: #000000;
+  background: #fff;
+  width: 50%;
 }
 .design-thinking-academy table td p {
   margin: 0 0 10px;
+  padding: 0px;
+  text-align: left;
   font-size: 13px;
   line-height: 16px;
+  color: #3d3d3d;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.design-thinking-academy table td p.meta {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 .design-thinking-academy table td ul,
 .design-thinking-academy table td ol {
-  margin: 0px;
+  margin: 0 0 10px;
   padding: 0px;
 }
 .design-thinking-academy table td ul li,
 .design-thinking-academy table td ol li {
-  margin: 0 0 8px 18px;
+  margin: 0 0 4px 0;
   font-size: 13px;
+  color: #3d3d3d;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
 }
 .design-thinking-academy table td strong {
   font-size: 13px;
   line-height: 16px;
 }
-.design-thinking-academy table td h3,
-.design-thinking-academy table td h4,
-.design-thinking-academy table td h5 {
-  font-size: 15px;
-  line-height: 18px;
-  margin: 0px 0px 10px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+.design-thinking-academy table td h3 {
+  font-size: 22px;
+  margin: 0 0 10px;
+}
+.design-thinking-academy table td .button {
+  margin-top: 15px;
+  padding: 7px 16px;
+  color: #fff !important;
+  background: #82af35;
 }
 .team-members {
   padding: 0 13%;
@@ -2283,10 +2280,9 @@ input[type="submit"] {
   -webkit-appearance: none;
   color: #fff !important;
   background: #47a9e1;
-  font-family: 'Carter One', sans-serif;
-  font-weight: 400;
-  padding: 8px 16px;
-  font-size: 16px;
+  text-transform: uppercase;
+  padding: 9px 16px;
+  font-size: 13px;
   display: inline-block;
   border-radius: 3px;
   -webkit-border-radius: 3px;
