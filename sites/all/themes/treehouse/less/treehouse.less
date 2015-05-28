@@ -324,7 +324,7 @@ body { background: @dkgrey2; }
 	@media (max-width: 1079px) { .ml(180px); }
 	@media (max-width: 800px) { .ml(0px); }
 	.about-detail { background: url("../images/bg-about-block.jpg") no-repeat center center; background-size: cover; .p(50px 5%); 
-		h2.block-title { .bg-blue; .roboto-light; .ls(4px); .p(12px 24px); .size(22px); .inline-block; }
+		h2.block-title { .tc; .slab; .p(12px 24px); .size(22px); .inline-block; .tc; }
 		h3, h4 { .white; .size(20px); .roboto-bold; }
 		.third { .w(30%); .m(30px 3.333% 0 0); .fl; .white; .roboto-light; 
 			p { .roboto-light; .size(14px); .lh(21px); .ltgrey; }
@@ -342,6 +342,16 @@ body { background: @dkgrey2; }
 		.views-slideshow-controls-top { .mb(10px);
 			a { .ltgrey; background: #555; .upper; .size(11px); .lh(20px); .h(20px); .p(0 10px); .inline-block; 
 				&:hover { .white; }
+			}
+		}
+	}
+	.extended-family { .m(0 13%);
+		h2.block-title { .tc; .m(20px 0); .pb(10px); border-bottom: 1px solid @dkgrey; }
+		table { border: 0px !important; .w(100%); 
+			td { .w(50%); .tc; .dkgrey; .vtop; .p(0 30px);
+				p { .size(14px); .lh(18px); .tl; 
+					a { .strong; .blue; }
+				}
 			}
 		}
 	}
