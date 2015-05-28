@@ -35,7 +35,7 @@ body { background: @dkgrey2; }
 					&:visited { .black; }
 					&:hover { .black; }
 				}
-				&.active-trail a { .black;
+				&.active-trail a {
 					&.services, &.service { border-left: 10px solid @blue; .p(16px 20px 16px 10px); }
 					&.case-studies { border-left: 10px solid @aqua; .p(16px 20px 16px 10px); }
 					&.blog { border-left: 10px solid @magenta; .p(16px 20px 16px 10px); }
@@ -43,12 +43,13 @@ body { background: @dkgrey2; }
 					&.about { border-left: 10px solid @orange; .p(16px 20px 16px 10px); }
 					&.contact { border-left: 10px solid @green; .p(16px 20px 16px 10px); }
 				}
-				ul, ul.menu { left: 240px; z-index: 9999; .w(240px); .p(10px 0 15px 19px); background: transparent url("../images/bg-flyout.png") no-repeat left top; border: none;
-					li { border-bottom: none;
-						a { .roboto-light; .grey; .size(12px); .lh(12px); .p(9px 20px); .tt-none; .upper;
+				ul { left: 240px; z-index: 9999; .w(240px); .p(10px 0 15px 19px); background: transparent url("../images/bg-flyout.png") no-repeat left top; border: none;
+					li { border-bottom: none; background: transparent;
+						a { .roboto-light; .white; .size(12px); .lh(12px); .p(9px 20px); .tt-none; .upper;
 							&.active { }
+							&:visited { .white; }
+							&:hover { .white; }
 						}
-						&:hover { .black; }
 					}
 				}
 			}

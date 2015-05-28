@@ -636,9 +636,6 @@ body {
 #navigation .block-nice-menus ul.nice-menu-right li a:hover {
   color: #000000;
 }
-#navigation .block-nice-menus ul.nice-menu-right li.active-trail a {
-  color: #000000;
-}
 #navigation .block-nice-menus ul.nice-menu-right li.active-trail a.services,
 #navigation .block-nice-menus ul.nice-menu-right li.active-trail a.service {
   border-left: 10px solid #47a9e1;
@@ -664,8 +661,7 @@ body {
   border-left: 10px solid #82af35;
   padding: 16px 20px 16px 10px;
 }
-#navigation .block-nice-menus ul.nice-menu-right li ul,
-#navigation .block-nice-menus ul.nice-menu-right li ul.menu {
+#navigation .block-nice-menus ul.nice-menu-right li ul {
   left: 240px;
   z-index: 9999;
   width: 240px;
@@ -673,24 +669,25 @@ body {
   background: transparent url("../images/bg-flyout.png") no-repeat left top;
   border: none;
 }
-#navigation .block-nice-menus ul.nice-menu-right li ul li,
-#navigation .block-nice-menus ul.nice-menu-right li ul.menu li {
+#navigation .block-nice-menus ul.nice-menu-right li ul li {
   border-bottom: none;
+  background: transparent;
 }
-#navigation .block-nice-menus ul.nice-menu-right li ul li a,
-#navigation .block-nice-menus ul.nice-menu-right li ul.menu li a {
+#navigation .block-nice-menus ul.nice-menu-right li ul li a {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: #555555;
+  color: #ffffff;
   font-size: 12px;
   line-height: 12px;
   padding: 9px 20px;
   text-transform: none;
   text-transform: uppercase;
 }
-#navigation .block-nice-menus ul.nice-menu-right li ul li:hover,
-#navigation .block-nice-menus ul.nice-menu-right li ul.menu li:hover {
-  color: #000000;
+#navigation .block-nice-menus ul.nice-menu-right li ul li a:visited {
+  color: #ffffff;
+}
+#navigation .block-nice-menus ul.nice-menu-right li ul li a:hover {
+  color: #ffffff;
 }
 #navigation .social-contact {
   margin: 30px 20px 0px;
