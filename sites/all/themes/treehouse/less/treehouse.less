@@ -34,14 +34,14 @@ body { background: @dkgrey2; }
 				a { .roboto-light; .upper; .ls(1px); .size(12px); .lh(12px); .grey; .block; .p(16px 20px); 
 					&:visited { .black; }
 					&:hover { .black; }
-					&.active-trail { .black;  
-						&.services, &.service { border-left: 10px solid @blue; .p(16px 20px 16px 10px); }
-						&.case-studies { border-left: 10px solid @aqua; .p(16px 20px 16px 10px); }
-						&.blog { border-left: 10px solid @magenta; .p(16px 20px 16px 10px); }
-						&.team { border-left: 10px solid @red; .p(16px 20px 16px 10px); }
-						&.about { border-left: 10px solid @orange; .p(16px 20px 16px 10px); }
-						&.contact { border-left: 10px solid @green; .p(16px 20px 16px 10px); }
-					}
+				}
+				&.active-trail a { .black;
+					&.services, &.service { border-left: 10px solid @blue; .p(16px 20px 16px 10px); }
+					&.case-studies { border-left: 10px solid @aqua; .p(16px 20px 16px 10px); }
+					&.blog { border-left: 10px solid @magenta; .p(16px 20px 16px 10px); }
+					&.team { border-left: 10px solid @red; .p(16px 20px 16px 10px); }
+					&.about { border-left: 10px solid @orange; .p(16px 20px 16px 10px); }
+					&.contact { border-left: 10px solid @green; .p(16px 20px 16px 10px); }
 				}
 				ul, ul.menu { left: 240px; z-index: 9999; .w(240px); .p(10px 0 15px 19px); background: transparent url("../images/bg-flyout.png") no-repeat left top; border: none;
 					li { border-bottom: none;
@@ -112,8 +112,7 @@ body { background: @dkgrey2; }
 }
 #block-views-header-image-block,
 #block-views-header-image-block-1,
-#block-views-header-image-block-2,
-#block-views-header-image-block-3 {
+#block-views-header-image-block-2 {
 	.header-image { .w100; .p(150px 0 20px); .m0; 
 		.header-content { .p(36px 5%); .m(0 15%); .tc; }
 		h1 { .m(6px 0); }
@@ -125,6 +124,13 @@ body { background: @dkgrey2; }
 			h1 { .size(24px); .lh(27px); }
 			p { .size(13px); .lh(15px); }
 		}
+	}
+}
+#block-views-header-image-block-3 {
+	.header-image { .w100; .p(0px); .m0;
+		.header-content { .p(36px 5%); .m(0 15%); .tc; }
+		h1 { .m(6px 0); }
+		p { .size(18px); .m(0px); }
 	}
 }
 
@@ -348,7 +354,7 @@ body { background: @dkgrey2; }
 	&.mobile { .hide; .p(25px 0); }
 	.row { .cb; .p(0 0 20px 0); .m(0 10% 20px); 
 		h2, h3, h4 { .white; .size(28px); .lh(30px); .m(0 0 8px); .pt(15px); }
-		p { .ltgrey; .roboto-light; .size(16px); .lh(21px); }
+		p { .ltgrey; .roboto-light; .size(16px); .lh(21px); .m(0 0 15px); }
 		.ui-icon { .hide; }
 		.icon { .m(0 30px 0 0); .fl;
 			&.fr { .m(0 0 0 30px); float: right; }
