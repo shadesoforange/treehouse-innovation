@@ -21,15 +21,16 @@ body { background: @dkgrey2; }
 
 // Navigation
 
-#navigation { .w(240px); .h(100%); .fix; z-index: 100; top: 0px; bottom: 0px; background: #fff; overflow-x: hidden; overflow-y: auto; 
-	.region-navigation { .h(auto); }
+#navigation { .w(240px); .h(100%); .fix; z-index: 100; top: 0px; bottom: 0px; background: #fff; overflow: visible; 
+	.region-navigation { .h(auto); overflow: visible; }
 	#logo { .w(240px); .h(240px); background: url("../images/treehouse-logo.svg") no-repeat center center; background-size: 150px 150px; .block; .m0; }
 	.mobile-menu { .hide; }
 	#mobile-menu-trigger { .h(40px); .w(40px); .tc; .abs; left: 2%; top: 0; z-index: 99; background: url("../images/mobile-menu.svg") no-repeat center center; background-size: 30px 30px; }
 	#mobile-home-link { .w(100%); .roboto-bold; .ls(2px); .upper; .size(11px); .lh(40px); .tc; .black; .block; }
-	.block-menu-block { .w(100%); .p0; .m0; border-top: 1px solid #ddd; 
-		ul.menu { .m0; .p0;
-			li { .list-none; .p0; .block; .fn; .m0; border-bottom: 1px solid #ddd;
+	.block-nice-menus { .w(100%); .p0; .m0; border-top: 1px solid #ddd; .rel; z-index: 9999;
+		h2.block-title { .hide; }
+		ul.nice-menu-right { .m0; .p0; .w(100%); border-top: none;
+			li { .list-none; .p0; .block; .fn; .m0; border: none; border-bottom: 1px solid #ddd; background: #fff; .w(100%);
 				a { .roboto-light; .upper; .ls(1px); .size(12px); .lh(12px); .grey; .block; .p(16px 20px); 
 					&:visited { .black; }
 					&:hover { .black; }
@@ -42,9 +43,9 @@ body { background: @dkgrey2; }
 						&.contact { border-left: 10px solid @green; .p(16px 20px 16px 10px); }
 					}
 				}
-				ul.menu { .pb(15px); 
+				ul, ul.menu { left: 240px; z-index: 9999; .w(240px); .p(10px 0 15px 19px); background: transparent url("../images/bg-flyout.png") no-repeat left top; border: none;
 					li { border-bottom: none;
-						a { .roboto-light; .grey; .size(11px); .lh(11px); .p(3px 20px); .tt-none; 
+						a { .roboto-light; .grey; .size(12px); .lh(12px); .p(9px 20px); .tt-none; .upper;
 							&.active { }
 						}
 						&:hover { .black; }
@@ -91,9 +92,10 @@ body { background: @dkgrey2; }
 		@media (max-width:1079px) { .pl(180px); }
 	}
 	.homepage-banner { .rel; z-index: 1; .w(auto); .h(800px); background: #fff url("../images/hot-air-balloon.jpg") no-repeat right top; background-size: 100% auto; overflow: hidden; 
-		.block-content { .p(200px 0 0 50px); .w(50%); }
+		.block-content { .p(175px 0 0 10%); .w(45%); }
 		p { .size(18px); .lh(26px); .m(0 0 14px); .roboto-light; }
 		h2 { .size(42px); .lh(48px); .mb(6px); }
+		.button { border: 1px solid @grey; background: #fff; color: @grey; .size(12px); .p(7px 16px); }
 		@media (max-width:1079px) {
 			.ml(180px);
 		}
@@ -104,7 +106,7 @@ body { background: @dkgrey2; }
 			}
 		}
 	}
-	.homepage-logos { .rel; top: -180px; z-index: 10; .tc; .ltgrey; .w(auto); background: rgba(0,0,0,0.8); .p(12px 30px 0); .m(0 50px); 
+	.homepage-logos { .rel; top: -180px; z-index: 10; .tc; .ltgrey; .w(auto); background: rgba(0,0,0,0.8); .p(12px 30px 0); .m(0 10%); 
 		p { .m(10px 0); }
 	}
 }
@@ -468,9 +470,10 @@ a.button,
 	&.bg-black, &.black { background: #000; .white; }
 	&.bg-grey, &.grey { background: @dkgrey; .white; }
 	&.bg-white, &.white { background: #fff; .dkgrey; }
+	&.hollow { border: 1px solid @grey; background: #fff; color: @grey; .size(12px); }
 }
 
-.design-thinking-academy { background: url("../images/green-leaves.jpg") no-repeat center bottom; background-size: cover; .p(50px 10%); 
+.design-thinking-academy { .p(50px 10%); background: transparent url("../images/green-leaves.jpg") no-repeat center center; background-size: cover; 
 	h2 { .white; .tc; }
 	p { .white; .tc; .p(0 100px); }
 	table { border-collapse: separate; border-spacing: 15px;
@@ -483,7 +486,7 @@ a.button,
 			}
 			strong { .size(13px); .lh(16px); }
 			h3 { .size(22px); .m(0 0 10px); }
-			.button { .mt(15px); .p(7px 16px); .bg-green; }
+			.button { .mt(15px); .p(7px 16px); }
 		}
 	}
 }
