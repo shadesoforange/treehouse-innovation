@@ -40,7 +40,7 @@
     <![endif]-->
   <?php endif; ?>
   
-  <link href='http://fonts.googleapis.com/css?family=Roboto:100,100italic,400,300,300italic,400italic,700,700italic|Carter+One|Roboto+Slab:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100,100italic,400,300,300italic,400italic,700,700italic|Roboto+Slab:700' rel='stylesheet' type='text/css'>
 
   
 </head>

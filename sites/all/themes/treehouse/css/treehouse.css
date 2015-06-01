@@ -120,10 +120,6 @@
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
 }
-.script {
-  font-family: 'Carter One', sans-serif;
-  font-weight: 400;
-}
 html,
 div,
 p,
@@ -791,7 +787,7 @@ body {
   overflow: hidden;
 }
 #header .homepage-banner .block-content {
-  padding: 175px 0 0 10%;
+  padding: 160px 0 0 10%;
   width: 45%;
 }
 #header .homepage-banner p {
@@ -840,7 +836,7 @@ body {
 }
 #header .homepage-logos {
   position: relative;
-  top: -180px;
+  top: -205px;
   z-index: 10;
   text-align: center;
   color: #aaaaaa;
@@ -1409,8 +1405,6 @@ body {
   color: #fff;
   background: #47a9e1;
   -webkit-appearance: none;
-  font-family: 'Carter One', sans-serif;
-  font-weight: 400;
   padding: 10px 25px;
   border: none;
   border-radius: 3px;
@@ -1509,9 +1503,9 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   padding: 12px 24px;
-  font-size: 22px;
-  display: inline-block;
+  font-size: 28px;
   text-align: center;
+  color: #47a9e1;
 }
 #content-lower .about-detail h3,
 #content-lower .about-detail h4 {
