@@ -611,7 +611,7 @@ body {
   margin: 0px;
   border: none;
   border-bottom: 1px solid #ddd;
-  background: #fff;
+  background: transparent;
   width: 100%;
 }
 #navigation .block-nice-menus ul.nice-menu-right li a {
@@ -621,7 +621,7 @@ body {
   letter-spacing: 1px;
   font-size: 12px;
   line-height: 12px;
-  color: #555555;
+  color: #000000;
   display: block;
   margin-bottom: 0px;
   padding: 16px 20px;
@@ -631,6 +631,45 @@ body {
 }
 #navigation .block-nice-menus ul.nice-menu-right li a:hover {
   color: #000000;
+  background-color: #eee;
+}
+#navigation .block-nice-menus ul.nice-menu-right li.menuparent a {
+  background: url("../images/arrow.svg") no-repeat 214px 14px;
+  background-size: 15px 15px;
+}
+#navigation .block-nice-menus ul.nice-menu-right li.menuparent a:hover {
+  background: #eeeeee url("../images/arrow.svg") no-repeat 214px 14px;
+  background-size: 15px 15px;
+}
+#navigation .block-nice-menus ul.nice-menu-right li.menuparent ul {
+  left: 240px;
+  z-index: 9999;
+  width: 240px;
+  padding: 10px 0 15px;
+  background: #47a9e1;
+  border: none;
+}
+#navigation .block-nice-menus ul.nice-menu-right li.menuparent ul li {
+  border-bottom: none;
+  background: transparent;
+}
+#navigation .block-nice-menus ul.nice-menu-right li.menuparent ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 9px 20px;
+  text-transform: none;
+  text-transform: uppercase;
+  background: transparent;
+}
+#navigation .block-nice-menus ul.nice-menu-right li.menuparent ul li a:visited {
+  color: #ffffff;
+}
+#navigation .block-nice-menus ul.nice-menu-right li.menuparent ul li a:hover {
+  color: #ffffff;
+  background: #21394f;
 }
 #navigation .block-nice-menus ul.nice-menu-right li.active-trail a.services,
 #navigation .block-nice-menus ul.nice-menu-right li.active-trail a.service {
@@ -657,34 +696,6 @@ body {
   border-left: 10px solid #82af35;
   padding: 16px 20px 16px 10px;
 }
-#navigation .block-nice-menus ul.nice-menu-right li ul {
-  left: 240px;
-  z-index: 9999;
-  width: 240px;
-  padding: 10px 0 15px 19px;
-  background: transparent url("../images/bg-flyout.png") no-repeat left top;
-  border: none;
-}
-#navigation .block-nice-menus ul.nice-menu-right li ul li {
-  border-bottom: none;
-  background: transparent;
-}
-#navigation .block-nice-menus ul.nice-menu-right li ul li a {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #ffffff;
-  font-size: 12px;
-  line-height: 12px;
-  padding: 9px 20px;
-  text-transform: none;
-  text-transform: uppercase;
-}
-#navigation .block-nice-menus ul.nice-menu-right li ul li a:visited {
-  color: #ffffff;
-}
-#navigation .block-nice-menus ul.nice-menu-right li ul li a:hover {
-  color: #ffffff;
-}
 #navigation .social-contact {
   margin: 30px 20px 0px;
   color: #555555;
@@ -710,7 +721,7 @@ body {
     background-size: 150px 150px;
     margin: 15px;
   }
-  #navigation #block-system-main-menu {
+  #navigation .block-nice-menus {
     width: 150px;
   }
   #navigation .social-contact {
@@ -731,7 +742,7 @@ body {
   #navigation .mobile-menu {
     display: block;
   }
-  #navigation #block-system-main-menu {
+  #navigation .block-nice-menus {
     display: none;
     width: auto;
     margin: 10px 10%;
@@ -739,15 +750,15 @@ body {
     padding: 0px;
     border-bottom: none;
   }
-  #navigation #block-system-main-menu ul.menu li {
+  #navigation .block-nice-menus ul.menu li {
     width: 50%;
     float: left;
     border-bottom: 1px solid #d6d6d6;
   }
-  #navigation #block-system-main-menu ul.menu li a {
+  #navigation .block-nice-menus ul.menu li a {
     padding: 10px 0;
   }
-  #navigation #block-system-main-menu ul.menu li ul.menu {
+  #navigation .block-nice-menus ul.menu li ul.menu {
     display: none;
   }
   #navigation .social-contact {
@@ -777,76 +788,10 @@ body {
     padding-left: 180px;
   }
 }
-#header .homepage-banner {
-  position: relative;
-  z-index: 1;
-  width: auto;
-  height: 800px;
-  background: #ffffff url("../images/hot-air-balloon.jpg") no-repeat right top;
-  background-size: 100% auto;
-  overflow: hidden;
-}
-#header .homepage-banner .block-content {
-  padding: 160px 0 0 10%;
-  width: 45%;
-}
-#header .homepage-banner p {
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0 0 14px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-#header .homepage-banner h2 {
-  font-size: 42px;
-  line-height: 48px;
-  margin-bottom: 6px;
-}
-#header .homepage-banner .button {
-  border: 1px solid #555555;
-  background: #fff;
-  color: #555555;
-  font-size: 12px;
-  padding: 7px 16px;
-}
-@media (max-width: 1079px) {
-  #header .homepage-banner {
-    margin-left: 180px;
-  }
-}
 @media (max-width: 800px) {
-  #header .homepage-banner {
-    margin-left: 0px;
-    top: auto;
-    height: auto;
+  #header .region-header {
+    padding-left: 0px;
   }
-  #header .homepage-banner .block-content {
-    padding: 85px 20px 80px 20px;
-    width: auto;
-  }
-  #header .homepage-banner .block-content h2 {
-    font-size: 22px;
-    line-height: 24px;
-    margin: 0 40% 20px 0;
-  }
-  #header .homepage-banner .block-content p {
-    font-size: 13px;
-    line-height: 16px;
-  }
-}
-#header .homepage-logos {
-  position: relative;
-  top: -205px;
-  z-index: 10;
-  text-align: center;
-  color: #aaaaaa;
-  width: auto;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 12px 30px 0;
-  margin: 0 10%;
-}
-#header .homepage-logos p {
-  margin: 10px 0;
 }
 #block-views-header-image-block .header-image,
 #block-views-header-image-block-1 .header-image,
@@ -923,6 +868,93 @@ body {
 .front #header {
   height: 800px;
 }
+.front #header .homepage-banner {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  height: 800px;
+  background: #ffffff url("../images/hot-air-balloon.jpg") no-repeat right top;
+  background-size: 100% auto;
+  overflow: hidden;
+}
+.front #header .homepage-banner .block-content {
+  padding: 160px 0 0 10%;
+  width: 45%;
+}
+.front #header .homepage-banner p {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 0 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.front #header .homepage-banner h2 {
+  font-size: 42px;
+  line-height: 48px;
+  margin-bottom: 6px;
+}
+.front #header .homepage-banner .button {
+  border: 1px solid #555555;
+  background: #fff;
+  color: #555555;
+  font-size: 12px;
+  padding: 7px 16px;
+}
+.front #header .homepage-logos {
+  position: relative;
+  top: -200px;
+  z-index: 10;
+  text-align: center;
+  color: #aaaaaa;
+  width: auto;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 12px 30px 15px;
+  margin: 0 10%;
+}
+.front #header .homepage-logos p {
+  margin: 10px 0;
+}
+.front #header .homepage-logos img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 800px) {
+  .front #header {
+    height: 480px;
+  }
+  .front #header .homepage-banner {
+    height: 480px;
+  }
+  .front #header .homepage-banner .block-content {
+    padding: 75px 8% 0 8%;
+    width: auto;
+  }
+  .front #header .homepage-banner h2 {
+    font-size: 24px;
+    line-height: 27px;
+    padding-right: 100px;
+    margin: 0 0 8px;
+  }
+  .front #header .homepage-banner p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .front #header .homepage-banner .button {
+    font-size: 11px;
+    padding: 5px 13px;
+  }
+  .front #header .homepage-logos {
+    top: -110px;
+    padding: 15px 10px 15px;
+    margin: 0 8%;
+  }
+  .front #header .homepage-logos p {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 0 8px;
+    padding: 0px;
+  }
+}
 .front h1#page-title {
   display: none;
 }
@@ -943,11 +975,18 @@ body {
   padding: 70px 15%;
   /*background: rgba(0,0,0,0.7);*/
 }
-.front #content article h2,
-.front #content article h3 {
+.front #content article h2 {
   color: #ffffff;
   font-size: 40px;
   line-height: 43px;
+}
+.front #content article h3,
+.front #content article h4 {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 23px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 .front #content article p {
   margin-bottom: 36px;
@@ -1076,9 +1115,11 @@ body {
   z-index: 8;
 }
 .front .case-studies-mobile h2.block-title {
-  margin: 40px 2% 10px;
-  color: #ffffff;
+  margin: 0px 2% 10px;
+  padding-top: 20px;
   letter-spacing: 1px;
+  font-size: 24px;
+  text-align: center;
 }
 .front .quote {
   background: rgba(68, 183, 169, 0.8);
@@ -1118,9 +1159,25 @@ body {
   padding: 10px;
 }
 .front .video h2 {
-  color: #ffffff;
   text-align: center;
   margin: 0 0 20px;
+}
+.front .video p {
+  text-align: left;
+}
+.front .video blockquote {
+  background: rgba(68, 183, 169, 0.8);
+  padding: 20px 40px;
+  text-align: left;
+  color: #ffffff;
+  margin: 0px;
+}
+.front .video blockquote p {
+  margin: 0 0 10px;
+}
+.front .video blockquote cite {
+  font-style: italic;
+  text-align: right;
 }
 .front .video .half {
   width: 270px;
@@ -1140,51 +1197,37 @@ body {
 }
 .front .blog-mobile-homepage h2.block-title {
   color: #ffffff;
+  font-size: 24px;
+  text-align: center;
 }
 .front #footer {
   clear: both;
   position: relative;
 }
 @media (max-width: 800px) {
-  .front .homepage-logos {
-    position: relative;
-    left: auto;
-    top: 0px;
+  .front #content article .field-name-body {
     margin: 0px;
-    height: auto;
-    width: 100%;
-    background: url("../images/box-dkgrey.svg") no-repeat center bottom;
-    background-size: 200% auto;
+    padding: 30px 8%;
+    /*background: rgba(0,0,0,0.7);*/
   }
-  .front .homepage-logos .block-content {
-    padding: 15px 15px 40px;
-  }
-  .front .homepage-logos p {
-    font-size: 13px;
-    line-height: 15px;
-    margin: 0 0 10px;
-  }
-  .front .homepage-logos img {
-    max-width: 100%;
-    height: auto;
-  }
-  .front article.node-3 {
-    padding: 40px 15px;
-    background: url("../images/wood-light.jpg") no-repeat center center;
-    background-size: auto 100%;
-    margin-top: -30px !important;
-  }
-  .front article.node-3 h2,
-  .front article.node-3 h3 {
+  .front #content article h2 {
+    color: #ffffff;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 27px;
   }
-  .front article.node-3 p {
-    margin-bottom: 25px;
+  .front #content article h3,
+  .front #content article h4 {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 19px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
+    font-weight: 300;
+  }
+  .front #content article p {
+    margin-bottom: 0px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
   }
   .front .services {
     display: none;
@@ -1208,7 +1251,7 @@ body {
     width: auto;
     font-size: 11px;
   }
-  .front .feature-video {
+  .front .video {
     display: none;
   }
 }
