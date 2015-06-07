@@ -716,50 +716,49 @@ body {
     width: 180px;
   }
   #navigation #logo {
-    width: 150px;
-    height: 150px;
-    background-size: 150px 150px;
-    margin: 15px;
+    width: 180px;
+    height: 180px;
+    background-size: 120px 120px;
   }
   #navigation .block-nice-menus {
-    width: 150px;
+    width: 180px;
   }
   #navigation .social-contact {
-    width: 150px;
+    width: 180px;
   }
 }
 @media (max-width: 800px) {
   #navigation {
     position: relative;
     width: 100%;
-    height: auto;
     bottom: auto;
     top: 0px;
+    height: auto;
   }
   #navigation #logo {
     display: none;
   }
-  #navigation .mobile-menu {
-    display: block;
-  }
   #navigation .block-nice-menus {
     display: none;
     width: auto;
-    margin: 10px 10%;
-    height: 130px;
+    margin: 0px 10%;
+    height: auto;
     padding: 0px;
     border-bottom: none;
   }
-  #navigation .block-nice-menus ul.menu li {
+  #navigation .block-nice-menus ul.nice-menu-right li {
     width: 50%;
     float: left;
     border-bottom: 1px solid #d6d6d6;
   }
-  #navigation .block-nice-menus ul.menu li a {
+  #navigation .block-nice-menus ul.nice-menu-right li a {
     padding: 10px 0;
   }
-  #navigation .block-nice-menus ul.menu li ul.menu {
+  #navigation .block-nice-menus ul.nice-menu-right li ul.menu {
     display: none;
+  }
+  #navigation .mobile-menu {
+    display: block;
   }
   #navigation .social-contact {
     display: none;
@@ -944,7 +943,7 @@ body {
     padding: 5px 13px;
   }
   .front #header .homepage-logos {
-    top: -110px;
+    top: -115px;
     padding: 15px 10px 15px;
     margin: 0 8%;
   }

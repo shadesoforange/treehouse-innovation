@@ -23,7 +23,7 @@ Drupal.behaviors.my_custom_behavior = {
 	
 	$('#mobile-menu-trigger').click(function(e){
 		e.preventDefault();
-		$('#block-system-main-menu').slideToggle(200);
+		$('.block-nice-menus').slideToggle(200);
 	});
 	
 	$('.accordion').accordion({header:'.header',active: 'false'});
