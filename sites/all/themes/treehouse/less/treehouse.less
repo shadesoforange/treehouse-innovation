@@ -94,6 +94,25 @@ body { background: @dkgrey2; }
 
 .logged-in #navigation #logo { .mt(60px); }
 
+.section-test-page #navigation { background: #333;
+	#logo { background: url("../images/treehouse-logo-white.svg") no-repeat center center; background-size: 150px 150px; }
+	.block-nice-menus { border-top: 1px solid #555;
+		ul.nice-menu-right {
+			li { border-bottom: 1px solid #555; 
+				a { .white; 
+					&:hover { .white; background-color: #222; }
+				}	
+				&.menuparent { 
+					a { background: url("../images/arrow-white.svg") no-repeat 214px 14px; background-size: 15px 15px; }
+				}
+			}
+		}
+	}
+	.social-contact { .white; 
+		a { .white; }
+	}
+}
+
 
 
 // Header Region
@@ -176,6 +195,12 @@ body { background: @dkgrey2; }
 	}
 	#content-lower { background: #e7e2dc url("../images/fog-mountains.jpg") no-repeat center bottom; background-size: auto 70%; }
 	.services { 
+		&.mobile { .hide; 
+			.block-content { .p(0); }
+			td { .p(0 0 10px); }
+			h3 { .m(15px 15px 12px); }
+			p { .m(0 15px 12px); .size(12px); .lh(16px); }
+		}
 		.block-content { .p(0 3% 50px); }
 		table { border-spacing: 15px; border-collapse: separate; }
 		td { background: #fff; .vtop; .p0; .w(33.333%); .p(0 0 130px); }
@@ -190,20 +215,6 @@ body { background: @dkgrey2; }
 		}
 		.button { .bg-grey; .white; .p(8px 16px); }
 	}
-	.services-mobile { .hide; .w100; .fn; background: #fff; 
-		.block-content { .p(15px); }
-		.service { border-bottom: 1px solid #ccc; .p(15px 135px 15px 0); 
-			&.icon1 { background: url("../images/icons/knowledge-green.svg") no-repeat right center; background-size: 120px 120px; }
-			&.icon2 { background: url("../images/icons/idea-orange.svg") no-repeat right center; background-size: 120px 120px; }
-			&.icon3 { background: url("../images/icons/future-aqua.svg") no-repeat right center; background-size: 120px 120px; border-bottom: none; }	
-		}
-		a { .black; .td-none; }
-		h3, h3 a { .mb(10px); .slab; }
-		p, p a { .m(0 0 10px); }
-		@media (max-width: 1200px) {
-			p { .size(12px); .lh(15px); }
-		}			
-	}
 	.case-studies { .p(50px 0 20px); .mb(0px);
 		h2.block-title { .fl; .m(0px 0 30px 50px); .rel; z-index: 8; }
 	}
@@ -215,6 +226,12 @@ body { background: @dkgrey2; }
 		}
 	}
 	.video { .cb; .p(40px 0 0);
+		&.mobile { .hide; 
+			.block-content { .w(100%); }
+			iframe { .p(10px 0); }
+			p { .p(0 15px); .size(13px); .lh(17px); }
+			blockquote { .p(15px); }
+		}
 		.block-content { .w(580px); .auto; .white; }
 		iframe { background: rgba(0,0,0,0.7); .p(10px);  }
 		h2 { .tc; .m(0 0 20px); }
@@ -223,7 +240,6 @@ body { background: @dkgrey2; }
 			p { .m(0 0 10px); }
 			cite { .em; .tr; }
 		}
-		.half { .w(270px); .m(0 10px); .fl; .pt(30px); }
 	}
 	.blog-homepage { .p(80px 0 80px); .cb; .mb(0px);
 		h2.block-title { .white; .tc; .m(0 0 40px); }
@@ -237,15 +253,20 @@ body { background: @dkgrey2; }
 			h3, h4 { .white; .size(14px); .lh(19px); .roboto-light; }
 			p { .mb(0px); .white; .roboto-light; }
 		}
-		.services { .hide; }
-		.services-mobile { .show; }
+		.services { 
+			&.desktop { .hide; }
+			&.mobile { .show; }
+		}
 		.quote { .m(40px 10%); 
 			blockquote { .size(18px); .lh(20px); .p(20px); .m0; 
 				p { .m0; }
 				span { .w(auto); .size(11px); }
 			}
 		}
-		.video { .hide; }
+		.video { 
+			&.desktop { .hide; }
+			&.mobile { .show; }
+		}
 	}
 }
 
@@ -269,47 +290,7 @@ body { background: @dkgrey2; }
 #main { .w100; .rel; z-index: 0; background: @xltgrey; }
 
 #content { .w(auto); .ml(240px); z-index: 1; .rel;
-	.field-name-body { .m(50px 15%); }
-	#sidebar { .fr; .w(33%); 
-		.region { .p(30px); }
-		.text {
-			.block-content { .p(15px 0); border-top: 4px solid @blue; border-bottom: 4px solid @blue; }
-			p { .roboto-xbold; .blue; .size(22px); .lh(24px); }
-		}
-		img { .w(100%); .h(auto); }
-		p { .m(0px); }
-		.sidebar-menu {
-			h2.block-title { .size(18px); .mb(0px); .lh(22px); .blue; .ls(1px); }
-			.block-content { .p(15px 0); border-top: 4px solid @blue; border-bottom: 4px solid @blue; }
-			ul { .m0; .p0; 
-				li { .list-none; .m0; .p0; 
-					a { .blue; .roboto-bold; .size(16px); .lh(14px); .block; .p(5px 0); 
-						&.active { .black; }
-					}
-				}
-			}
-		}
-		.block-menu-block {
-			&.menu-leadership-learning { background: url("../images/icons/knowledge-aqua.svg") no-repeat left top; background-size: 150px 150px; .pt(150px);
-				h2.block-title a { .aqua; .size(18px); .slab; }
-			}
-			&.menu-strategic-projects { background: url("../images/icons/empathise-blue.svg") no-repeat left top; background-size: 170px 170px; .pt(160px);
-				h2.block-title a { .blue; .size(18px); .slab; }
-			}
-			&.menu-workshops-events { background: url("../images/icons/recording-magenta.svg") no-repeat left top; background-size: 160px 160px; .pt(160px);
-				h2.block-title a { .magenta; .size(18px); .slab; }
-			}
-			ul.menu { border-bottom: 1px solid #ccc; .m0;
-				li { .list-none; border-top: 1px solid #ccc; .m0; .p(9px 0); 
-					a { color: @ltgrey; .size(14px);
-						&.active { .black; }
-					}
-				}
-			}
-		}
-		@media (max-width:800px) { .hide; }
-	}
-	.field-name-body {
+	.field-name-body { .m(50px 15%);
 		a { .blue; }
 		img { .w100; .h(auto); }
 	}
@@ -324,7 +305,10 @@ body { background: @dkgrey2; }
 	}
 	@media (max-width: 1079px) { .ml(180px); }
 	@media (max-width: 800px) { .ml(0px); 
-
+		.field-name-body { .m(20px 5%); }
+		.block-webform { .m(0px 5% 40px); 
+			input { max-width: 100%; }
+		}
 	}
 }
 
@@ -339,8 +323,6 @@ body { background: @dkgrey2; }
 }
 
 #content-lower { .w(auto); .ml(240px); .cb;
-	@media (max-width: 1079px) { .ml(180px); }
-	@media (max-width: 800px) { .ml(0px); }
 	.about-detail { background: url("../images/bg-about-block.jpg") no-repeat center center; background-size: cover; .p(50px 5%); 
 		h2.block-title { .tc; .slab; .p(12px 24px); .size(28px); .tc; .blue; }
 		h3, h4 { .white; .size(20px); .roboto-bold; }
@@ -364,6 +346,7 @@ body { background: @dkgrey2; }
 		}
 	}
 	.extended-family { .m(0 13%);
+		&.mobile { .hide; }
 		h2.block-title { .tc; .m(20px 0); .pb(10px); border-bottom: 1px solid @dkgrey; }
 		table { border: 0px !important; .w(100%); 
 			td { .w(50%); .tc; .dkgrey; .vtop; .p(0 30px);
@@ -371,6 +354,13 @@ body { background: @dkgrey2; }
 					a { .strong; .blue; }
 				}
 			}
+		}
+	}
+	@media (max-width: 1079px) { .ml(180px); }
+	@media (max-width: 800px) { .ml(0px); 
+		.extended-family {
+			&.desktop { .hide; }
+			&.mobile { .show; }
 		}
 	}
 }

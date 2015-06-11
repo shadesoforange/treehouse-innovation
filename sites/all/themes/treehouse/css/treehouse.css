@@ -785,6 +785,36 @@ body {
 .logged-in #navigation #logo {
   margin-top: 60px;
 }
+.section-test-page #navigation {
+  background: #333;
+}
+.section-test-page #navigation #logo {
+  background: url("../images/treehouse-logo-white.svg") no-repeat center center;
+  background-size: 150px 150px;
+}
+.section-test-page #navigation .block-nice-menus {
+  border-top: 1px solid #555;
+}
+.section-test-page #navigation .block-nice-menus ul.nice-menu-right li {
+  border-bottom: 1px solid #555;
+}
+.section-test-page #navigation .block-nice-menus ul.nice-menu-right li a {
+  color: #ffffff;
+}
+.section-test-page #navigation .block-nice-menus ul.nice-menu-right li a:hover {
+  color: #ffffff;
+  background-color: #222;
+}
+.section-test-page #navigation .block-nice-menus ul.nice-menu-right li.menuparent a {
+  background: url("../images/arrow-white.svg") no-repeat 214px 14px;
+  background-size: 15px 15px;
+}
+.section-test-page #navigation .social-contact {
+  color: #ffffff;
+}
+.section-test-page #navigation .social-contact a {
+  color: #ffffff;
+}
 #header {
   position: relative;
   z-index: 0;
@@ -1039,6 +1069,23 @@ body {
   background: #e7e2dc url("../images/fog-mountains.jpg") no-repeat center bottom;
   background-size: auto 70%;
 }
+.front .services.mobile {
+  display: none;
+}
+.front .services.mobile .block-content {
+  padding: 0;
+}
+.front .services.mobile td {
+  padding: 0 0 10px;
+}
+.front .services.mobile h3 {
+  margin: 15px 15px 12px;
+}
+.front .services.mobile p {
+  margin: 0 15px 12px;
+  font-size: 12px;
+  line-height: 16px;
+}
 .front .services .block-content {
   padding: 0 3% 50px;
 }
@@ -1091,52 +1138,6 @@ body {
   color: #ffffff;
   padding: 8px 16px;
 }
-.front .services-mobile {
-  display: none;
-  width: 100%;
-  float: none;
-  background: #fff;
-}
-.front .services-mobile .block-content {
-  padding: 15px;
-}
-.front .services-mobile .service {
-  border-bottom: 1px solid #ccc;
-  padding: 15px 135px 15px 0;
-}
-.front .services-mobile .service.icon1 {
-  background: url("../images/icons/knowledge-green.svg") no-repeat right center;
-  background-size: 120px 120px;
-}
-.front .services-mobile .service.icon2 {
-  background: url("../images/icons/idea-orange.svg") no-repeat right center;
-  background-size: 120px 120px;
-}
-.front .services-mobile .service.icon3 {
-  background: url("../images/icons/future-aqua.svg") no-repeat right center;
-  background-size: 120px 120px;
-  border-bottom: none;
-}
-.front .services-mobile a {
-  color: #000000;
-  text-decoration: none;
-}
-.front .services-mobile h3,
-.front .services-mobile h3 a {
-  margin-bottom: 10px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
-}
-.front .services-mobile p,
-.front .services-mobile p a {
-  margin: 0 0 10px;
-}
-@media (max-width: 1200px) {
-  .front .services-mobile p {
-    font-size: 12px;
-    line-height: 15px;
-  }
-}
 .front .case-studies {
   padding: 50px 0 20px;
   margin-bottom: 0px;
@@ -1182,6 +1183,23 @@ body {
   clear: both;
   padding: 40px 0 0;
 }
+.front .video.mobile {
+  display: none;
+}
+.front .video.mobile .block-content {
+  width: 100%;
+}
+.front .video.mobile iframe {
+  padding: 10px 0;
+}
+.front .video.mobile p {
+  padding: 0 15px;
+  font-size: 13px;
+  line-height: 17px;
+}
+.front .video.mobile blockquote {
+  padding: 15px;
+}
 .front .video .block-content {
   width: 580px;
   margin: 0 auto;
@@ -1211,12 +1229,6 @@ body {
 .front .video blockquote cite {
   font-style: italic;
   text-align: right;
-}
-.front .video .half {
-  width: 270px;
-  margin: 0 10px;
-  float: left;
-  padding-top: 30px;
 }
 .front .blog-homepage {
   padding: 80px 0 80px;
@@ -1262,10 +1274,10 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
   }
-  .front .services {
+  .front .services.desktop {
     display: none;
   }
-  .front .services-mobile {
+  .front .services.mobile {
     display: block;
   }
   .front .quote {
@@ -1284,8 +1296,11 @@ body {
     width: auto;
     font-size: 11px;
   }
-  .front .video {
+  .front .video.desktop {
     display: none;
+  }
+  .front .video.mobile {
+    display: block;
   }
 }
 .breadcrumb {
@@ -1328,125 +1343,6 @@ body {
 }
 #content .field-name-body {
   margin: 50px 15%;
-}
-#content #sidebar {
-  float: right;
-  width: 33%;
-}
-#content #sidebar .region {
-  padding: 30px;
-}
-#content #sidebar .text .block-content {
-  padding: 15px 0;
-  border-top: 4px solid #47a9e1;
-  border-bottom: 4px solid #47a9e1;
-}
-#content #sidebar .text p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  color: #47a9e1;
-  font-size: 22px;
-  line-height: 24px;
-}
-#content #sidebar img {
-  width: 100%;
-  height: auto;
-}
-#content #sidebar p {
-  margin: 0px;
-}
-#content #sidebar .sidebar-menu h2.block-title {
-  font-size: 18px;
-  margin-bottom: 0px;
-  line-height: 22px;
-  color: #47a9e1;
-  letter-spacing: 1px;
-}
-#content #sidebar .sidebar-menu .block-content {
-  padding: 15px 0;
-  border-top: 4px solid #47a9e1;
-  border-bottom: 4px solid #47a9e1;
-}
-#content #sidebar .sidebar-menu ul {
-  margin: 0px;
-  padding: 0px;
-}
-#content #sidebar .sidebar-menu ul li {
-  list-style: none;
-  list-style-image: none;
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-}
-#content #sidebar .sidebar-menu ul li a {
-  color: #47a9e1;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 14px;
-  display: block;
-  margin-bottom: 0px;
-  padding: 5px 0;
-}
-#content #sidebar .sidebar-menu ul li a.active {
-  color: #000000;
-}
-#content #sidebar .block-menu-block.menu-leadership-learning {
-  background: url("../images/icons/knowledge-aqua.svg") no-repeat left top;
-  background-size: 150px 150px;
-  padding-top: 150px;
-}
-#content #sidebar .block-menu-block.menu-leadership-learning h2.block-title a {
-  color: #44b7a9;
-  font-size: 18px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
-}
-#content #sidebar .block-menu-block.menu-strategic-projects {
-  background: url("../images/icons/empathise-blue.svg") no-repeat left top;
-  background-size: 170px 170px;
-  padding-top: 160px;
-}
-#content #sidebar .block-menu-block.menu-strategic-projects h2.block-title a {
-  color: #47a9e1;
-  font-size: 18px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
-}
-#content #sidebar .block-menu-block.menu-workshops-events {
-  background: url("../images/icons/recording-magenta.svg") no-repeat left top;
-  background-size: 160px 160px;
-  padding-top: 160px;
-}
-#content #sidebar .block-menu-block.menu-workshops-events h2.block-title a {
-  color: #cb4d83;
-  font-size: 18px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
-}
-#content #sidebar .block-menu-block ul.menu {
-  border-bottom: 1px solid #ccc;
-  margin: 0px;
-}
-#content #sidebar .block-menu-block ul.menu li {
-  list-style: none;
-  list-style-image: none;
-  list-style-type: none;
-  border-top: 1px solid #ccc;
-  margin: 0px;
-  padding: 9px 0;
-}
-#content #sidebar .block-menu-block ul.menu li a {
-  color: #aaaaaa;
-  font-size: 14px;
-}
-#content #sidebar .block-menu-block ul.menu li a.active {
-  color: #000000;
-}
-@media (max-width: 800px) {
-  #content #sidebar {
-    display: none;
-  }
 }
 #content .field-name-body a {
   color: #47a9e1;
@@ -1511,6 +1407,15 @@ body {
   #content {
     margin-left: 0px;
   }
+  #content .field-name-body {
+    margin: 20px 5%;
+  }
+  #content .block-webform {
+    margin: 0px 5% 40px;
+  }
+  #content .block-webform input {
+    max-width: 100%;
+  }
 }
 .one-sidebar #content .node-article {
   margin-right: 37%;
@@ -1535,16 +1440,6 @@ body {
   width: auto;
   margin-left: 240px;
   clear: both;
-}
-@media (max-width: 1079px) {
-  #content-lower {
-    margin-left: 180px;
-  }
-}
-@media (max-width: 800px) {
-  #content-lower {
-    margin-left: 0px;
-  }
 }
 #content-lower .about-detail {
   background: url("../images/bg-about-block.jpg") no-repeat center center;
@@ -1634,6 +1529,9 @@ body {
 #content-lower .extended-family {
   margin: 0 13%;
 }
+#content-lower .extended-family.mobile {
+  display: none;
+}
 #content-lower .extended-family h2.block-title {
   text-align: center;
   margin: 20px 0;
@@ -1660,6 +1558,22 @@ body {
   font-weight: 700;
   font-family: inherit;
   color: #47a9e1;
+}
+@media (max-width: 1079px) {
+  #content-lower {
+    margin-left: 180px;
+  }
+}
+@media (max-width: 800px) {
+  #content-lower {
+    margin-left: 0px;
+  }
+  #content-lower .extended-family.desktop {
+    display: none;
+  }
+  #content-lower .extended-family.mobile {
+    display: block;
+  }
 }
 .services-overview {
   min-height: 500px;
