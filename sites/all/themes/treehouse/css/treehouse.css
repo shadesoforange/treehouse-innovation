@@ -672,6 +672,14 @@ body {
   background: #eeeeee url("../images/arrow.svg") no-repeat 214px 14px;
   background-size: 15px 15px;
 }
+#navigation .block-nice-menus ul.nice-menu-right li.menuparent.active-trail a {
+  background: url("../images/arrow.svg") no-repeat 204px 14px;
+  background-size: 15px 15px;
+}
+#navigation .block-nice-menus ul.nice-menu-right li.menuparent.active-trail a:hover {
+  background: #eeeeee url("../images/arrow.svg") no-repeat 204px 14px;
+  background-size: 15px 15px;
+}
 #navigation .block-nice-menus ul.nice-menu-right li.menuparent ul {
   left: 240px;
   z-index: 9999;
@@ -753,6 +761,9 @@ body {
   }
   #navigation .block-nice-menus {
     width: 180px;
+  }
+  #navigation .block-nice-menus ul.nice-menu-right li.menuparent ul {
+    left: 180px;
   }
   #navigation .social-contact {
     width: 180px;
@@ -2018,6 +2029,52 @@ a.button.hollow,
   background: transparent url("../images/green-leaves.jpg") no-repeat center center;
   background-size: cover;
 }
+.design-thinking-academy.mobile {
+  display: none;
+  padding: 20px 4%;
+}
+.design-thinking-academy.mobile h2 {
+  text-align: left;
+  margin-bottom: 12px;
+}
+.design-thinking-academy.mobile p {
+  padding: 0px;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: left;
+}
+.design-thinking-academy.mobile .row {
+  padding: 15px;
+  margin-bottom: 5px;
+  background: #fff;
+}
+.design-thinking-academy.mobile .row h3 {
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 10px;
+}
+.design-thinking-academy.mobile .row p {
+  color: #555555;
+  margin: 0 0 12px;
+  font-size: 12px;
+  line-height: 17px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.design-thinking-academy.mobile .row ul,
+.design-thinking-academy.mobile .row ol {
+  margin: 0 0 12px;
+  padding: 0px;
+}
+.design-thinking-academy.mobile .row ul li,
+.design-thinking-academy.mobile .row ol li {
+  margin: 0 0 4px 15px;
+  font-size: 12px;
+  line-height: 17px;
+  color: #555555;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 .design-thinking-academy h2 {
   color: #ffffff;
   text-align: center;
@@ -2039,11 +2096,11 @@ a.button.hollow,
   width: 50%;
 }
 .design-thinking-academy table td p {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   padding: 0px;
   text-align: left;
   font-size: 13px;
-  line-height: 16px;
+  line-height: 17px;
   color: #3d3d3d;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -2055,19 +2112,16 @@ a.button.hollow,
 }
 .design-thinking-academy table td ul,
 .design-thinking-academy table td ol {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   padding: 0px;
 }
 .design-thinking-academy table td ul li,
 .design-thinking-academy table td ol li {
-  margin: 0 0 4px 0;
+  margin: 0 0 4px 15px;
   font-size: 13px;
   color: #3d3d3d;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  list-style: none;
-  list-style-image: none;
-  list-style-type: none;
 }
 .design-thinking-academy table td strong {
   font-size: 13px;
@@ -2080,6 +2134,14 @@ a.button.hollow,
 .design-thinking-academy table td .button {
   margin-top: 15px;
   padding: 7px 16px;
+}
+@media (max-width: 800px) {
+  .design-thinking-academy.desktop {
+    display: none;
+  }
+  .design-thinking-academy.mobile {
+    display: block;
+  }
 }
 .team-members {
   padding: 0 13%;

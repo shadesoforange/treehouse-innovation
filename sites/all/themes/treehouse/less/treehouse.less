@@ -51,6 +51,9 @@ body { background: @dkgrey2; }
 					a { background: url("../images/arrow.svg") no-repeat 214px 14px; background-size: 15px 15px; 
 						&:hover { background: #eee url("../images/arrow.svg") no-repeat 214px 14px; background-size: 15px 15px; }
 					}
+					&.active-trail a { background: url("../images/arrow.svg") no-repeat 204px 14px; background-size: 15px 15px; 
+						&:hover { background: #eee url("../images/arrow.svg") no-repeat 204px 14px; background-size: 15px 15px; }
+					}
 					ul { left: 240px; z-index: 9999; .w(240px); .p(10px 0 15px); background: @blue; border: none;
 						li { border-bottom: none; background: transparent;
 							a { .roboto-light; .white; .size(12px); .lh(12px); .p(9px 20px); .tt-none; .upper; background: transparent;
@@ -80,7 +83,9 @@ body { background: @dkgrey2; }
 	}
 	@media (max-width: 1079px) { .w(180px); 
 		#logo { .w(180px); .h(180px); background-size: 120px 120px; }
-		.block-nice-menus { .w(180px); }
+		.block-nice-menus { .w(180px); 
+			ul.nice-menu-right li.menuparent ul { left: 180px; }		
+		}
 		.social-contact { .w(180px); }
 	}
 	@media (max-width: 800px) { .rel; .w(100%); .h(auto); bottom: auto; top: 0px; .h(auto);
@@ -504,19 +509,36 @@ a.button,
 }
 
 .design-thinking-academy { .p(50px 10%); background: transparent url("../images/green-leaves.jpg") no-repeat center center; background-size: cover; 
+	&.mobile { .hide; .p(20px 4%);
+		h2 { .tl; .mb(12px); }
+		p { .p0; .size(12px); .lh(17px); .tl; }
+		.row { .p(15px); .mb(5px); background: #fff; 
+			h3 { .size(18px); .lh(23px); .m(0 0 10px); }
+			p { .grey; .m(0 0 12px); .size(12px); .lh(17px); .roboto-light; }
+			ul, ol { .m(0 0 12px); .p0;
+				li { .m(0 0 4px 15px); .size(12px); .lh(17px); .grey; .roboto-light; }
+			}
+		}
+	}
 	h2 { .white; .tc; }
 	p { .white; .tc; .p(0 100px); }
 	table { border-collapse: separate; border-spacing: 15px;
 		td { .p(30px 40px); .tl; .vtop; background: #fff; .w(50%);
-			p { .m(0 0 10px); .p0; .tl; .size(13px); .lh(16px); color: @dkgrey; .roboto-light;
+			p { .m(0 0 12px); .p0; .tl; .size(13px); .lh(17px); color: @dkgrey; .roboto-light;
 				&.meta { .roboto-bold; .mb(20px); }
 			}
-			ul, ol { .m(0 0 10px); .p0;
-				li { .m(0 0 4px 0); .size(13px); color: @dkgrey; .roboto-light; .list-none; }
+			ul, ol { .m(0 0 12px); .p0;
+				li { .m(0 0 4px 15px); .size(13px); color: @dkgrey; .roboto-light; }
 			}
 			strong { .size(13px); .lh(16px); }
 			h3 { .size(22px); .m(0 0 10px); }
 			.button { .mt(15px); .p(7px 16px); }
+		}
+	}
+	@media (max-width: 800px) {
+		&.desktop { .hide; }
+		&.mobile { .show; 
+			
 		}
 	}
 }
