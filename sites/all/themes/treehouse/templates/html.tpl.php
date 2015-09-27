@@ -40,8 +40,7 @@
     <![endif]-->
   <?php endif; ?>
   
-  <link href='http://fonts.googleapis.com/css?family=Roboto:100,100italic,400,300,300italic,400italic,700,700italic|Roboto+Slab:700' rel='stylesheet' type='text/css'>
-
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,700italic,400italic,300italic,700,300|Roboto+Slab:700' rel='stylesheet' type='text/css'>
   
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
