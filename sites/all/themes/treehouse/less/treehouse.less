@@ -117,9 +117,12 @@ body { background: #000; }
 		.view-header-image {
 			.header-image { background-position: center center; }
 			.header-overlay { .w(100%); .h(100%); .m0; .p0; }
-			.header-content { .p(150px 8% 20px 8%);
-				h1 { .mb(10px); }
-				p { .m(0 0 10px); }
+			.header-content { .p(150px 13% 20px 13%);
+				h1 { .mb(10px); .tc; }
+				p { .m(0 0 10px); .tc; }
+			}
+			.short-header-1 {
+				.header-content { .p(80px 13% 20px 13%); }
 			}
 		}
 	}
@@ -178,8 +181,7 @@ body { background: #000; }
 // Main content styles
 
 #main { .w100; .rel; z-index: 0; background: #fff; }
-.section-test-page #main { background: #fff; }
-#content { .w(auto); .ml(240px); z-index: 1; .rel;
+#content { .w(auto); .ml(240px); z-index: 1; .rel; 
 	.field-name-body { .m(50px 13%);
 		a { .blue; }
 		img { .w100; .h(auto); }
@@ -242,6 +244,9 @@ body { background: #000; }
 	}
 }
 
+.page-node-31 #main,
+.page-node-32 #main,
+.page-node-33 #main { background: #fff url("../images/tree-rings-top-left.jpg") no-repeat 240px top; }
 
 // Lower Content
 
@@ -490,7 +495,7 @@ a.button,
 	}
 }
 
-.team-members { .p(0 4%);
+.team-members { .p(0 10%);
 	h2.block-title { .m(20px 4%); .tl; border-bottom: 1px solid @ltgrey; .pb(10px); }
 	table { .w100; }
 	td { vertical-align: top; .w(50%); .p(0 4%); }
@@ -514,7 +519,7 @@ a.button,
 	}
 }
 
-.teaser-grid { .pb(40px);
+.teaser-grid { .p(40px 0);
 	h2.block-title { .m(0px 5% 10px); .pt(40px); .tc; }
 	.view-content { .cb; .p(0 7%); }
 	.views-row { .w(31.33%); .h(300px); background: #fff; .m(0 1% 20px); .fl; }
@@ -543,15 +548,15 @@ a.button,
 
 // Footer
 
-#footer { .w(auto); .ml(240px); .ltgrey; 
-	.block-menu-block { .m(0 7%); .pt(40px);
+#footer { .w(auto); .ml(240px); .ltgrey; background: url("../images/bg-footer.png") no-repeat right center;
+	.block-menu-block { .m(0 8%); .pt(40px);
 		ul { .m0; .p0;
-			li { .list-none; .fl; .w(22%); .m(0 1.5% 10px); border-bottom: 1px solid #555;
-				a { .white; .roboto-med; .block; .m(0 0 10px); }
+			li { .list-none; .fl; .w(22%); .m(0 1.5% 8px); border-bottom: 1px solid rgba(255,255,255,0.2);
+				a { .white; .roboto-bold; .block; .m(0 0 8px); .size(13px); }
 				&.is-expanded { .mb(70px);
 					ul {
 						li { .w(100%); .m0; .p0; border-bottom: none; 
-							a { .roboto-light; .block; color: #bbb; .m(0 0 10px); }
+							a { .roboto; .block; color: #999; .m(0 0 10px); }
 							&.is-expanded { .w(100%); .h(auto); 
 								ul { .hide; }
 							}
@@ -561,12 +566,15 @@ a.button,
 			}
 		}
 	}
+	.copyright { .roboto-bold; .p(10px 0); .m0; .size(12px); .cb; .grey; 
+		p { color: #999; }
+	}
 	@media (max-width: 1079px) { .ml(180px); }
 	@media (max-width: 720px) { .ml(0px); 
 		.block-menu-block { .hide; }
 	}
 }
-.copyright { .roboto-bold; .p(10px 0); .m0; .size(12px); .cb; }
+
 
 
 // Drupal Fixes

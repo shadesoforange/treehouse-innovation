@@ -17,7 +17,7 @@
   </div>
 
   <div id="main" class="group">
-  	
+  	<!--<?php print $breadcrumb; ?>-->
   	<header class="header" id="header" role="banner">
 	  	<?php print render($page['header']); ?>
   	</header>
@@ -35,7 +35,7 @@
       
       
       <?php print render($page['highlighted']); ?>
-      <?php print $breadcrumb; ?>
+      
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
