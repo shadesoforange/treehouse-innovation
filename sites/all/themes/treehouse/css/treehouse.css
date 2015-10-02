@@ -1171,7 +1171,7 @@ body {
 #content .quote .block-content {
   background: #ebebeb;
   color: #000000;
-  padding: 40px 50px;
+  padding: 40px 50px 20px;
   position: relative;
   text-align: center;
 }
@@ -1191,22 +1191,27 @@ body {
   font-family: inherit;
   font-style: italic;
 }
+#content .quote.consulting {
+  background: url("../images/meeting.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 250px;
+}
 #content .block-block {
   padding: 50px 13%;
 }
-#content .block-block .block-content table {
+#content .block-block table {
   border: none;
   width: 100%;
 }
-#content .block-block .block-content table td {
+#content .block-block table td {
   padding: 0 25px 0 0;
   vertical-align: top;
   border: none;
 }
-#content .block-block .block-content table td img {
+#content .block-block table td img {
   margin: 0px;
 }
-#content .block-block .block-content table td p {
+#content .block-block table td p {
   margin: 0 0 10px;
 }
 #content .learning-leadership-venn {
@@ -1216,7 +1221,7 @@ body {
 }
 #content .leadership-partners {
   background: transparent url("../images/learning-bw.png") no-repeat center top;
-  margin-top: -65px;
+  margin-top: -70px;
   padding-top: 185px;
 }
 #content .leadership-partners table {
@@ -1227,6 +1232,51 @@ body {
   padding: 10px 10px 10px 10px;
   font-weight: 700;
   font-family: inherit;
+}
+#content .labs-intro {
+  padding-bottom: 0px;
+}
+#content .labs-details {
+  background: url("../images/acceleration-labs.jpg") no-repeat right top;
+  background-size: 50% auto;
+  padding-right: 50%;
+}
+#content .lab-examples table {
+  border: 30px solid #ebebeb !important;
+  background: #ebebeb;
+}
+#content .lab-examples table td {
+  padding: 10px 10px 10px 10px;
+  font-weight: 700;
+  font-family: inherit;
+}
+#content .lab-examples table td img {
+  margin: 0px 10px 30px 0px;
+}
+#content .labs {
+  background: url("../images/green-leaves.jpg") no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+}
+#content .labs .lab {
+  background: #ebebeb;
+  color: #000000;
+  padding: 40px 50px 40px 150px;
+  margin: 0 0 60px;
+  position: relative;
+}
+#content .labs .lab .violator {
+  position: absolute;
+  left: -60px;
+  float: left;
+}
+#content .labs .lab h3 {
+  margin-top: 0px;
+}
+#content .field-projects {
+  background: transparent url("../images/field-projects-venn.png") no-repeat center top;
+  margin-top: -70px;
+  padding-top: 185px;
 }
 #content .contact {
   background: url("../images/grey.gif") repeat-x center 180px;

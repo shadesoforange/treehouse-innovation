@@ -211,26 +211,43 @@ body { background: #000; }
 		}
 	}
 	.quote { 
-		.block-content { background: #ebebeb; .black; .p(40px 50px); .rel; .tc;
+		.block-content { background: #ebebeb; .black; .p(40px 50px 20px); .rel; .tc;
 			img { .abs; top: -40px; left: 50%; .ml(-41px); }
 			h2, h3, h4 { .size(20px); .lh(26px); .black; .bold; .em; }
 		}
+		&.consulting { background: url("../images/meeting.jpg") no-repeat center center; background-size: cover; .pt(250px); }
 	}
 	.block-block { .p(50px 13%);
-		.block-content {
-			table { border: none; .w(100%);
-				td { .p(0 25px 0 0); .vtop; border: none; 
-					img { .m0; }
-					p { .m(0 0 10px); }
-				}
+		table { border: none; .w(100%);
+			td { .p(0 25px 0 0); .vtop; border: none; 
+				img { .m0; }
+				p { .m(0 0 10px); }
 			}
 		}
 	}
 	.learning-leadership-venn { background: url("../images/venn.jpg") no-repeat center center; background-size: cover; .h(550px); }
-	.leadership-partners { background: transparent url("../images/learning-bw.png") no-repeat center top; .mt(-65px); .pt(185px); 
+	.leadership-partners { background: transparent url("../images/learning-bw.png") no-repeat center top; .mt(-70px); .pt(185px); 
 		table { border: 30px solid #ebebeb !important; background: #ebebeb; 
 			td { .p(10px 10px 10px 10px); .bold; }
 		}
+	}
+	.labs-intro { .pb(0px); }
+	.labs-details { background: url("../images/acceleration-labs.jpg") no-repeat right top; background-size: 50% auto; .pr(50%); }
+	.lab-examples {
+		table { border: 30px solid #ebebeb !important; background: #ebebeb; 
+			td { .p(10px 10px 10px 10px); .bold; 
+				img { .m(0px 10px 30px 0px); }
+			}
+		}
+	}
+	.labs { background: url("../images/green-leaves.jpg") no-repeat center center; background-size: cover; .white;
+		.lab { background: #ebebeb; .black; .p(40px 50px 40px 150px); .m(0 0 60px); .rel; 
+			.violator { .abs; left: -60px; .fl; }
+			h3 { .mt(0px); }
+		}
+	}
+	.field-projects { background: transparent url("../images/field-projects-venn.png") no-repeat center top; .mt(-70px); .pt(185px);
+		
 	}
 	.contact { background: url("../images/grey.gif") repeat-x center 180px; .p(20px 13% 40px);
 		p, a, h2, h3, h4 { .serif !important; .bold; .size(30px); .black; .td-none; }	
