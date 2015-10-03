@@ -486,8 +486,8 @@ h1 {
   }
 }
 h2 {
-  font-size: 30px;
-  line-height: 34px;
+  font-size: 34px;
+  line-height: 38px;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   letter-spacing: -1px;
@@ -643,13 +643,13 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 15px;
   line-height: 18px;
-  color: #ffffff;
+  color: #aaaaaa;
   display: block;
   margin-bottom: 0px;
-  padding: 12px 18px;
+  padding: 11px 18px;
 }
 #navigation .block-nice-menus ul.nice-menu-right li a:visited {
-  color: #ffffff;
+  color: #aaaaaa;
 }
 #navigation .block-nice-menus ul.nice-menu-right li a:hover {
   color: #ffffff;
@@ -661,6 +661,7 @@ body {
 }
 #navigation .block-nice-menus ul.nice-menu-right li.menuparent a:hover {
   background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 #navigation .block-nice-menus ul.nice-menu-right li.menuparent ul {
   left: 240px;
@@ -693,47 +694,61 @@ body {
 #navigation .block-nice-menus ul.nice-menu-right li.active-trail a.services,
 #navigation .block-nice-menus ul.nice-menu-right li.active-trail a.service {
   border-left: 10px solid #47a9e1;
-  padding: 12px 18px 12px 8px;
+  padding: 11px 18px 11px 8px;
+  color: #ffffff;
 }
 #navigation .block-nice-menus ul.nice-menu-right li.active-trail a.case-studies {
   border-left: 10px solid #44b7a9;
-  padding: 12px 18px 12px 8px;
+  padding: 11px 18px 11px 8px;
+  color: #ffffff;
 }
 #navigation .block-nice-menus ul.nice-menu-right li.active-trail a.blog {
   border-left: 10px solid #cb4d83;
-  padding: 12px 18px 12px 8px;
+  padding: 11px 18px 11px 8px;
+  color: #ffffff;
 }
 #navigation .block-nice-menus ul.nice-menu-right li.active-trail a.team {
   border-left: 10px solid #c63936;
-  padding: 12px 18px 12px 8px;
+  padding: 11px 18px 11px 8px;
+  color: #ffffff;
 }
 #navigation .block-nice-menus ul.nice-menu-right li.active-trail a.about {
   border-left: 10px solid #ef7436;
-  padding: 12px 18px 12px 8px;
+  padding: 11px 18px 11px 8px;
+  color: #ffffff;
 }
 #navigation .block-nice-menus ul.nice-menu-right li.active-trail a.contact {
   border-left: 10px solid #82af35;
-  padding: 12px 18px 12px 8px;
+  padding: 11px 18px 11px 8px;
+  color: #ffffff;
 }
 #navigation .block-nice-menus ul.nice-menu-right li.menu-464 {
   display: none;
 }
 #navigation .social-contact {
-  margin: 20px 20px 0px;
-  color: #555555;
+  margin: 15px 20px 0px;
+  color: #aaaaaa;
   font-size: 12px;
 }
 #navigation .social-contact p {
   margin-top: 0px;
+  font-size: 12px;
+  line-height: 17px;
 }
 #navigation .social-contact a {
-  color: #555555;
+  color: #aaaaaa;
 }
 #navigation .social-contact a:visited {
-  color: #555555;
+  color: #aaaaaa;
 }
 #navigation .social-contact img {
   padding-right: 10px;
+}
+#navigation .back-to-top {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  display: none;
 }
 @media (max-width: 1079px) {
   #navigation {
@@ -1002,6 +1017,9 @@ body {
 #content .field-name-body a {
   color: #47a9e1;
 }
+#content .field-name-body a.button {
+  color: #ffffff;
+}
 #content .field-name-body img {
   width: 100%;
   height: auto;
@@ -1196,6 +1214,11 @@ body {
   background-size: cover;
   padding-top: 250px;
 }
+#content .quote.events {
+  background: url("../images/event.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 230px;
+}
 #content .block-block {
   padding: 50px 13%;
 }
@@ -1278,15 +1301,46 @@ body {
   margin-top: -70px;
   padding-top: 185px;
 }
+#content .crowd-innovation-sprints {
+  background: url("../images/crowd-innovation-sprints.jpg") no-repeat right bottom;
+  background-size: 50% auto;
+}
+#content .crowd-innovation-sprints .block-content {
+  padding-right: 45%;
+}
+#content .design-thinker-conference {
+  background: url("../images/design-thinker-conference.jpg") no-repeat right center;
+  background-size: 50% auto;
+}
+#content .design-thinker-conference .block-content {
+  padding-right: 55%;
+}
+#content .graphic-recording {
+  background: url("../images/graphic-recording.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 350px 8% 30px;
+}
+#content .graphic-recording .block-content {
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 20px 55px;
+}
+#content .your-next-event {
+  background: url("../images/your-next-event.jpg") no-repeat right center;
+  background-size: 45% auto;
+}
+#content .your-next-event .block-content {
+  padding-right: 50%;
+}
 #content .contact {
   background: url("../images/grey.gif") repeat-x center 180px;
   padding: 20px 13% 40px;
 }
-#content .contact p,
-#content .contact a,
-#content .contact h2,
-#content .contact h3,
-#content .contact h4 {
+#content .contact .block-content p,
+#content .contact .block-content a,
+#content .contact .block-content h2,
+#content .contact .block-content h3,
+#content .contact .block-content h4 {
   font-family: 'Roboto Slab', serif !important;
   font-weight: 400 !important;
   font-weight: 700;
@@ -1294,6 +1348,39 @@ body {
   font-size: 30px;
   color: #000000;
   text-decoration: none;
+}
+#content .about-name .block-content {
+  padding-right: 55%;
+  background: url("../images/treehouse-logo.svg") no-repeat right center;
+  background-size: 40% auto;
+}
+#content .values {
+  background: url("../images/dandelions.jpg") no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+}
+#content .values .block-content table {
+  background: rgba(0, 0, 0, 0.6);
+}
+#content .values .block-content table td {
+  padding: 30px;
+}
+#content .values .block-content h2 {
+  text-align: center;
+}
+#content .values .block-content h3 {
+  margin: 0 0 3px;
+  color: #ffffff;
+}
+#content .values .block-content p {
+  color: #ffffff;
+  margin: 0 0 12px;
+}
+@media (min-width: 1400px) {
+  #content .about-name .block-content {
+    background: url("../images/treehouse-logo.svg") no-repeat right center;
+    background-size: auto 100%;
+  }
 }
 @media (max-width: 1079px) {
   #content {
@@ -1314,6 +1401,7 @@ body {
     max-width: 100%;
   }
 }
+.page-node-21 #main,
 .page-node-31 #main,
 .page-node-32 #main,
 .page-node-33 #main {
@@ -2324,6 +2412,8 @@ a.button.hollow,
 }
 #footer .copyright p {
   color: #999;
+  font-size: 11px;
+  line-height: 16px;
 }
 @media (max-width: 1079px) {
   #footer {
