@@ -1024,6 +1024,14 @@ body {
   width: 100%;
   height: auto;
 }
+#content .field-name-body li {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+  padding-left: 30px;
+  margin-left: 0px;
+  background: url("../images/leaf-bullet-blue.png") no-repeat left center;
+}
 #content .block-webform {
   margin: 40px 5%;
 }
@@ -1236,6 +1244,9 @@ body {
 }
 #content .block-block table td p {
   margin: 0 0 10px;
+}
+#content .block-block .block-content li {
+  background: url("../images/leaf-bullet-blue.png") no-repeat left center;
 }
 #content .learning-leadership-venn {
   background: url("../images/venn.jpg") no-repeat center center;
