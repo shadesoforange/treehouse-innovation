@@ -911,7 +911,6 @@ body {
   display: none;
 }
 .front #content {
-  background: #efefef;
   position: relative;
   z-index: 1;
 }
@@ -922,29 +921,23 @@ body {
   text-align: center;
 }
 .front #content article .field-name-body {
-  padding: 0px 0px 30px;
+  padding: 0px;
   margin: 0 7%;
 }
 .front #content article .column.third {
-  width: 25.33%;
-  margin: 0 4%;
+  width: 27.33%;
+  margin: 0 3%;
   float: left;
 }
 .front #content article .column.third img {
   width: auto;
   margin-top: -85px;
 }
-.front #content article .column.third h3 {
-  font-size: 18px;
-  line-height: 19px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-}
 .front #content article .column.third p {
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  line-height: 18px;
+  line-height: 19px;
   text-align: left;
 }
 .front #content article .column.third a {
