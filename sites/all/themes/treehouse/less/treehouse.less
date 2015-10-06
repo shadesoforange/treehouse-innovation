@@ -167,11 +167,14 @@ body { background: #000; }
 				h2 { .size(26px); .lh(29px); }
 			}
 		}
-		#content article {
-			.column.third { .w(100%); .m0; .fn;
-				img { .m(0px 15px 30px -30px); .fl; .w(80px); .h(auto); }
-				p { .size(14px); .lh(19px); }
+		#content {
+			article { .pt(20px);
+				.column.third { .w(100%); .m(0 0 20px); .pb(20px); .fn; border-bottom: 1px solid #ddd; 
+					img { .m(0px 15px 30px -30px); .fl; .w(80px); .h(auto); .hide; }
+					p { .size(14px); .lh(19px); .m(0 0 15px); }
+				}
 			}
+			.homepage-logos { .p(0 3%); }
 		}
 	}
 }
