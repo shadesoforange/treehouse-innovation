@@ -596,7 +596,7 @@ body {
   top: 0;
   z-index: 99;
   padding: 25px 10px 23px 34px;
-  background: url("../images/mobile-menu.svg") no-repeat left center;
+  background: url("../images/mobile-menu-white.svg") no-repeat left center;
   background-size: 30px 30px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -604,7 +604,7 @@ body {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 12px;
-  color: #000000;
+  color: #ffffff;
   display: block;
   margin-bottom: 0px;
 }
@@ -794,6 +794,7 @@ body {
     top: 0px;
     height: auto;
     text-align: center;
+    background: #000;
   }
   #navigation #logo {
     width: 60px;
@@ -956,25 +957,42 @@ body {
   line-height: 14px;
   text-align: left;
 }
-@media (max-width: 800px) {
-  .front #content article h2 {
-    color: #ffffff;
-    font-size: 24px;
-    line-height: 27px;
+@media (max-width: 720px) {
+  .front #header {
+    height: 365px;
   }
-  .front #content article h3,
-  .front #content article h4 {
-    color: #ffffff;
+  .front #header .homepage-banner {
+    height: 365px;
+    background: #ffffff url("../images/bricks.jpg") no-repeat 47% top;
+    background-size: auto 470px;
+  }
+  .front #header .homepage-banner .block-content {
+    padding: 90px 3% 0;
+  }
+  .front #header .homepage-banner p {
+    font-size: 16px;
+    line-height: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  .front #header .homepage-banner h2 {
+    font-size: 26px;
+    line-height: 29px;
+  }
+  .front #content article .column.third {
+    width: 100%;
+    margin: 0px;
+    float: none;
+  }
+  .front #content article .column.third img {
+    margin: 0px 15px 30px -30px;
+    float: left;
+    width: 80px;
+    height: auto;
+  }
+  .front #content article .column.third p {
     font-size: 14px;
     line-height: 19px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-  }
-  .front #content article p {
-    margin-bottom: 0px;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
   }
 }
 .breadcrumb {
