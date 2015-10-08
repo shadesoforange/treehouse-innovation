@@ -17,7 +17,7 @@
   </div>
 
   <div id="main" class="group">
-  	<!--<?php print $breadcrumb; ?>-->
+  	<?php print $breadcrumb; ?>
   	<header class="header" id="header" role="banner">
 	  	<?php print render($page['header']); ?>
   	</header>
