@@ -693,44 +693,57 @@ body {
   color: #ffffff;
   background: #21394f;
 }
-#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.services,
-#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.service {
-  border-left: 10px solid #47a9e1;
-  padding: 9px 18px 9px 8px;
-  color: #ffffff;
-  font-weight: 700;
-  font-family: inherit;
-}
-#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.case-studies {
+#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.learning {
   border-left: 10px solid #44b7a9;
   padding: 9px 18px 9px 8px;
   color: #ffffff;
   font-weight: 700;
   font-family: inherit;
 }
-#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.blog {
+#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.consulting {
+  border-left: 10px solid #47a9e1;
+  padding: 9px 18px 9px 8px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: inherit;
+}
+#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.events {
   border-left: 10px solid #cb4d83;
   padding: 9px 18px 9px 8px;
   color: #ffffff;
   font-weight: 700;
   font-family: inherit;
 }
-#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.team {
-  border-left: 10px solid #c63936;
-  padding: 9px 18px 9px 8px;
-  color: #ffffff;
-  font-weight: 700;
-  font-family: inherit;
-}
-#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.about {
+#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.case-studies {
   border-left: 10px solid #ef7436;
   padding: 9px 18px 9px 8px;
   color: #ffffff;
   font-weight: 700;
   font-family: inherit;
 }
-#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.contact {
+#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.team {
   border-left: 10px solid #82af35;
+  padding: 9px 18px 9px 8px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: inherit;
+}
+#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.about {
+  border-left: 10px solid #f1c736;
+  padding: 9px 18px 9px 8px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: inherit;
+}
+#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.blog {
+  border-left: 10px solid #c63936;
+  padding: 9px 18px 9px 8px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: inherit;
+}
+#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.contact {
+  border-left: 10px solid #21394f;
   padding: 9px 18px 9px 8px;
   color: #ffffff;
   font-weight: 700;
