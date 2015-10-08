@@ -19,6 +19,7 @@
   <div id="main" class="group">
   	<header class="header" id="header" role="banner">
 	  	<?php print render($page['header']); ?>
+	  	<?php print $breadcrumb; ?>
   	</header>
   	
     <div id="content" class="column group" role="main">
@@ -47,8 +48,6 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      
-      <?php print $breadcrumb; ?>
       
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
