@@ -17,7 +17,6 @@
   </div>
 
   <div id="main" class="group">
-  	<?php print $breadcrumb; ?>
   	<header class="header" id="header" role="banner">
 	  	<?php print render($page['header']); ?>
   	</header>
@@ -48,6 +47,9 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
+      
+      <?php print $breadcrumb; ?>
+      
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
       
