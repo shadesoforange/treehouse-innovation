@@ -1492,6 +1492,12 @@ body {
 .page-node-33 #main {
   background: #ffffff url("../images/tree-rings-top-left.jpg") no-repeat 240px top;
 }
+.page-node-31 #content .field-name-body li {
+  background: url("../images/leaf-bullet-aqua.png") no-repeat left center;
+}
+.page-node-33 #content .field-name-body li {
+  background: url("../images/leaf-bullet-magenta.png") no-repeat left center;
+}
 #content-lower {
   width: auto;
   margin-left: 240px;
