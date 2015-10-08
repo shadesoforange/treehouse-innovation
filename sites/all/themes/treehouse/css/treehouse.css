@@ -1230,7 +1230,7 @@ body {
 }
 #content .courses {
   color: #ffffff;
-  background: url("../images/droplets.jpg") no-repeat center center;
+  background: url("../images/green-leaves.jpg") no-repeat center center;
   background-size: cover;
 }
 #content .courses .course {
@@ -1361,7 +1361,7 @@ body {
   margin: 0px 10px 30px 0px;
 }
 #content .labs {
-  background: url("../images/green-leaves.jpg") no-repeat center center;
+  background: url("../images/droplets.jpg") no-repeat center center;
   background-size: cover;
   color: #ffffff;
 }
@@ -1393,7 +1393,7 @@ body {
   padding-right: 45%;
 }
 #content .design-thinker-conference {
-  background: url("../images/design-thinker-conference.jpg") no-repeat right center;
+  background: url("../images/dt-room.jpg") no-repeat right center;
   background-size: 50% auto;
 }
 #content .design-thinker-conference .block-content {
@@ -1402,7 +1402,7 @@ body {
 #content .graphic-recording {
   background: url("../images/graphic-recording.jpg") no-repeat center center;
   background-size: cover;
-  padding: 350px 8% 30px;
+  padding: 400px 8% 30px;
 }
 #content .graphic-recording .block-content {
   background: rgba(0, 0, 0, 0.8);
