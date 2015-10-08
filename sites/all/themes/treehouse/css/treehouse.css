@@ -1063,6 +1063,9 @@ body {
 #content a {
   color: #47a9e1;
 }
+#content a.button {
+  color: #ffffff;
+}
 #content .field-name-body {
   margin: 50px 13%;
 }
