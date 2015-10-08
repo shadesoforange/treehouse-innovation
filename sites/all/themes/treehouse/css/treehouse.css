@@ -934,7 +934,7 @@ body {
 .front #content {
   position: relative;
   z-index: 1;
-  background: #e8e8e8;
+  background: #fff;
 }
 .front #content .node-page {
   margin: 0px;
