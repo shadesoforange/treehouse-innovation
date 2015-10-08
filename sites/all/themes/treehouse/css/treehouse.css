@@ -1296,6 +1296,11 @@ body {
   margin: 0 0 10px;
 }
 #content .block-block .block-content li {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+  padding-left: 30px;
+  margin-left: 0px;
   background: url("../images/leaf-bullet-blue.png") no-repeat left center;
 }
 #content .learning-leadership-venn {
