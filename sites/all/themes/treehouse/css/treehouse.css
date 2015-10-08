@@ -965,8 +965,6 @@ body {
 }
 .front #content article .column.third a.button {
   color: #ffffff;
-  background: transparent;
-  border: 1px solid #fff;
 }
 .front #content article .column.third img {
   width: auto;
