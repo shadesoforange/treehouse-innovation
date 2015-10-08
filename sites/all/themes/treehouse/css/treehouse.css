@@ -517,7 +517,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  background: #333;
+  background: #222;
 }
 .block-block {
   margin-bottom: 0px;
@@ -540,7 +540,7 @@ body {
   z-index: 100;
   top: 0px;
   bottom: 0px;
-  background: #000000 url("../images/bg-navigation.jpg") no-repeat center top;
+  background: #222222 /* url("../images/bg-navigation.jpg") no-repeat center top*/;
   overflow: visible;
 }
 #navigation .region-navigation {
