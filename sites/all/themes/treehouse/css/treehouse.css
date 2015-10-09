@@ -1433,32 +1433,20 @@ body {
   color: #000000;
   text-decoration: none;
 }
+#content .about-name {
+  background: url("../images/fog-mountains.jpg") no-repeat center center;
+  background-size: cover;
+}
 #content .about-name .block-content {
   padding-right: 55%;
-  background: url("../images/treehouse-logo.svg") no-repeat right center;
+  background: url("../images/treehouse-logo-white.svg") no-repeat right center;
   background-size: 40% auto;
+  color: #ffffff;
 }
 #content .values {
-  background: url("../images/dandelions.jpg") no-repeat center center;
-  background-size: cover;
-  color: #ffffff;
-}
-#content .values .block-content table {
-  background: rgba(0, 0, 0, 0.6);
-}
-#content .values .block-content table td {
-  padding: 30px;
-}
-#content .values .block-content h2 {
-  text-align: center;
-}
-#content .values .block-content h3 {
-  margin: 0 0 3px;
-  color: #ffffff;
-}
-#content .values .block-content p {
-  color: #ffffff;
-  margin: 0 0 12px;
+  background: url("../images/stump.jpg") no-repeat center bottom;
+  background-size: auto 200px;
+  padding-bottom: 200px;
 }
 #content .extended-family {
   margin: 0 4%;
@@ -1495,7 +1483,7 @@ body {
 }
 @media (min-width: 1400px) {
   #content .about-name .block-content {
-    background: url("../images/treehouse-logo.svg") no-repeat right center;
+    background: url("../images/treehouse-logo-white.svg") no-repeat right center;
     background-size: auto 100%;
   }
 }
