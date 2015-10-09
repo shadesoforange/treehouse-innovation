@@ -1524,14 +1524,16 @@ body {
     display: block;
   }
 }
-.page-node-5 #main .page-node-21 #main,
+.page-node-5 #main,
+.page-node-21 #main,
 .page-node-25 #main,
 .page-node-31 #main,
 .page-node-32 #main,
 .page-node-33 #main {
   background: #ffffff url("../images/tree-rings-top-left.jpg") no-repeat 240px top;
 }
-.page-node-5 #main .page-node-21 #main .breadcrumb,
+.page-node-5 #main .breadcrumb,
+.page-node-21 #main .breadcrumb,
 .page-node-25 #main .breadcrumb,
 .page-node-31 #main .breadcrumb,
 .page-node-32 #main .breadcrumb,
