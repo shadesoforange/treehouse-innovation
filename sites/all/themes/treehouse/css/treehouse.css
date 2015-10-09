@@ -2378,6 +2378,9 @@ a.button.hollow,
   margin-bottom: 0px;
   margin-bottom: 15px;
 }
+.teaser-grid .teaser-image .icon-blog {
+  margin: 10px;
+}
 .teaser-grid .title {
   margin: 0 20px;
   font-family: 'Roboto', sans-serif;
