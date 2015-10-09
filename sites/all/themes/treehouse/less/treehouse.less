@@ -304,6 +304,17 @@ body { background: #1a1a1a; }
 			p { .white; .m(0 0 12px); }
 		}
 	}
+	.extended-family { .m(0 4%);
+		&.mobile { .hide; }
+		h2.block-title { .tl; .m(20px 4%); .pb(10px); border-bottom: 1px solid @ltgrey; }
+		table { border: 0px !important; .w(100%); 
+			td { .w(50%); .tc; .dkgrey; .vtop; .p(0 4%);
+				p { .size(14px); .lh(18px); .tl; 
+					a { .strong; .blue; }
+				}
+			}
+		}
+	}
 	@media (min-width: 1400px) {
 		.about-name .block-content { background: url("../images/treehouse-logo.svg") no-repeat right center; background-size: auto 100%; }
 	}
@@ -313,9 +324,14 @@ body { background: #1a1a1a; }
 		.block-webform { .m(0px 5% 40px); 
 			input { max-width: 100%; }
 		}
+		.extended-family {
+			&.desktop { .hide; }
+			&.mobile { .show; }
+		}
 	}
 }
 
+.page-node-5 #main
 .page-node-21 #main,
 .page-node-25 #main,
 .page-node-31 #main,
@@ -365,12 +381,7 @@ body { background: #1a1a1a; }
 		}
 	}
 	@media (max-width: 1079px) { .ml(180px); }
-	@media (max-width: 720px) { .ml(0px); 
-		.extended-family {
-			&.desktop { .hide; }
-			&.mobile { .show; }
-		}
-	}
+	@media (max-width: 720px) { .ml(0px); }
 }
 
 .services-overview { min-height: 500px; .h(auto); .p(40px 8% 60px); background: @dkgrey;

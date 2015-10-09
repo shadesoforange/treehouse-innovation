@@ -1460,6 +1460,39 @@ body {
   color: #ffffff;
   margin: 0 0 12px;
 }
+#content .extended-family {
+  margin: 0 4%;
+}
+#content .extended-family.mobile {
+  display: none;
+}
+#content .extended-family h2.block-title {
+  text-align: left;
+  margin: 20px 4%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aaaaaa;
+}
+#content .extended-family table {
+  border: 0px !important;
+  width: 100%;
+}
+#content .extended-family table td {
+  width: 50%;
+  text-align: center;
+  color: #3d3d3d;
+  vertical-align: top;
+  padding: 0 4%;
+}
+#content .extended-family table td p {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+}
+#content .extended-family table td p a {
+  font-weight: 700;
+  font-family: inherit;
+  color: #47a9e1;
+}
 @media (min-width: 1400px) {
   #content .about-name .block-content {
     background: url("../images/treehouse-logo.svg") no-repeat right center;
@@ -1484,15 +1517,21 @@ body {
   #content .block-webform input {
     max-width: 100%;
   }
+  #content .extended-family.desktop {
+    display: none;
+  }
+  #content .extended-family.mobile {
+    display: block;
+  }
 }
-.page-node-21 #main,
+.page-node-5 #main .page-node-21 #main,
 .page-node-25 #main,
 .page-node-31 #main,
 .page-node-32 #main,
 .page-node-33 #main {
   background: #ffffff url("../images/tree-rings-top-left.jpg") no-repeat 240px top;
 }
-.page-node-21 #main .breadcrumb,
+.page-node-5 #main .page-node-21 #main .breadcrumb,
 .page-node-25 #main .breadcrumb,
 .page-node-31 #main .breadcrumb,
 .page-node-32 #main .breadcrumb,
@@ -1637,12 +1676,6 @@ body {
 @media (max-width: 720px) {
   #content-lower {
     margin-left: 0px;
-  }
-  #content-lower .extended-family.desktop {
-    display: none;
-  }
-  #content-lower .extended-family.mobile {
-    display: block;
   }
 }
 .services-overview {
