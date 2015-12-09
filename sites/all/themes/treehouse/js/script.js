@@ -26,8 +26,6 @@ Drupal.behaviors.my_custom_behavior = {
 		$('.mobile-nav').slideToggle(200);
 	});
 	
-	$('.accordion').accordion({header:'.header',active: 'false'});
-	
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 100) {
 			$('.back-to-top').fadeIn();

@@ -558,20 +558,21 @@ body {
 }
 #navigation .mobile-menu {
   display: none;
-  clear: both;
 }
 #navigation .mobile-nav {
   display: none;
+  padding-top: 38px;
+  position: relative;
+  z-index: 9;
 }
 #navigation .mobile-nav .block-content {
-  padding: 10px 5%;
+  padding: 10px 5% 0px;
 }
 #navigation .mobile-nav .block-content ul.menu li {
   list-style: none;
   list-style-image: none;
   list-style-type: none;
   text-align: left;
-  background: transparent url("../images/white15.png") repeat-x bottom;
   padding: 0px;
   margin: 0px;
   float: none;
@@ -582,18 +583,19 @@ body {
   font-weight: 400;
   display: block;
   margin-bottom: 0px;
-  padding: 7px 0;
+  padding: 6px 0;
   text-align: left;
-  font-size: 13px;
+  font-size: 15px;
 }
 #navigation .mobile-nav .block-content ul.menu li a:visited {
-  color: #000000;
+  color: #ffffff;
 }
 #navigation .mobile-nav .block-content ul.menu li.last {
   border-bottom: none;
 }
 #navigation #mobile-menu-trigger {
   float: left;
+  position: absolute;
   left: 2%;
   top: 0;
   z-index: 99;
@@ -654,14 +656,14 @@ body {
 }
 #navigation .block-nice-menus ul.nice-menu-right li a:hover {
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
+  background: #333;
 }
 #navigation .block-nice-menus ul.nice-menu-right li.menuparent {
   background: url("../images/arrow-white.svg") no-repeat 215px 10px;
   background-size: 15px 15px;
 }
 #navigation .block-nice-menus ul.nice-menu-right li.menuparent a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #333;
   color: #ffffff;
 }
 #navigation .block-nice-menus ul.nice-menu-right li.menuparent ul {
@@ -812,6 +814,10 @@ body {
     width: 180px;
     margin: 20px 15px 0;
   }
+  #navigation .social-contact p {
+    font-size: 10px;
+    line-height: 15px;
+  }
 }
 @media (max-width: 720px) {
   #navigation {
@@ -821,7 +827,7 @@ body {
     top: 0px;
     height: auto;
     text-align: center;
-    background: #000;
+    background: #222;
   }
   #navigation #logo {
     width: 60px;
@@ -897,153 +903,167 @@ body {
   #header {
     margin-left: 0px;
   }
+  #header .region-header .view-header-image .header-content {
+    padding: 40px 3%;
+  }
+  #header .region-header .view-header-image .header-content h1 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+  #header .region-header .view-header-image .short-header-1 .header-content {
+    padding: 40px 3%;
+  }
 }
-.front #header {
-  height: 500px;
-  position: relative;
-  z-index: 0;
-  background: url("../images/lightbulb-wall.jpg") no-repeat center center;
-  background-size: cover;
+.page-node-2 #header .region-header .view-header-image .header-content,
+.section-blog #header .region-header .view-header-image .header-content {
+  padding: 150px 8% 20px 8%;
 }
-.front #header .homepage-banner {
-  position: relative;
-  z-index: 1;
-  width: auto;
-  height: 500px;
-  overflow: hidden;
+@media (max-width: 1079px) {
+  .page-node-2 #header,
+  .section-blog #header {
+    margin-left: 180px;
+  }
 }
-.front #header .homepage-banner .block-content {
-  padding: 120px 15% 0;
-  text-align: center;
+@media (max-width: 720px) {
+  .page-node-2 #header,
+  .section-blog #header {
+    margin-left: 0px;
+  }
+  .page-node-2 #header .region-header .view-header-image .header-content,
+  .section-blog #header .region-header .view-header-image .header-content {
+    padding: 40px 3%;
+  }
 }
-.front #header .homepage-banner p {
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0 0 14px;
-  background: rgba(71, 169, 225, 0.9);
-  color: #ffffff;
-  padding: 5px 20px;
+.node-type-case-study #header .region-header .view-header-image .header-content {
+  padding: 150px 13% 20px 13%;
 }
-.front #header .homepage-banner h2 {
-  font-size: 40px;
-  line-height: 50px;
-  margin-bottom: 0px;
-  background: rgba(71, 169, 225, 0.9);
-  text-align: center;
-  padding: 30px;
-  color: #ffffff;
-  font-family: 'Permanent Marker', cursive;
-}
-.front #header .homepage-banner .button {
-  border: 1px solid #555555;
-  background: transparent;
-  color: #555555;
-  font-size: 12px;
-  padding: 7px 16px;
-}
-.front h1#page-title {
-  display: none;
+@media (max-width: 720px) {
+  .node-type-case-study #header .region-header .view-header-image .header-content {
+    padding: 40px 3%;
+  }
 }
 .front #content {
   position: relative;
   z-index: 1;
-  background: #fff;
+  background: url("../images/treehouse-home.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center;
 }
 .front #content .node-page {
   margin: 0px;
 }
-.front #content article {
-  text-align: center;
+.front #content h1 {
+  color: #ffffff;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 42px;
+  line-height: 45px;
+  max-width: 750px;
+  margin: 0 auto 20px;
 }
-.front #content article .field-name-body {
-  padding: 0px 8%;
-  margin: 0px;
-}
-.front #content article .column.third {
-  width: 29.33%;
-  padding: 0px;
-  margin: 0 2%;
-  float: left;
-  text-align: center;
-  /*&.learn { background: transparent url("../images/icons/knowledge-white.svg") no-repeat 10px 30px; background-size: 110px 110px; }
-				&.collaborate { background: transparent url("../images/icons/idea-white.svg") no-repeat 10px 30px; background-size: 110px 110px; }
-				&.events { background: transparent url("../images/icons/future-white.svg") no-repeat 10px 30px; background-size: 110px 110px; }*/
-}
-.front #content article .column.third p {
-  font-size: 14px;
+.front #content h2,
+.front #content h3 {
+  color: #ffffff;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  line-height: 19px;
-  text-align: left;
+  font-weight: 700;
+  line-height: 23px;
 }
-.front #content article .column.third a.button {
+.front #content p {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.front #content p a {
   color: #ffffff;
 }
-.front #content article .column.third img {
+.front #content .services {
+  padding: 30px 13% 80px;
+}
+.front #content .services table td {
+  width: 33.33%;
+  padding: 0px 15px;
+}
+.front #content .services .top {
+  min-height: 160px;
+}
+.front #content .services h2,
+.front #content .services h3 {
+  margin: 0 0 12px;
+}
+.front #content .services p {
+  margin: 0 0 12px;
+}
+.front #content .services img {
   width: auto;
   height: auto;
-  margin: -85px 0 0 10px;
+}
+.front #content .services.mobile {
+  padding-bottom: 40px;
+}
+.front #content .services.mobile table td {
+  width: auto;
+  min-width: 40px;
+  padding: 0 6px 15px;
+  vertical-align: top;
+  text-align: center;
+}
+.front #content .services.mobile table td img {
+  width: auto;
+  height: auto;
+}
+.front #content .services.mobile table td p {
+  font-size: 13px;
+  line-height: 17px;
+  text-align: left;
+}
+.front #content .services.mobile table td h2,
+.front #content .services.mobile table td h3 {
+  text-align: left;
+}
+.front #content .field-name-body {
+  margin: 0 13%;
+  padding: 150px 0 0;
 }
 .front #content .homepage-logos {
   background: #fff;
   margin-bottom: 0px;
-  padding: 10px 10%;
+  padding: 20px 10%;
 }
 .front #content .homepage-logos p {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-style: italic;
+  color: #555555;
   font-size: 11px;
   line-height: 14px;
   text-align: left;
   margin: 0px;
 }
+@media (max-width: 1079px) {
+  .front #content .field-name-body {
+    padding: 100px 0 0;
+    margin: 0 5%;
+  }
+  .front #content .services {
+    padding: 40px 5%;
+  }
+}
 @media (max-width: 720px) {
-  .front #header {
-    height: 365px;
+  .front #content .field-name-body {
+    padding: 70px 0 0;
   }
-  .front #header .homepage-banner {
-    height: 365px;
-    background: #ffffff url("../images/bricks.jpg") no-repeat 47% top;
-    background-size: auto 470px;
-  }
-  .front #header .homepage-banner .block-content {
-    padding: 90px 3% 0;
-  }
-  .front #header .homepage-banner p {
-    font-size: 16px;
-    line-height: 21px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-  }
-  .front #header .homepage-banner h2 {
-    font-size: 26px;
-    line-height: 29px;
-  }
-  .front #content article {
-    padding-top: 20px;
-  }
-  .front #content article .column.third {
-    width: 100%;
-    margin: 0 0 20px;
-    padding-bottom: 20px;
-    float: none;
-    border-bottom: 1px solid #ddd;
-  }
-  .front #content article .column.third img {
-    margin: 0px 15px 30px -30px;
-    float: left;
-    width: 80px;
-    height: auto;
-    display: none;
-  }
-  .front #content article .column.third p {
+  .front #content .field-name-body p {
     font-size: 14px;
     line-height: 19px;
-    margin: 0 0 15px;
+  }
+  .front #content h1 {
+    font-size: 30px;
+    line-height: 34px;
   }
   .front #content .homepage-logos {
-    padding: 0 3%;
+    padding: 20px 0;
   }
 }
 .breadcrumb {
@@ -1061,6 +1081,15 @@ body {
 .breadcrumb li a {
   color: #47a9e1;
 }
+@media (max-width: 720px) {
+  .breadcrumb {
+    padding: 10px 4%;
+  }
+}
+.page-node-2 .breadcrumb,
+.section-blog .breadcrumb {
+  padding: 10px 0 10px 8%;
+}
 #main {
   width: 100%;
   position: relative;
@@ -1072,6 +1101,9 @@ body {
   margin-left: 240px;
   z-index: 1;
   position: relative;
+}
+#content .mobile {
+  display: none;
 }
 #content a {
   color: #47a9e1;
@@ -1098,7 +1130,8 @@ body {
   list-style-type: none;
   padding-left: 30px;
   margin-left: 0px;
-  background: url("../images/leaf-bullet-blue.png") no-repeat left center;
+  background: url("../images/leaf-bullet-blue.png") no-repeat left 5px;
+  line-height: 1.5em;
 }
 #content .block-webform {
   margin: 40px 5%;
@@ -1262,6 +1295,27 @@ body {
   top: -45px;
   left: -85px;
 }
+#content .design-thinking-courses2 td {
+  width: 50%;
+  padding: 0 40px 0 0;
+  vertical-align: top;
+  text-align: left;
+}
+#content .design-thinking-list .block-content {
+  padding-right: 290px;
+  background: url("../images/icons/idea-aqua.svg") no-repeat right center;
+  background-size: 250px auto;
+}
+#content .jumpstart {
+  color: #ffffff;
+  background: url("../images/design-thinking-venn.jpg") no-repeat center center;
+  background-size: cover;
+}
+#content .jumpstart .block-content {
+  width: 50%;
+  margin-right: 50%;
+  padding: 40px 0 20px;
+}
 #content .quote .block-content {
   background: #ebebeb;
   color: #000000;
@@ -1284,6 +1338,11 @@ body {
   font-weight: 700;
   font-family: inherit;
   font-style: italic;
+}
+#content .quote.design-thinking {
+  background: url("../images/meeting.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 250px;
 }
 #content .quote.consulting {
   background: url("../images/meeting.jpg") no-repeat center center;
@@ -1319,23 +1378,14 @@ body {
   list-style-type: none;
   padding-left: 30px;
   margin-left: 0px;
-  background: url("../images/leaf-bullet-blue.png") no-repeat left center;
+  background: url("../images/leaf-bullet-blue.png") no-repeat left 5px;
+  line-height: 1.5em;
 }
-#content .learning-leadership-venn {
-  background: url("../images/venn.jpg") no-repeat center center;
-  background-size: cover;
-  height: 550px;
-}
-#content .leadership-partners {
-  background: transparent url("../images/learning-bw.png") no-repeat center top;
-  margin-top: -70px;
-  padding-top: 185px;
-}
-#content .leadership-partners table {
+#content .industries table {
   border: 30px solid #ebebeb !important;
   background: #ebebeb;
 }
-#content .leadership-partners table td {
+#content .industries table td {
   padding: 10px 10px 10px 10px;
   font-weight: 700;
   font-family: inherit;
@@ -1343,10 +1393,13 @@ body {
 #content .labs-intro {
   padding-bottom: 0px;
 }
-#content .labs-details {
+#content .innovation-collaborator {
   background: url("../images/acceleration-labs.jpg") no-repeat right top;
   background-size: 50% auto;
-  padding-right: 50%;
+  padding-right: 55%;
+}
+#content .innovation-collaborator h2 {
+  margin-top: 0px;
 }
 #content .lab-examples table {
   border: 30px solid #ebebeb !important;
@@ -1409,11 +1462,11 @@ body {
   color: #ffffff;
   padding: 20px 55px;
 }
-#content .your-next-event {
+#content .innovation-at-scale {
   background: url("../images/your-next-event.jpg") no-repeat right center;
   background-size: 45% auto;
 }
-#content .your-next-event .block-content {
+#content .innovation-at-scale .block-content {
   padding-right: 50%;
 }
 #content .contact {
@@ -1448,8 +1501,23 @@ body {
   background-size: auto 200px;
   padding-bottom: 200px;
 }
+#content .values table td {
+  width: 50%;
+  padding: 20px;
+}
+#content .values table td img {
+  margin: 0px;
+  padding: 0px;
+}
+#content .values table td h2,
+#content .values table td h3 {
+  margin: 0px;
+}
+#content .values table td p {
+  margin: 0px;
+}
 #content .extended-family {
-  margin: 0 4%;
+  padding: 30px 10%;
 }
 #content .extended-family.mobile {
   display: none;
@@ -1469,7 +1537,7 @@ body {
   text-align: center;
   color: #3d3d3d;
   vertical-align: top;
-  padding: 0 4%;
+  padding: 0 4% 30px;
 }
 #content .extended-family table td p {
   font-size: 14px;
@@ -1480,6 +1548,57 @@ body {
   font-weight: 700;
   font-family: inherit;
   color: #47a9e1;
+}
+#content .group-at-table {
+  background: url("../images/group-at-table.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 300px;
+}
+#content .universities {
+  background: url("../images/learning-bw.png") no-repeat top center;
+  margin-top: -75px;
+  padding-top: 165px;
+}
+#content .change2 .block-content {
+  background: url("../images/icons/leadership-blue.svg") no-repeat right center;
+  background-size: 250px auto;
+  padding: 20px 290px 20px 0;
+}
+#content .big-change .block-content {
+  padding: 0 41% 0 0;
+  background: url("../images/icons/recording-blue.svg") no-repeat right center;
+  background-size: 40% auto;
+}
+#content .experience-change {
+  background: url("../images/experience-change.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 60px 50% 60px 8%;
+}
+#content .experience-change .block-content {
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 20px 55px;
+}
+#content .culture-building-events {
+  background: url("../images/culture-building-events.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 60px 50% 60px 8%;
+}
+#content .culture-building-events .block-content {
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 20px 55px;
+}
+#content .culture-building-events .block-content li {
+  background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px;
+}
+#content .culture-of-innovation .block-content {
+  padding: 0 40% 0 0;
+  background: url("../images/icons/tree-ring-magenta.svg") no-repeat right center;
+  background-size: 40% auto;
+}
+#content .culture-of-innovation .block-content li {
+  background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px;
 }
 @media (min-width: 1400px) {
   #content .about-name .block-content {
@@ -1499,6 +1618,17 @@ body {
   #content .field-name-body {
     margin: 20px 5%;
   }
+  #content .block-block {
+    padding: 20px 0;
+  }
+  #content .block-block .block-title {
+    width: 92%;
+    padding: 0 4%;
+  }
+  #content .block-block .block-content {
+    width: 92%;
+    padding: 0 4%;
+  }
   #content .block-webform {
     margin: 0px 5% 40px;
   }
@@ -1511,28 +1641,165 @@ body {
   #content .extended-family.mobile {
     display: block;
   }
+  #content .quote .block-content {
+    padding: 40px 4% 20px;
+    width: 86%;
+    margin: 0 3%;
+  }
+  #content .labs-details {
+    background: none;
+    padding-top: 0px;
+  }
+  #content .labs .lab {
+    padding: 20px;
+  }
+  #content .labs .lab .violator {
+    width: 80px;
+    height: auto;
+    top: -40px;
+    left: 20px;
+  }
+  #content .contact .block-content p,
+  #content .contact .block-content a,
+  #content .contact .block-content h2,
+  #content .contact .block-content h3,
+  #content .contact .block-content h4 {
+    font-size: 22px;
+  }
+  #content .crowd-innovation-sprints {
+    background: none;
+  }
+  #content .design-thinker-conference {
+    background: none;
+  }
+  #content .graphic-recording {
+    padding-top: 250px;
+  }
+  #content .graphic-recording .block-content {
+    padding: 20px 4%;
+    font-size: 14px;
+    width: 86%;
+    margin: 0 3%;
+  }
+  #content .innovation-at-scale {
+    background: none;
+  }
+  #content .field-projects {
+    padding-top: 130px;
+    background-size: 180px auto;
+  }
+  #content .desktop {
+    display: none;
+  }
+  #content .mobile {
+    display: block;
+  }
+  #content .learning-leadership-venn {
+    height: 350px;
+  }
+  #content .leadership-partners {
+    padding-top: 160px;
+  }
+  #content .lab-examples table {
+    border: 10px solid #ebebeb !important;
+    background: #ebebeb;
+  }
+  #content .lab-examples table td {
+    padding: 10px 5px;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  #content .lab-examples table td img {
+    margin: 0px;
+    max-width: none;
+  }
+  #content .courses .course {
+    background: #ebebeb;
+    color: #000000;
+    padding: 50px 20px 20px;
+    margin: 0 0 35px;
+    position: relative;
+  }
+  #content .courses .course h3 {
+    margin: 0px 0px 12px;
+  }
+  #content .courses .course p {
+    margin: 0px 0px 12px;
+  }
+  #content .courses .course .violator {
+    background: #000;
+    float: left;
+    padding: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: inherit;
+    font-style: italic;
+    text-align: left;
+    font-size: 14px;
+    line-height: 16px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: auto;
+    height: auto;
+  }
 }
 .page-node-5 #main,
 .page-node-21 #main,
 .page-node-25 #main,
 .page-node-31 #main,
 .page-node-32 #main,
-.page-node-33 #main {
+.page-node-33 #main,
+.page-node-61 #main {
   background: #ffffff url("../images/tree-rings-top-left.jpg") no-repeat 240px top;
 }
-.page-node-5 #main .breadcrumb,
-.page-node-21 #main .breadcrumb,
-.page-node-25 #main .breadcrumb,
-.page-node-31 #main .breadcrumb,
-.page-node-32 #main .breadcrumb,
-.page-node-33 #main .breadcrumb {
-  display: none;
+@media screen and (max-width: 1079px) {
+  .page-node-5 #main,
+  .page-node-21 #main,
+  .page-node-25 #main,
+  .page-node-31 #main,
+  .page-node-32 #main,
+  .page-node-33 #main,
+  .page-node-61 #main {
+    background: #ffffff url("../images/tree-rings-top-left.jpg") no-repeat 180px top;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-node-5 #main,
+  .page-node-21 #main,
+  .page-node-25 #main,
+  .page-node-31 #main,
+  .page-node-32 #main,
+  .page-node-33 #main,
+  .page-node-61 #main {
+    background: #fff;
+  }
+}
+.page-node-31 #content .field-name-body {
+  background: url("../images/icons/knowledge-aqua.svg") no-repeat right top;
+  background-size: 250px auto;
+  padding-right: 290px;
 }
 .page-node-31 #content .field-name-body li {
-  background: url("../images/leaf-bullet-aqua.png") no-repeat left center;
+  background: url("../images/leaf-bullet-aqua.png") no-repeat left 5px;
+}
+.page-node-32 #content .field-name-body {
+  background: url("../images/icons/future-blue.svg") no-repeat right top;
+  background-size: 250px auto;
+  padding-right: 290px;
+  padding-bottom: 55px;
+}
+.page-node-32 #content .field-name-body li {
+  background: url("../images/leaf-bullet-blue.png") no-repeat left 5px;
+}
+.page-node-33 #content .field-name-body {
+  background: url("../images/icons/ecosystem-magenta.svg") no-repeat right top;
+  background-size: 250px auto;
+  padding-right: 290px;
+  padding-bottom: 55px;
 }
 .page-node-33 #content .field-name-body li {
-  background: url("../images/leaf-bullet-magenta.png") no-repeat left center;
+  background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px;
 }
 #content-lower {
   width: auto;
@@ -1625,38 +1892,13 @@ body {
 #content-lower #block-views-nodequeue-3-block .views-slideshow-controls-top a:hover {
   color: #ffffff;
 }
-#content-lower .extended-family {
-  margin: 0 4%;
+#content-lower .homepage-bottom {
+  margin: 50px 13% 75px;
 }
-#content-lower .extended-family.mobile {
-  display: none;
-}
-#content-lower .extended-family h2.block-title {
-  text-align: left;
-  margin: 20px 4%;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #aaaaaa;
-}
-#content-lower .extended-family table {
-  border: 0px !important;
-  width: 100%;
-}
-#content-lower .extended-family table td {
-  width: 50%;
-  text-align: center;
-  color: #3d3d3d;
-  vertical-align: top;
-  padding: 0 4%;
-}
-#content-lower .extended-family table td p {
-  font-size: 14px;
-  line-height: 18px;
-  text-align: left;
-}
-#content-lower .extended-family table td p a {
-  font-weight: 700;
-  font-family: inherit;
-  color: #47a9e1;
+#content-lower .homepage-bottom .block-content {
+  background: url("../images/venn-homepage.jpg") no-repeat right center;
+  background-size: 40% auto;
+  padding-right: 45%;
 }
 @media (max-width: 1079px) {
   #content-lower {
@@ -2419,10 +2661,10 @@ a.button.hollow,
   display: none;
 }
 .mobile-teasers h2.block-title {
-  margin: 30px 2% 10px;
+  margin: 30px 4% 10px;
 }
 .mobile-teasers .view-content {
-  padding: 0 2%;
+  padding: 0 4%;
 }
 .mobile-teasers .views-row {
   background: #fff;
@@ -2550,6 +2792,9 @@ a.button.hollow,
   }
   #footer .block-menu-block {
     display: none;
+  }
+  #footer .copyright {
+    padding: 10px 5%;
   }
 }
 .profile {

@@ -25,31 +25,31 @@ body { background: #1a1a1a; }
 #navigation { .w(240px); .h(100%); .fix; z-index: 100; top: 0px; bottom: 0px; background: #222 /* url("../images/bg-navigation.jpg") no-repeat center top*/; overflow: visible; 
 	.region-navigation { .h(auto); overflow: visible; }
 	#logo { .w(240px); .h(240px); background: url("../images/treehouse-logo-white.svg") no-repeat center center; background-size: 150px 150px; .block; .m0; }
-	.mobile-menu { .hide; .cb; }
-	.mobile-nav { .hide;
-		.block-content { .p(10px 5%); 
+	.mobile-menu { .hide; }
+	.mobile-nav { .hide; .pt(38px); .rel; z-index: 9;
+		.block-content { .p(10px 5% 0px); 
 			ul.menu { 
-				li { .list-none; .tl; background: transparent url("../images/white15.png") repeat-x bottom; .p0; .m0; .fn;
-					a { .white; .roboto; .block; .p(7px 0); .tl; .size(13px);
-						&:visited { .black; }
+				li { .list-none; .tl; .p0; .m0; .fn;
+					a { .white; .roboto; .block; .p(6px 0); .tl; .size(15px);
+						&:visited { .white; }
 					}
 					&.last { border-bottom: none; }
 				}
 			}
 		}
 	}
-	#mobile-menu-trigger { .fl; left: 2%; top: 0; z-index: 99; .p(25px 10px 23px 34px); background: url("../images/mobile-menu-white.svg") no-repeat left center; background-size: 30px 30px; .roboto; .ls(2px); .upper; .size(12px); .lh(12px); .white; .block; }
+	#mobile-menu-trigger { .fl; .abs; left: 2%; top: 0; z-index: 99; .p(25px 10px 23px 34px); background: url("../images/mobile-menu-white.svg") no-repeat left center; background-size: 30px 30px; .roboto; .ls(2px); .upper; .size(12px); .lh(12px); .white; .block; }
 	.block-nice-menus { .w(100%); .p0; .m0; .rel; z-index: 9999;
 		h2.block-title { .hide; }
 		ul.nice-menu-right { .m0; .p0; .w(100%); border-top: none;
 			li { .list-none; .p0; .block; .fn; .m0; border: none; background: transparent; .w(100%);
 				a { .roboto; .size(15px); .lh(18px); .ltgrey; .block; .p(9px 18px); 
 					&:visited { .ltgrey; }
-					&:hover { .white; background: rgba(255,255,255,0.1); }
+					&:hover { .white; background: #333; }
 				}
 				&.menuparent { background: url("../images/arrow-white.svg") no-repeat 215px 10px; background-size: 15px 15px; 
 					a { 
-						&:hover { background: rgba(255,255,255,0.1); .white; }
+						&:hover { background: #333; .white; }
 					}
 					ul { left: 240px; z-index: 9999; .w(200px); .p(5px 0 15px); background: @blue; border: none;
 						li { border-bottom: none; background: transparent;
@@ -96,9 +96,11 @@ body { background: #1a1a1a; }
 				ul { left: 180px; }
 			}
 		}
-		.social-contact { .w(180px); .m(20px 15px 0); }
+		.social-contact { .w(180px); .m(20px 15px 0); 
+			p { .size(10px); .lh(15px); }
+		}
 	}
-	@media (max-width: 720px) { .rel; .w(100%); .h(auto); bottom: auto; top: 0px; .h(auto); .tc; background: #000;
+	@media (max-width: 720px) { .rel; .w(100%); .h(auto); bottom: auto; top: 0px; .h(auto); .tc; background: #222;
 		#logo { .w(60px); .h(60px); background-size: 48px 48px; background-position: center center; .m(0px auto); } 
 		.block-nice-menus { .hide; }
 		.mobile-menu { .show; }
@@ -130,57 +132,89 @@ body { background: #1a1a1a; }
 		}
 	}
 	@media (max-width: 1079px) { .ml(180px); }
-	@media (max-width: 720px) { .ml(0px); }
+	@media (max-width: 720px) { .ml(0px); 
+		.region-header {
+			.view-header-image {
+				.header-content { .p(40px 3%); 
+					h1 { .size(30px); .lh(33px); }
+				}
+				.short-header-1 {
+					.header-content { .p(40px 3%); }
+				}	
+			}
+		}
+	}
 }
-
+.page-node-2 #header,
+.section-blog #header {
+	.region-header {
+		.view-header-image {
+			.header-content { .p(150px 8% 20px 8%); }
+		}
+	}
+	@media (max-width: 1079px) { .ml(180px); }
+	@media (max-width: 720px) { .ml(0px); 
+		.region-header {
+			.view-header-image {
+				.header-content { .p(40px 3%); }
+			}
+		}
+	}
+}
+.node-type-case-study #header {
+	.region-header .view-header-image .header-content { .p(150px 13% 20px 13%); }
+	@media (max-width: 720px) {
+		.region-header .view-header-image .header-content { .p(40px 3%); }
+	}
+}
 
 
 // Front Page Styles
 
 .front {
-	#main { }
-	#header { .h(500px); .rel; z-index: 0; background: url("../images/lightbulb-wall.jpg") no-repeat center center; background-size: cover;
-		.homepage-banner { .rel; z-index: 1; .w(auto); .h(500px); overflow: hidden; 
-			.block-content { .p(120px 15% 0); .tc; }
-			p { .size(18px); .lh(26px); .m(0 0 14px); background: rgba(71,169,225,0.9); .white; .p(5px 20px); }
-			h2 { .size(40px); .lh(50px); .mb(0px); background: rgba(71,169,225,0.9); .tc; .p(30px); .white; .script; }
-			.button { border: 1px solid @grey; background: transparent; color: @grey; .size(12px); .p(7px 16px); }
-		}
-	}
-	h1#page-title { .hide; }
-	#content { .rel; z-index: 1; background: #fff;
+	#content { .rel; z-index: 1; background: url("../images/treehouse-home.jpg") no-repeat center center; background-size: cover; .tc;
 		.node-page { .m0; }
-		article { .tc;
-			.field-name-body { .p(0px 8%); .m(0px); }
-			.column.third { .w(29.33%); .p(0px); .m(0 2%); .fl; .tc;
-				/*&.learn { background: transparent url("../images/icons/knowledge-white.svg") no-repeat 10px 30px; background-size: 110px 110px; }
-				&.collaborate { background: transparent url("../images/icons/idea-white.svg") no-repeat 10px 30px; background-size: 110px 110px; }
-				&.events { background: transparent url("../images/icons/future-white.svg") no-repeat 10px 30px; background-size: 110px 110px; }*/
-				p { .size(14px); .roboto-light; .lh(19px); .tl; }
-				a.button { .white; }
-				img { .w(auto); .h(auto); .m(-85px 0 0 10px); }
+		h1 { .white; .script; .size(42px); .lh(45px); max-width: 750px; .m(0 auto 20px); }
+		h2, h3 { .white; .size(20px); .roboto-bold; .lh(23px); }
+		p { .white; .roboto; .size(16px); .lh(19px); 
+			a { .white; }
+		}
+		.services { .p(30px 13% 80px);
+			table {
+				td { .w(33.33%); .p(0px 15px); }
+			}
+			.top { min-height: 160px; }
+			h2, h3 { .m(0 0 12px); }
+			p { .m(0 0 12px); }
+			img { .w(auto); .h(auto); }
+			&.mobile { .pb(40px);
+				table {
+					td { .w(auto); min-width: 40px; .p(0 6px 15px); .vtop; .tc;  
+						img { .w(auto); .h(auto); }
+						p { .size(13px); .lh(17px); .tl; }
+						h2, h3 { .tl; }
+					}
+				}
 			}
 		}
-		.homepage-logos { background: #fff; .mb(0px); .p(10px 10%); 
-			p { .roboto-light; .em; .size(11px); .lh(14px); .tl; .m(0px); }
+		.field-name-body { .m(0 13%); .p(150px 0 0); }
+		.homepage-logos { background: #fff; .mb(0px); .p(20px 10%); 
+			p { .roboto-light; .em; .grey; .size(11px); .lh(14px); .tl; .m(0px); }
+		}
+	}
+	@media (max-width: 1079px) {
+		#content {
+			.field-name-body { .p(100px 0 0); .m(0 5%); }
+			.services { .p(40px 5%); }
 		}
 	}
 	@media (max-width:720px) { 
-		#header { .h(365px); 
-			.homepage-banner { .h(365px); background: #fff url("../images/bricks.jpg") no-repeat 47% top; background-size: auto 470px;
-				.block-content { .p(90px 3% 0); }
-				p { .size(16px); .lh(21px); .roboto; }
-				h2 { .size(26px); .lh(29px); }
-			}
-		}
 		#content {
-			article { .pt(20px);
-				.column.third { .w(100%); .m(0 0 20px); .pb(20px); .fn; border-bottom: 1px solid #ddd; 
-					img { .m(0px 15px 30px -30px); .fl; .w(80px); .h(auto); .hide; }
-					p { .size(14px); .lh(19px); .m(0 0 15px); }
-				}
+			.field-name-body { .p(70px 0 0); 
+				p { .size(14px); .lh(19px); }
 			}
-			.homepage-logos { .p(0 3%); }
+			h1 { .size(30px); .lh(34px); }
+			.homepage-logos { .p(20px 0); }
 		}
 	}
 }
@@ -192,13 +226,16 @@ body { background: #1a1a1a; }
 	li { .size(10px); .roboto-light; .em; .upper; 
 		a { .blue; }
 	}
+	@media (max-width:720px) { .p(10px 4%); }
 }
-
+.page-node-2 .breadcrumb,
+.section-blog .breadcrumb {.p(10px 0 10px 8%); }
 
 // Main content styles
 
 #main { .w100; .rel; z-index: 0; background: #fff; }
 #content { .w(auto); .ml(240px); z-index: 1; .rel; 
+	.mobile { .hide; }
 	a { .blue; 
 		&.button { .white; }
 	}
@@ -207,7 +244,7 @@ body { background: #1a1a1a; }
 			&.button { .white; }
 		}
 		img { .w100; .h(auto); }
-		li { .list-none; .pl(30px); .ml(0px); background: url("../images/leaf-bullet-blue.png") no-repeat left center; }
+		li { .list-none; .pl(30px); .ml(0px); background: url("../images/leaf-bullet-blue.png") no-repeat left 5px; .lh(1.5em); }
 	}
 	.block-webform { .m(40px 5%);
 		h2.block-title { .hide; }
@@ -233,11 +270,21 @@ body { background: #1a1a1a; }
 			.violator { background: url("../images/violator-grey.png") no-repeat center center; .w(92px); .h(50px); .p(35px 30px); .white; .bold; .em; .tc; .size(14px); .lh(16px); .abs; top: -45px; left: -85px; }
 		}
 	}
+	.design-thinking-courses2 {
+		td { .w(50%); .p(0 40px 0 0); vertical-align: top; .tl; }
+	}
+	.design-thinking-list { 
+		.block-content { .pr(290px); background: url("../images/icons/idea-aqua.svg") no-repeat right center; background-size: 250px auto; }
+	}
+	.jumpstart { .white; background: url("../images/design-thinking-venn.jpg") no-repeat center center; background-size: cover; 
+		.block-content { .w(50%); .mr(50%); .p(40px 0 20px); }
+	}
 	.quote { 
 		.block-content { background: #ebebeb; .black; .p(40px 50px 20px); .rel; .tc;
 			img { .abs; top: -40px; left: 50%; .ml(-41px); }
 			h2, h3, h4 { .size(20px); .lh(26px); .black; .bold; .em; }
 		}
+		&.design-thinking { background: url("../images/meeting.jpg") no-repeat center center; background-size: cover; .pt(250px); }
 		&.consulting { background: url("../images/meeting.jpg") no-repeat center center; background-size: cover; .pt(250px); }
 		&.events { background: url("../images/event.jpg") no-repeat center center; background-size: cover; .pt(230px); }
 	}
@@ -249,17 +296,18 @@ body { background: #1a1a1a; }
 			}
 		}
 		.block-content {
-			li { .list-none; .pl(30px); .ml(0px); background: url("../images/leaf-bullet-blue.png") no-repeat left center; }
+			li { .list-none; .pl(30px); .ml(0px); background: url("../images/leaf-bullet-blue.png") no-repeat left 5px; .lh(1.5em); }
 		}
 	}
-	.learning-leadership-venn { background: url("../images/venn.jpg") no-repeat center center; background-size: cover; .h(550px); }
-	.leadership-partners { background: transparent url("../images/learning-bw.png") no-repeat center top; .mt(-70px); .pt(185px); 
+	.industries { 
 		table { border: 30px solid #ebebeb !important; background: #ebebeb; 
 			td { .p(10px 10px 10px 10px); .bold; }
 		}
 	}
 	.labs-intro { .pb(0px); }
-	.labs-details { background: url("../images/acceleration-labs.jpg") no-repeat right top; background-size: 50% auto; .pr(50%); }
+	.innovation-collaborator { background: url("../images/acceleration-labs.jpg") no-repeat right top; background-size: 50% auto; .pr(55%); 
+		h2 { .mt(0px); }
+	}
 	.lab-examples {
 		table { border: 30px solid #ebebeb !important; background: #ebebeb; 
 			td { .p(10px 10px 10px 10px); .bold; 
@@ -283,7 +331,7 @@ body { background: #1a1a1a; }
 	.graphic-recording { background: url("../images/graphic-recording.jpg") no-repeat center center; background-size: cover; .p(420px 8% 30px); 
 		.block-content { background: rgba(0,0,0,0.8); .white; .p(20px 55px); }
 	}
-	.your-next-event { background: url("../images/your-next-event.jpg") no-repeat right center; background-size: 45% auto; 
+	.innovation-at-scale { background: url("../images/your-next-event.jpg") no-repeat right center; background-size: 45% auto; 
 		.block-content { .pr(50%); }
 	}
 	.contact { background: url("../images/grey.gif") repeat-x center 180px; .p(20px 13% 40px);
@@ -294,16 +342,45 @@ body { background: #1a1a1a; }
 	.about-name { background: url("../images/fog-mountains.jpg") no-repeat center center; background-size: cover; 
 		.block-content { .pr(55%); background: url("../images/treehouse-logo-white.svg") no-repeat right center; background-size: 40% auto; .white; }
 	}
-	.values { background: url("../images/stump.jpg") no-repeat center bottom; background-size: auto 200px; .pb(200px); }
-	.extended-family { .m(0 4%);
+	.values { background: url("../images/stump.jpg") no-repeat center bottom; background-size: auto 200px; .pb(200px); 
+		table {
+			td { .w(50%); .p(20px);
+				img { .m0; .p0; }
+				h2, h3 { .m(0px); }
+				p { .m(0px); }
+			}
+		}
+	}
+	.extended-family { .p(30px 10%);
 		&.mobile { .hide; }
 		h2.block-title { .tl; .m(20px 4%); .pb(10px); border-bottom: 1px solid @ltgrey; }
 		table { border: 0px !important; .w(100%); 
-			td { .w(50%); .tc; .dkgrey; .vtop; .p(0 4%);
+			td { .w(50%); .tc; .dkgrey; .vtop; .p(0 4% 30px);
 				p { .size(14px); .lh(18px); .tl; 
 					a { .strong; .blue; }
 				}
 			}
+		}
+	}
+	.group-at-table { background: url("../images/group-at-table.jpg") no-repeat center center; background-size: cover; min-height: 300px; }
+	.universities { background: url("../images/learning-bw.png") no-repeat top center; .mt(-75px); .pt(165px); }
+	.change2 { 
+		.block-content { background: url("../images/icons/leadership-blue.svg") no-repeat right center; background-size: 250px auto; .p(20px 290px 20px 0); }
+	}
+	.big-change { 
+		.block-content { .p(0 41% 0 0); background: url("../images/icons/recording-blue.svg") no-repeat right center; background-size: 40% auto;  }
+	}
+	.experience-change { background: url("../images/experience-change.jpg") no-repeat center center; background-size: cover; .p(60px 50% 60px 8%);
+		.block-content { background: rgba(0,0,0,0.8); .white; .p(20px 55px); }
+	}
+	.culture-building-events { background: url("../images/culture-building-events.jpg") no-repeat center center; background-size: cover; .p(60px 50% 60px 8%);
+		.block-content { background: rgba(0,0,0,0.8); .white; .p(20px 55px); 
+			li { background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px; }
+		}
+	}
+	.culture-of-innovation {
+		.block-content { .p(0 40% 0 0); background: url("../images/icons/tree-ring-magenta.svg") no-repeat right center; background-size: 40% auto; 
+			li { background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px; }
 		}
 	}
 	@media (min-width: 1400px) {
@@ -312,12 +389,55 @@ body { background: #1a1a1a; }
 	@media (max-width: 1079px) { .ml(180px); }
 	@media (max-width: 720px) { .ml(0px); 
 		.field-name-body { .m(20px 5%); }
+		.block-block { .p(20px 0); 
+			.block-title { .w(92%); .p(0 4%); }
+			.block-content { .w(92%); .p(0 4%); }
+		}
 		.block-webform { .m(0px 5% 40px); 
 			input { max-width: 100%; }
 		}
 		.extended-family {
 			&.desktop { .hide; }
 			&.mobile { .show; }
+		}
+		.quote {
+			.block-content { .p(40px 4% 20px); .w(86%); .m(0 3%); }
+		}
+		.labs-details { background: none; .pt(0px); }
+		.labs {
+			.lab{ .p(20px);
+				.violator { .w(80px); .h(auto); top: -40px; left: 20px; }
+			}
+		}
+		.contact {
+			.block-content { 
+				p, a, h2, h3, h4 { .size(22px); }
+			}
+		}
+		.crowd-innovation-sprints { background: none; }
+		.design-thinker-conference { background: none; }
+		.graphic-recording { .pt(250px); 
+			.block-content { .p(20px 4%); .size(14px); .w(86%); .m(0 3%); }
+		}
+		.innovation-at-scale { background: none; }
+		.field-projects { .pt(130px); background-size: 180px auto; }
+		.desktop { .hide; }
+		.mobile { .show; }
+		.learning-leadership-venn { .h(350px); }
+		.leadership-partners { .pt(160px); }
+		.lab-examples {
+			table { border: 10px solid #ebebeb !important; background: #ebebeb; 
+				td { .p(10px 5px); .bold; 
+					img { .m(0px); max-width: none; }
+				}
+			}
+		}
+		.courses { 
+			.course { background: #ebebeb; .black; .p(50px 20px 20px); .m(0 0 35px); .rel;
+				h3 { .m(0px 0px 12px); }
+				p { .m(0px 0px 12px); }
+				.violator { background: #000; .fl; .p(15px); .white; .bold; .em; .tl; .size(14px); .lh(16px); .abs; top: -15px; left: -15px; .w(auto); .h(auto); }
+			}
 		}
 	}
 }
@@ -327,12 +447,27 @@ body { background: #1a1a1a; }
 .page-node-25 #main,
 .page-node-31 #main,
 .page-node-32 #main,
-.page-node-33 #main { background: #fff url("../images/tree-rings-top-left.jpg") no-repeat 240px top; 
-	.breadcrumb { .hide; }
+.page-node-33 #main,
+.page-node-61 #main { background: #fff url("../images/tree-rings-top-left.jpg") no-repeat 240px top; 
+	@media screen and (max-width: 1079px) { background: #fff url("../images/tree-rings-top-left.jpg") no-repeat 180px top; }
+	@media screen and (max-width:720px) { background: #fff; }
 }
 
-.page-node-31 #content .field-name-body li { background: url("../images/leaf-bullet-aqua.png") no-repeat left center; }
-.page-node-33 #content .field-name-body li { background: url("../images/leaf-bullet-magenta.png") no-repeat left center; }
+.page-node-31 #content {
+	.field-name-body { background: url("../images/icons/knowledge-aqua.svg") no-repeat right top; background-size: 250px auto; .pr(290px);
+		li { background: url("../images/leaf-bullet-aqua.png") no-repeat left 5px; }
+	}
+}
+.page-node-32 #content {
+	.field-name-body { background: url("../images/icons/future-blue.svg") no-repeat right top; background-size: 250px auto; .pr(290px); .pb(55px);
+		li { background: url("../images/leaf-bullet-blue.png") no-repeat left 5px; }
+	}
+}
+.page-node-33 #content {
+	.field-name-body { background: url("../images/icons/ecosystem-magenta.svg") no-repeat right top; background-size: 250px auto; .pr(290px); .pb(55px);
+		li { background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px; }
+	}
+}
 
 
 // Lower Content
@@ -360,16 +495,8 @@ body { background: #1a1a1a; }
 			}
 		}
 	}
-	.extended-family { .m(0 4%);
-		&.mobile { .hide; }
-		h2.block-title { .tl; .m(20px 4%); .pb(10px); border-bottom: 1px solid @ltgrey; }
-		table { border: 0px !important; .w(100%); 
-			td { .w(50%); .tc; .dkgrey; .vtop; .p(0 4%);
-				p { .size(14px); .lh(18px); .tl; 
-					a { .strong; .blue; }
-				}
-			}
-		}
+	.homepage-bottom { .m(50px 13% 75px);
+		.block-content { background: url("../images/venn-homepage.jpg") no-repeat right center; background-size: 40% auto; .pr(45%); }
 	}
 	@media (max-width: 1079px) { .ml(180px); }
 	@media (max-width: 720px) { .ml(0px); }
@@ -618,8 +745,8 @@ a.button,
 	}
 }
 .mobile-teasers { .hide;
-	h2.block-title { .m(30px 2% 10px); }
-	.view-content { .p(0 2%); }
+	h2.block-title { .m(30px 4% 10px); }
+	.view-content { .p(0 4%); }
 	.views-row { background: #fff; .h(120px); .mb(5px); }
 	.teaser-image { .w(100px); .h(120px); .fl; }
 	.title { .m(0px 15px 15px 115px); .roboto-bold; .size(14px); .lh(16px); .black; .pt(15px); }
@@ -656,6 +783,7 @@ a.button,
 	@media (max-width: 1079px) { .ml(180px); }
 	@media (max-width: 720px) { .ml(0px); 
 		.block-menu-block { .hide; }
+		.copyright { .p(10px 5%); }
 	}
 }
 
