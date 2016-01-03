@@ -2,18 +2,20 @@
 
 // Basics
 
-h1 { .size(46px); .lh(51px); .slab; .ls(-1px); 
-	@media (max-width:1120px) { .size(36px); .lh(40px); }
+h1 { .size(46px); .lh(51px); .slab; .ls(-1px); .mb(18px);
+	@media (max-width:1120px) { .size(36px); .lh(40px);  }
 }
-h2 { .size(34px); .lh(38px); .slab; .ls(-1px);
+h2 { .size(34px); .lh(38px); .slab; .ls(-1px); .mb(18px);
 	@media (max-width:1120px) { .size(26px); .lh(30px); }
 }
-h3 { .size(22px); .lh(26px); .slab; .ls(0px);
+h3 { .size(22px); .lh(26px); .slab; .ls(0px); .mb(18px);
 	@media (max-width:1120px) { .size(20px); .lh(24px); }
 }
 
 html { -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; }
-body { background: #1a1a1a; }
+body { background: #1a1a1a; .size(15px); .lh(22px); }
+p, div, span, li, strong { .size(15px); .lh(22px); }
+p { .mb(18px); }
 .block-block { .mb(0px); }
 .block { .mb(0px); }
 .tabs-primary { .m(0px); .p(20px 0 10px); }
@@ -22,9 +24,9 @@ body { background: #1a1a1a; }
 
 // Navigation
 
-#navigation { .w(240px); .h(100%); .fix; z-index: 100; top: 0px; bottom: 0px; background: #222 /* url("../images/bg-navigation.jpg") no-repeat center top*/; overflow: visible; 
+#navigation { .w(220px); .h(100%); .fix; z-index: 100; top: 0px; bottom: 0px; background: #222 /* url("../images/bg-navigation.jpg") no-repeat center top */; overflow: visible; 
 	.region-navigation { .h(auto); overflow: visible; }
-	#logo { .w(240px); .h(240px); background: url("../images/treehouse-logo-white.svg") no-repeat center center; background-size: 150px 150px; .block; .m0; }
+	#logo { .w(220px); .h(220px); background: url("../images/treehouse-logo-white.svg") no-repeat center center; background-size: 140px 140px; .block; .m0; }
 	.mobile-menu { .hide; }
 	.mobile-nav { .hide; .pt(38px); .rel; z-index: 9;
 		.block-content { .p(10px 5% 0px); 
@@ -51,7 +53,7 @@ body { background: #1a1a1a; }
 					a { 
 						&:hover { background: #333; .white; }
 					}
-					ul { left: 240px; z-index: 9999; .w(200px); .p(5px 0 15px); background: @blue; border: none;
+					ul { left: 220px; z-index: 9999; .w(200px); .p(5px 0 15px); background: @blue; border: none;
 						li { border-bottom: none; background: transparent;
 							a { .roboto; .white; .size(15px); .lh(18px); .p(9px 20px); .tt-none; background: transparent;
 								&.active { }
@@ -70,6 +72,7 @@ body { background: #1a1a1a; }
 					&.about { border-left: 10px solid @yellow; .p(9px 18px 9px 8px); .white; .bold; }
 					&.blog { border-left: 10px solid @red; .p(9px 18px 9px 8px); .white; .bold; }
 					&.contact { border-left: 10px solid @dkblue; .p(9px 18px 9px 8px); .white; .bold; }
+					&.methods { border-left: 10px solid @blue; .p(9px 18px 9px 8px); .white; .bold; }
 				}
 				&.menu-464 { .hide; }
 			}
@@ -117,14 +120,18 @@ body { background: #1a1a1a; }
 
 // Header Region
 
-#header { .rel; z-index: 0; top: 0; .ml(240px); .w(auto); overflow: hidden;
+#toolbar {
+	.toolbar-menu ul li a { .roboto-med; }
+}
+
+#header { .rel; z-index: 0; top: 0; .ml(220px); .w(auto); overflow: hidden;
 	.region-header { .rel; .w(100%); .h(100%); .m0;
 		.view-header-image {
 			.header-image { background-position: center center; }
 			.header-overlay { .w(100%); .h(100%); .m0; .p0; }
 			.header-content { .p(150px 13% 20px 13%);
 				h1 { .mb(10px); .tl; }
-				p { .m(0 0 10px); .tl; }
+				p { .m(0 0 10px); .tl; .roboto-med; }
 			}
 			.short-header-1 {
 				.header-content { .p(80px 13% 20px 13%); }
@@ -167,6 +174,8 @@ body { background: #1a1a1a; }
 		.region-header .view-header-image .header-content { .p(40px 3%); }
 	}
 }
+.page-node-2 #content .tabs-primary,
+.section-blog #content .tabs-primary { .m(0 8%); }
 
 
 // Front Page Styles
@@ -234,10 +243,22 @@ body { background: #1a1a1a; }
 // Main content styles
 
 #main { .w100; .rel; z-index: 0; background: #fff; }
-#content { .w(auto); .ml(240px); z-index: 1; .rel; 
+#content { .w(auto); .ml(220px); z-index: 1; .rel; 
 	.mobile { .hide; }
 	a { .blue; 
 		&.button { .white; }
+	}
+	.tabs-primary { .m(0px 13%); border-bottom: none; .pb(0px); background: none;
+		li.tabs-primary__tab { .list-none; .radius(0px); border: none; .m(0 5px 0 0);
+			a.tabs-primary__tab-link { .bg-blue; .p(6px 12px); text-shadow: none; .radius(0px); .roboto-med; .ls(0px); border: none;
+				&:hover { background: @dkblue; }
+			}
+			&.is-active { border-bottom: none; 
+				a.tabs-primary__tab-link.is-active { .bg-blue; .p(6px 12px); .radius(0px); border: none;
+					&:hover { background: @dkblue; }
+				}	
+			}
+		}
 	}
 	.field-name-body { .m(50px 13%);
 		a { .blue; 
@@ -263,22 +284,7 @@ body { background: #1a1a1a; }
 			}
 		}
 	}
-	.courses { .white; background: url("../images/green-leaves.jpg") no-repeat center center; background-size: cover; 
-		.course { background: #ebebeb; .black; .p(40px 50px); .m(0 0 60px); .rel;
-			h3 { .m(0px 0px 12px); }
-			p { .m(0px 0px 12px); }
-			.violator { background: url("../images/violator-grey.png") no-repeat center center; .w(92px); .h(50px); .p(35px 30px); .white; .bold; .em; .tc; .size(14px); .lh(16px); .abs; top: -45px; left: -85px; }
-		}
-	}
-	.design-thinking-courses2 {
-		td { .w(50%); .p(0 40px 0 0); vertical-align: top; .tl; }
-	}
-	.design-thinking-list { 
-		.block-content { .pr(290px); background: url("../images/icons/idea-aqua.svg") no-repeat right center; background-size: 250px auto; }
-	}
-	.jumpstart { .white; background: url("../images/design-thinking-venn.jpg") no-repeat center center; background-size: cover; 
-		.block-content { .w(50%); .mr(50%); .p(40px 0 20px); }
-	}
+	
 	.quote { 
 		.block-content { background: #ebebeb; .black; .p(40px 50px 20px); .rel; .tc;
 			img { .abs; top: -40px; left: 50%; .ml(-41px); }
@@ -305,8 +311,11 @@ body { background: #1a1a1a; }
 		}
 	}
 	.labs-intro { .pb(0px); }
-	.innovation-collaborator { background: url("../images/acceleration-labs.jpg") no-repeat right top; background-size: 50% auto; .pr(55%); 
-		h2 { .mt(0px); }
+	.innovation-collaborator { background: url("../images/notes-on-board.jpg") no-repeat center center; background-size: cover; .pr(0px);
+		.block-content { .p(0px 55% 0 0); background: url("../images/collaboration.png") no-repeat 120% 15px; background-size: 60% auto; .white; .roboto-med; 
+			h2 { .mt(0px); }
+			p, a { .roboto-med; }
+		}
 	}
 	.lab-examples {
 		table { border: 30px solid #ebebeb !important; background: #ebebeb; 
@@ -321,8 +330,21 @@ body { background: #1a1a1a; }
 			h3 { .mt(0px); }
 		}
 	}
-	.field-projects { background: transparent url("../images/field-projects-venn.png") no-repeat center top; .mt(-70px); .pt(185px); }
-	.crowd-innovation-sprints { background: url("../images/crowd-innovation-sprints.jpg") no-repeat right bottom; background-size: 50% auto; 
+	.design-thinking-courses2 {
+		td { .w(50%); .p(0 40px 0 0); vertical-align: top; .tl; }
+	}
+	.design-thinking-list { 
+		.block-content { .p(20px 290px 20px 0); background: url("../images/icons/idea-aqua.svg") no-repeat right center; background-size: 250px auto; }
+	}
+	.courses { .white; background: url("../images/design-thinking-bg.jpg") no-repeat center center; background-size: cover; .p(60px 35% 60px 8%);
+		.block-content { .p(20px 40px); background: rgba(0,0,0,0.8); 
+			table {
+				td { .w(50%); .p(0 20px 0 0); }
+			}
+		}
+	}
+	.field-projects { background: transparent url("../images/field-projects-venn.png") no-repeat center top; .pt(195px); .mt(20px); }
+	.crowd-innovation-sprints { background: url("../images/crowd-innovation-sprints.jpg") no-repeat right center; background-size: 40% auto; 
 		.block-content { .pr(45%); } 
 	}
 	.design-thinker-conference { background: url("../images/dt-room.jpg") no-repeat right center; background-size: 50% auto; 
@@ -367,8 +389,10 @@ body { background: #1a1a1a; }
 	.change2 { 
 		.block-content { background: url("../images/icons/leadership-blue.svg") no-repeat right center; background-size: 250px auto; .p(20px 290px 20px 0); }
 	}
-	.big-change { 
-		.block-content { .p(0 41% 0 0); background: url("../images/icons/recording-blue.svg") no-repeat right center; background-size: 40% auto;  }
+	.big-change { background: url("../images/people-1.jpg") no-repeat center center; background-size: cover; .pb(150px);
+		.block-content { .p(0 41% 0 0); background: url("../images/icons/recording-blue.svg") no-repeat right center; background-size: 40% auto; .white; .roboto-med; 
+			p, a { .roboto-med; }
+		}
 	}
 	.experience-change { background: url("../images/experience-change.jpg") no-repeat center center; background-size: cover; .p(60px 50% 60px 8%);
 		.block-content { background: rgba(0,0,0,0.8); .white; .p(20px 55px); }
@@ -378,11 +402,18 @@ body { background: #1a1a1a; }
 			li { background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px; }
 		}
 	}
-	.culture-of-innovation {
-		.block-content { .p(0 40% 0 0); background: url("../images/icons/tree-ring-magenta.svg") no-repeat right center; background-size: 40% auto; 
-			li { background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px; }
+	.culture-of-innovation { background: url("../images/people-2.jpg") no-repeat center center; background-size: cover; 
+		.block-content { .p(20px 35% 20px 0px); background: url("../images/icons/tree-ring-magenta.svg") no-repeat right center; background-size: 30% auto; .white;
+			li { background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px; .roboto-med; }
+			p, a { .roboto-med; }
 		}
 	}
+	.venn { background: url("../images/venn.jpg") no-repeat center center; background-size: cover; 
+		.block-content { .pt(430px); .tc; }
+	}
+	.labs-details { background: url("../images/acceleration-labs.jpg") no-repeat right top; background-size: 50% auto; .pr(50%); }
+	.notes-on-board { background: url("../images/notes-on-board.jpg") no-repeat center center; background-size: cover; }
+	.notes-on-board { background: url("../images/notes-on-board.jpg") no-repeat center center; background-size: cover; }
 	@media (min-width: 1400px) {
 		.about-name .block-content { background: url("../images/treehouse-logo-white.svg") no-repeat right center; background-size: auto 100%; }
 	}
@@ -396,6 +427,7 @@ body { background: #1a1a1a; }
 		.block-webform { .m(0px 5% 40px); 
 			input { max-width: 100%; }
 		}
+		.about-name .block-content { background: transparent; }
 		.extended-family {
 			&.desktop { .hide; }
 			&.mobile { .show; }
@@ -433,12 +465,19 @@ body { background: #1a1a1a; }
 			}
 		}
 		.courses { 
-			.course { background: #ebebeb; .black; .p(50px 20px 20px); .m(0 0 35px); .rel;
-				h3 { .m(0px 0px 12px); }
-				p { .m(0px 0px 12px); }
-				.violator { background: #000; .fl; .p(15px); .white; .bold; .em; .tl; .size(14px); .lh(16px); .abs; top: -15px; left: -15px; .w(auto); .h(auto); }
-			}
+			.block-content { .p(20px 4%); }
 		}
+		.innovation-collaborator { .p(30px 3%);
+			.block-content { background: transparent; }
+		}
+		.experience-change, .culture-building-events { .pb(0px);
+			.block-content { .m(200px 0 0); .p(20px 4%); }
+		}
+		.change2, .big-change, .design-thinking-list, .culture-of-innovation { 
+			.block-content { background: transparent; .pr(0px); }
+		}
+		.group-at-table { min-height: 200px; }
+		.universities { .pt(150px); }
 	}
 }
 
@@ -448,23 +487,26 @@ body { background: #1a1a1a; }
 .page-node-31 #main,
 .page-node-32 #main,
 .page-node-33 #main,
-.page-node-61 #main { background: #fff url("../images/tree-rings-top-left.jpg") no-repeat 240px top; 
+.page-node-61 #main { background: #fff url("../images/tree-rings-top-left.jpg") no-repeat 220px top; 
 	@media screen and (max-width: 1079px) { background: #fff url("../images/tree-rings-top-left.jpg") no-repeat 180px top; }
 	@media screen and (max-width:720px) { background: #fff; }
 }
 
 .page-node-31 #content {
-	.field-name-body { background: url("../images/icons/knowledge-aqua.svg") no-repeat right top; background-size: 250px auto; .pr(290px);
+	.field-name-body { background: url("../images/icons/knowledge-aqua.svg") no-repeat right top; background-size: 180px auto; .pr(220px);
+		@media screen and (max-width:720px) { background: none; .pr(0px); }
 		li { background: url("../images/leaf-bullet-aqua.png") no-repeat left 5px; }
 	}
 }
 .page-node-32 #content {
-	.field-name-body { background: url("../images/icons/future-blue.svg") no-repeat right top; background-size: 250px auto; .pr(290px); .pb(55px);
+	.field-name-body { background: url("../images/icons/future-blue.svg") no-repeat right top; background-size: 180px auto; .pr(220px); .pb(40px);
+		@media screen and (max-width:720px) { background: none; .pr(0px); }
 		li { background: url("../images/leaf-bullet-blue.png") no-repeat left 5px; }
 	}
 }
 .page-node-33 #content {
-	.field-name-body { background: url("../images/icons/ecosystem-magenta.svg") no-repeat right top; background-size: 250px auto; .pr(290px); .pb(55px);
+	.field-name-body { background: url("../images/icons/ecosystem-magenta.svg") no-repeat right top; background-size: 180px auto; .pr(220px); .pb(40px);
+		@media screen and (max-width:720px) { background: none; .pr(0px); }
 		li { background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px; }
 	}
 }
@@ -472,7 +514,7 @@ body { background: #1a1a1a; }
 
 // Lower Content
 
-#content-lower { .w(auto); .ml(240px); .cb;
+#content-lower { .w(auto); .ml(220px); .cb;
 	.about-detail { background: url("../images/bg-about-block.jpg") no-repeat center center; background-size: cover; .p(50px 6%); 
 		h2.block-title { .tl; .slab; .p(12px 2%); .size(30px); .white; }
 		h3, h4 { .white; .size(20px); .roboto-light; .mb(12px); }
@@ -495,11 +537,15 @@ body { background: #1a1a1a; }
 			}
 		}
 	}
-	.homepage-bottom { .m(50px 13% 75px);
-		.block-content { background: url("../images/venn-homepage.jpg") no-repeat right center; background-size: 40% auto; .pr(45%); }
+	.homepage-bottom { .p(50px 13% 75px); background: #f0f0f0;
+		.block-content { background: url("../images/venn-horizontal-black.png") no-repeat right center; background-size: 45% auto; .p(20px 48% 20px 0); }
 	}
 	@media (max-width: 1079px) { .ml(180px); }
-	@media (max-width: 720px) { .ml(0px); }
+	@media (max-width: 720px) { .ml(0px); 
+		.homepage-bottom { .p(20px 3%); 
+			.block-content { background: url("../images/venn-horizontal-black.png") no-repeat center top; background-size: 75% auto; .p(170px 0 20px 0); }
+		}
+	}
 }
 
 .services-overview { min-height: 500px; .h(auto); .p(40px 8% 60px); background: @dkgrey;
@@ -540,7 +586,7 @@ body { background: #1a1a1a; }
 			h2, h3, h4 { .size(18px); .lh(23px); }
 			p { .size(12px); .lh(15px); }
 			.icon { .hide; }
-			.button { .size(13px); .p(6px 12px); }
+			.button { .size(13px); .p(6px 12px); .roboto-med; }
 		}
 	}
 }
@@ -656,7 +702,7 @@ body { background: #1a1a1a; }
 
 // Buttons
 a.button,
-.button { -webkit-appearance: none; .bg-blue; .upper; .p(9px 16px); .size(13px); .inline-block; .radius(3px); border: none;
+.button { -webkit-appearance: none; .bg-blue; .upper; .p(9px 16px); .size(13px); .inline-block; .radius(3px); border: none; .roboto-med; .mt(9px);
 	&.bg-green, &.green { .bg-green; }
 	&.bg-aqua, &.aqua { .bg-aqua; }
 	&.bg-magenta, &.magenta { .bg-magenta; }
@@ -729,16 +775,16 @@ a.button,
 }
 
 .teaser-grid { .p(40px 0);
-	h2.block-title { .m(0px 5% 10px); .pt(40px); .tc; }
-	.view-content { .cb; .p(0 7%); }
-	.views-row { .w(31.33%); .h(300px); background: #fff; .m(0 1% 20px); .fl; }
+	h2.block-title { .m(0px 0px 10px); .pt(40px); .tc; }
+	.view-content { .cb; .p(0 6.5%); }
+	.views-row { .w(30.333%); .h(300px); background: #fff; .m(0 1.5% 20px); .fl; }
 	.teaser-image { .w(100%); .h(180px); .block; .mb(15px); 
 		.icon-blog { .m(10px); }
 	}
-	.title { .m(0 20px); .roboto-bold; .size(20px); .black; }
-	.subtitle { .m(0 20px 20px); .roboto; .size(14px); .lh(18px); .black; }
-	.meta { .grey; .size(11px); .m(0 20px 20px); }
-	.excerpt { .m(0 20px 30px); .size(14px); .lh(18px); .black; }
+	.title { .m(0px); .roboto-bold; .size(20px); .black; }
+	.subtitle { .m(0 0 20px); .roboto; .size(14px); .lh(18px); .black; }
+	.meta { .grey; .size(11px); .m(0 0 20px); }
+	.excerpt { .m(0 0 30px); .size(14px); .lh(18px); .black; }
 	@media (max-width: 720px) { .hide; }
 	&.blog-teasers { 
 		.views-row { .h(400px); }
@@ -759,7 +805,7 @@ a.button,
 
 // Footer
 
-#footer { .w(auto); .ml(240px); .ltgrey; background: url("../images/bg-footer.png") no-repeat right center;
+#footer { .w(auto); .ml(220px); .ltgrey; background: url("../images/bg-footer.png") no-repeat right center;
 	.block-menu-block { .m(0 8%); .pt(40px);
 		ul { .m0; .p0;
 			li { .list-none; .fl; .w(22%); .m(0 1.5% 8px); border-bottom: 1px solid rgba(255,255,255,0.2);

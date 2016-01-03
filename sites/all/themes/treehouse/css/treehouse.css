@@ -94,7 +94,7 @@
 .sans,
 .roboto {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 .roboto-light {
   font-family: 'Roboto', sans-serif;
@@ -122,7 +122,7 @@ p,
 span,
 a {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 small,
 .small {
@@ -479,6 +479,7 @@ h1 {
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   letter-spacing: -1px;
+  margin-bottom: 18px;
 }
 @media (max-width: 1120px) {
   h1 {
@@ -492,6 +493,7 @@ h2 {
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   letter-spacing: -1px;
+  margin-bottom: 18px;
 }
 @media (max-width: 1120px) {
   h2 {
@@ -505,6 +507,7 @@ h3 {
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   letter-spacing: 0px;
+  margin-bottom: 18px;
 }
 @media (max-width: 1120px) {
   h3 {
@@ -518,6 +521,19 @@ html {
 }
 body {
   background: #1a1a1a;
+  font-size: 15px;
+  line-height: 22px;
+}
+p,
+div,
+span,
+li,
+strong {
+  font-size: 15px;
+  line-height: 22px;
+}
+p {
+  margin-bottom: 18px;
 }
 .block-block {
   margin-bottom: 0px;
@@ -534,13 +550,13 @@ body {
   height: 100%;
 }
 #navigation {
-  width: 240px;
+  width: 220px;
   height: 100%;
   position: fixed;
   z-index: 100;
   top: 0px;
   bottom: 0px;
-  background: #222222 /* url("../images/bg-navigation.jpg") no-repeat center top*/;
+  background: #222222 /* url("../images/bg-navigation.jpg") no-repeat center top */;
   overflow: visible;
 }
 #navigation .region-navigation {
@@ -548,10 +564,10 @@ body {
   overflow: visible;
 }
 #navigation #logo {
-  width: 240px;
-  height: 240px;
+  width: 220px;
+  height: 220px;
   background: url("../images/treehouse-logo-white.svg") no-repeat center center;
-  background-size: 150px 150px;
+  background-size: 140px 140px;
   display: block;
   margin-bottom: 0px;
   margin: 0px;
@@ -580,7 +596,7 @@ body {
 #navigation .mobile-nav .block-content ul.menu li a {
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   display: block;
   margin-bottom: 0px;
   padding: 6px 0;
@@ -603,7 +619,7 @@ body {
   background: url("../images/mobile-menu-white.svg") no-repeat left center;
   background-size: 30px 30px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 12px;
@@ -643,7 +659,7 @@ body {
 }
 #navigation .block-nice-menus ul.nice-menu-right li a {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 15px;
   line-height: 18px;
   color: #aaaaaa;
@@ -667,7 +683,7 @@ body {
   color: #ffffff;
 }
 #navigation .block-nice-menus ul.nice-menu-right li.menuparent ul {
-  left: 240px;
+  left: 220px;
   z-index: 9999;
   width: 200px;
   padding: 5px 0 15px;
@@ -680,7 +696,7 @@ body {
 }
 #navigation .block-nice-menus ul.nice-menu-right li.menuparent ul li a {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #ffffff;
   font-size: 15px;
   line-height: 18px;
@@ -746,6 +762,13 @@ body {
 }
 #navigation .block-nice-menus ul.nice-menu-right li.active-trail a.contact {
   border-left: 10px solid #21394f;
+  padding: 9px 18px 9px 8px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: inherit;
+}
+#navigation .block-nice-menus ul.nice-menu-right li.active-trail a.methods {
+  border-left: 10px solid #47a9e1;
   padding: 9px 18px 9px 8px;
   color: #ffffff;
   font-weight: 700;
@@ -857,11 +880,15 @@ body {
     margin-top: 0px;
   }
 }
+#toolbar .toolbar-menu ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
 #header {
   position: relative;
   z-index: 0;
   top: 0;
-  margin-left: 240px;
+  margin-left: 220px;
   width: auto;
   overflow: hidden;
 }
@@ -890,6 +917,8 @@ body {
 #header .region-header .view-header-image .header-content p {
   margin: 0 0 10px;
   text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 #header .region-header .view-header-image .short-header-1 .header-content {
   padding: 80px 13% 20px 13%;
@@ -942,6 +971,10 @@ body {
     padding: 40px 3%;
   }
 }
+.page-node-2 #content .tabs-primary,
+.section-blog #content .tabs-primary {
+  margin: 0 8%;
+}
 .front #content {
   position: relative;
   z-index: 1;
@@ -971,7 +1004,7 @@ body {
 .front #content p {
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 19px;
 }
@@ -1098,7 +1131,7 @@ body {
 }
 #content {
   width: auto;
-  margin-left: 240px;
+  margin-left: 220px;
   z-index: 1;
   position: relative;
 }
@@ -1110,6 +1143,53 @@ body {
 }
 #content a.button {
   color: #ffffff;
+}
+#content .tabs-primary {
+  margin: 0px 13%;
+  border-bottom: none;
+  padding-bottom: 0px;
+  background: none;
+}
+#content .tabs-primary li.tabs-primary__tab {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border: none;
+  margin: 0 5px 0 0;
+}
+#content .tabs-primary li.tabs-primary__tab a.tabs-primary__tab-link {
+  color: #fff;
+  background: #47a9e1;
+  padding: 6px 12px;
+  text-shadow: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+  border: none;
+}
+#content .tabs-primary li.tabs-primary__tab a.tabs-primary__tab-link:hover {
+  background: #21394f;
+}
+#content .tabs-primary li.tabs-primary__tab.is-active {
+  border-bottom: none;
+}
+#content .tabs-primary li.tabs-primary__tab.is-active a.tabs-primary__tab-link.is-active {
+  color: #fff;
+  background: #47a9e1;
+  padding: 6px 12px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border: none;
+}
+#content .tabs-primary li.tabs-primary__tab.is-active a.tabs-primary__tab-link.is-active:hover {
+  background: #21394f;
 }
 #content .field-name-body {
   margin: 50px 13%;
@@ -1202,6 +1282,8 @@ body {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border: none;
+  font-weight: 400;
+  margin-top: 9px;
   text-transform: none;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
@@ -1260,61 +1342,6 @@ body {
   background: #fff;
   color: #555555;
   font-size: 12px;
-}
-#content .courses {
-  color: #ffffff;
-  background: url("../images/green-leaves.jpg") no-repeat center center;
-  background-size: cover;
-}
-#content .courses .course {
-  background: #ebebeb;
-  color: #000000;
-  padding: 40px 50px;
-  margin: 0 0 60px;
-  position: relative;
-}
-#content .courses .course h3 {
-  margin: 0px 0px 12px;
-}
-#content .courses .course p {
-  margin: 0px 0px 12px;
-}
-#content .courses .course .violator {
-  background: url("../images/violator-grey.png") no-repeat center center;
-  width: 92px;
-  height: 50px;
-  padding: 35px 30px;
-  color: #ffffff;
-  font-weight: 700;
-  font-family: inherit;
-  font-style: italic;
-  text-align: center;
-  font-size: 14px;
-  line-height: 16px;
-  position: absolute;
-  top: -45px;
-  left: -85px;
-}
-#content .design-thinking-courses2 td {
-  width: 50%;
-  padding: 0 40px 0 0;
-  vertical-align: top;
-  text-align: left;
-}
-#content .design-thinking-list .block-content {
-  padding-right: 290px;
-  background: url("../images/icons/idea-aqua.svg") no-repeat right center;
-  background-size: 250px auto;
-}
-#content .jumpstart {
-  color: #ffffff;
-  background: url("../images/design-thinking-venn.jpg") no-repeat center center;
-  background-size: cover;
-}
-#content .jumpstart .block-content {
-  width: 50%;
-  margin-right: 50%;
-  padding: 40px 0 20px;
 }
 #content .quote .block-content {
   background: #ebebeb;
@@ -1394,12 +1421,25 @@ body {
   padding-bottom: 0px;
 }
 #content .innovation-collaborator {
-  background: url("../images/acceleration-labs.jpg") no-repeat right top;
-  background-size: 50% auto;
-  padding-right: 55%;
+  background: url("../images/notes-on-board.jpg") no-repeat center center;
+  background-size: cover;
+  padding-right: 0px;
 }
-#content .innovation-collaborator h2 {
+#content .innovation-collaborator .block-content {
+  padding: 0px 55% 0 0;
+  background: url("../images/collaboration.png") no-repeat 120% 15px;
+  background-size: 60% auto;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+#content .innovation-collaborator .block-content h2 {
   margin-top: 0px;
+}
+#content .innovation-collaborator .block-content p,
+#content .innovation-collaborator .block-content a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 #content .lab-examples table {
   border: 30px solid #ebebeb !important;
@@ -1433,14 +1473,39 @@ body {
 #content .labs .lab h3 {
   margin-top: 0px;
 }
+#content .design-thinking-courses2 td {
+  width: 50%;
+  padding: 0 40px 0 0;
+  vertical-align: top;
+  text-align: left;
+}
+#content .design-thinking-list .block-content {
+  padding: 20px 290px 20px 0;
+  background: url("../images/icons/idea-aqua.svg") no-repeat right center;
+  background-size: 250px auto;
+}
+#content .courses {
+  color: #ffffff;
+  background: url("../images/design-thinking-bg.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 60px 35% 60px 8%;
+}
+#content .courses .block-content {
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.8);
+}
+#content .courses .block-content table td {
+  width: 50%;
+  padding: 0 20px 0 0;
+}
 #content .field-projects {
   background: transparent url("../images/field-projects-venn.png") no-repeat center top;
-  margin-top: -70px;
-  padding-top: 185px;
+  padding-top: 195px;
+  margin-top: 20px;
 }
 #content .crowd-innovation-sprints {
-  background: url("../images/crowd-innovation-sprints.jpg") no-repeat right bottom;
-  background-size: 50% auto;
+  background: url("../images/crowd-innovation-sprints.jpg") no-repeat right center;
+  background-size: 40% auto;
 }
 #content .crowd-innovation-sprints .block-content {
   padding-right: 45%;
@@ -1564,10 +1629,23 @@ body {
   background-size: 250px auto;
   padding: 20px 290px 20px 0;
 }
+#content .big-change {
+  background: url("../images/people-1.jpg") no-repeat center center;
+  background-size: cover;
+  padding-bottom: 150px;
+}
 #content .big-change .block-content {
   padding: 0 41% 0 0;
   background: url("../images/icons/recording-blue.svg") no-repeat right center;
   background-size: 40% auto;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+#content .big-change .block-content p,
+#content .big-change .block-content a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 #content .experience-change {
   background: url("../images/experience-change.jpg") no-repeat center center;
@@ -1592,13 +1670,46 @@ body {
 #content .culture-building-events .block-content li {
   background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px;
 }
+#content .culture-of-innovation {
+  background: url("../images/people-2.jpg") no-repeat center center;
+  background-size: cover;
+}
 #content .culture-of-innovation .block-content {
-  padding: 0 40% 0 0;
+  padding: 20px 35% 20px 0px;
   background: url("../images/icons/tree-ring-magenta.svg") no-repeat right center;
-  background-size: 40% auto;
+  background-size: 30% auto;
+  color: #ffffff;
 }
 #content .culture-of-innovation .block-content li {
   background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+#content .culture-of-innovation .block-content p,
+#content .culture-of-innovation .block-content a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+#content .venn {
+  background: url("../images/venn.jpg") no-repeat center center;
+  background-size: cover;
+}
+#content .venn .block-content {
+  padding-top: 430px;
+  text-align: center;
+}
+#content .labs-details {
+  background: url("../images/acceleration-labs.jpg") no-repeat right top;
+  background-size: 50% auto;
+  padding-right: 50%;
+}
+#content .notes-on-board {
+  background: url("../images/notes-on-board.jpg") no-repeat center center;
+  background-size: cover;
+}
+#content .notes-on-board {
+  background: url("../images/notes-on-board.jpg") no-repeat center center;
+  background-size: cover;
 }
 @media (min-width: 1400px) {
   #content .about-name .block-content {
@@ -1634,6 +1745,9 @@ body {
   }
   #content .block-webform input {
     max-width: 100%;
+  }
+  #content .about-name .block-content {
+    background: transparent;
   }
   #content .extended-family.desktop {
     display: none;
@@ -1713,35 +1827,36 @@ body {
     margin: 0px;
     max-width: none;
   }
-  #content .courses .course {
-    background: #ebebeb;
-    color: #000000;
-    padding: 50px 20px 20px;
-    margin: 0 0 35px;
-    position: relative;
+  #content .courses .block-content {
+    padding: 20px 4%;
   }
-  #content .courses .course h3 {
-    margin: 0px 0px 12px;
+  #content .innovation-collaborator {
+    padding: 30px 3%;
   }
-  #content .courses .course p {
-    margin: 0px 0px 12px;
+  #content .innovation-collaborator .block-content {
+    background: transparent;
   }
-  #content .courses .course .violator {
-    background: #000;
-    float: left;
-    padding: 15px;
-    color: #ffffff;
-    font-weight: 700;
-    font-family: inherit;
-    font-style: italic;
-    text-align: left;
-    font-size: 14px;
-    line-height: 16px;
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    width: auto;
-    height: auto;
+  #content .experience-change,
+  #content .culture-building-events {
+    padding-bottom: 0px;
+  }
+  #content .experience-change .block-content,
+  #content .culture-building-events .block-content {
+    margin: 200px 0 0;
+    padding: 20px 4%;
+  }
+  #content .change2 .block-content,
+  #content .big-change .block-content,
+  #content .design-thinking-list .block-content,
+  #content .culture-of-innovation .block-content {
+    background: transparent;
+    padding-right: 0px;
+  }
+  #content .group-at-table {
+    min-height: 200px;
+  }
+  #content .universities {
+    padding-top: 150px;
   }
 }
 .page-node-5 #main,
@@ -1751,7 +1866,7 @@ body {
 .page-node-32 #main,
 .page-node-33 #main,
 .page-node-61 #main {
-  background: #ffffff url("../images/tree-rings-top-left.jpg") no-repeat 240px top;
+  background: #ffffff url("../images/tree-rings-top-left.jpg") no-repeat 220px top;
 }
 @media screen and (max-width: 1079px) {
   .page-node-5 #main,
@@ -1777,33 +1892,51 @@ body {
 }
 .page-node-31 #content .field-name-body {
   background: url("../images/icons/knowledge-aqua.svg") no-repeat right top;
-  background-size: 250px auto;
-  padding-right: 290px;
+  background-size: 180px auto;
+  padding-right: 220px;
+}
+@media screen and (max-width: 720px) {
+  .page-node-31 #content .field-name-body {
+    background: none;
+    padding-right: 0px;
+  }
 }
 .page-node-31 #content .field-name-body li {
   background: url("../images/leaf-bullet-aqua.png") no-repeat left 5px;
 }
 .page-node-32 #content .field-name-body {
   background: url("../images/icons/future-blue.svg") no-repeat right top;
-  background-size: 250px auto;
-  padding-right: 290px;
-  padding-bottom: 55px;
+  background-size: 180px auto;
+  padding-right: 220px;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 720px) {
+  .page-node-32 #content .field-name-body {
+    background: none;
+    padding-right: 0px;
+  }
 }
 .page-node-32 #content .field-name-body li {
   background: url("../images/leaf-bullet-blue.png") no-repeat left 5px;
 }
 .page-node-33 #content .field-name-body {
   background: url("../images/icons/ecosystem-magenta.svg") no-repeat right top;
-  background-size: 250px auto;
-  padding-right: 290px;
-  padding-bottom: 55px;
+  background-size: 180px auto;
+  padding-right: 220px;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 720px) {
+  .page-node-33 #content .field-name-body {
+    background: none;
+    padding-right: 0px;
+  }
 }
 .page-node-33 #content .field-name-body li {
   background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px;
 }
 #content-lower {
   width: auto;
-  margin-left: 240px;
+  margin-left: 220px;
   clear: both;
 }
 #content-lower .about-detail {
@@ -1893,12 +2026,13 @@ body {
   color: #ffffff;
 }
 #content-lower .homepage-bottom {
-  margin: 50px 13% 75px;
+  padding: 50px 13% 75px;
+  background: #f0f0f0;
 }
 #content-lower .homepage-bottom .block-content {
-  background: url("../images/venn-homepage.jpg") no-repeat right center;
-  background-size: 40% auto;
-  padding-right: 45%;
+  background: url("../images/venn-horizontal-black.png") no-repeat right center;
+  background-size: 45% auto;
+  padding: 20px 48% 20px 0;
 }
 @media (max-width: 1079px) {
   #content-lower {
@@ -1908,6 +2042,14 @@ body {
 @media (max-width: 720px) {
   #content-lower {
     margin-left: 0px;
+  }
+  #content-lower .homepage-bottom {
+    padding: 20px 3%;
+  }
+  #content-lower .homepage-bottom .block-content {
+    background: url("../images/venn-horizontal-black.png") no-repeat center top;
+    background-size: 75% auto;
+    padding: 170px 0 20px 0;
   }
 }
 .services-overview {
@@ -2054,6 +2196,8 @@ body {
   .services-overview .row .button {
     font-size: 13px;
     padding: 6px 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
   }
 }
 .one-sidebar #content #sidebar {
@@ -2337,6 +2481,9 @@ a.button,
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-top: 9px;
 }
 a.button.bg-green,
 .button.bg-green,
@@ -2598,19 +2745,19 @@ a.button.hollow,
   padding: 40px 0;
 }
 .teaser-grid h2.block-title {
-  margin: 0px 5% 10px;
+  margin: 0px 0px 10px;
   padding-top: 40px;
   text-align: center;
 }
 .teaser-grid .view-content {
   clear: both;
-  padding: 0 7%;
+  padding: 0 6.5%;
 }
 .teaser-grid .views-row {
-  width: 31.33%;
+  width: 30.333%;
   height: 300px;
   background: #fff;
-  margin: 0 1% 20px;
+  margin: 0 1.5% 20px;
   float: left;
 }
 .teaser-grid .teaser-image {
@@ -2624,16 +2771,16 @@ a.button.hollow,
   margin: 10px;
 }
 .teaser-grid .title {
-  margin: 0 20px;
+  margin: 0px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 20px;
   color: #000000;
 }
 .teaser-grid .subtitle {
-  margin: 0 20px 20px;
+  margin: 0 0 20px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
@@ -2641,10 +2788,10 @@ a.button.hollow,
 .teaser-grid .meta {
   color: #555555;
   font-size: 11px;
-  margin: 0 20px 20px;
+  margin: 0 0 20px;
 }
 .teaser-grid .excerpt {
-  margin: 0 20px 30px;
+  margin: 0 0 30px;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
@@ -2688,7 +2835,7 @@ a.button.hollow,
 .mobile-teasers .subtitle {
   margin: 0px 15px 15px 115px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 12px;
   line-height: 14px;
   color: #000000;
@@ -2713,7 +2860,7 @@ a.button.hollow,
 }
 #footer {
   width: auto;
-  margin-left: 240px;
+  margin-left: 220px;
   color: #aaaaaa;
   background: url("../images/bg-footer.png") no-repeat right center;
 }
@@ -2754,7 +2901,7 @@ a.button.hollow,
 }
 #footer .block-menu-block ul li.is-expanded ul li a {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   display: block;
   margin-bottom: 0px;
   color: #999;
@@ -2829,6 +2976,9 @@ input[type="submit"] {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-top: 9px;
 }
 .form-submit.bg-green,
 input[type="button"].bg-green,
