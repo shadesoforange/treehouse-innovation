@@ -129,12 +129,12 @@ p { .mb(18px); }
 		.view-header-image {
 			.header-image { background-position: center center; }
 			.header-overlay { .w(100%); .h(100%); .m0; .p0; }
-			.header-content { .p(150px 13% 20px 13%);
-				h1 { .mb(10px); .tl; }
+			.header-content { .p(150px 12% 20px 12%);
+				h1 { .m(0 0 10px); .tl; }
 				p { .m(0 0 10px); .tl; .roboto-med; }
 			}
 			.short-header-1 {
-				.header-content { .p(80px 13% 20px 13%); }
+				.header-content { .p(80px 12% 20px 12%); }
 			}
 		}
 	}
@@ -169,7 +169,7 @@ p { .mb(18px); }
 	}
 }
 .node-type-case-study #header {
-	.region-header .view-header-image .header-content { .p(150px 13% 20px 13%); }
+	.region-header .view-header-image .header-content { .p(150px 12% 20px 12%); }
 	@media (max-width: 720px) {
 		.region-header .view-header-image .header-content { .p(40px 3%); }
 	}
@@ -185,14 +185,14 @@ p { .mb(18px); }
 	#video-overlay { .fix; top: 0px; left: 0px; width: auto; height: auto; min-width: 100%; min-height: 100%; z-index: -99; background: rgba(0,0,0,0.65); }
 	#main { background: transparent; }
 	#content { background: transparent; /* url("../images/treehouse-home.jpg") no-repeat center center; background-size: cover; */ .tc;
-		.field-name-body { .m(0 13%); .p(200px 0px 0px); }
+		.field-name-body { .m(0 12%); .p(200px 0px 0px); }
 		.node-page { .m0; }
 		h1 { .white; .script; .size(50px); .lh(55px); max-width: 700px; .m(0 auto); }
 		.services { .m(0px auto 40px); max-width: 700px; .pt(0px); .pb(150px);
 			h2, h3 { .white; .roboto-light; .mb(30px); .size(20px); .lh(28px); }
 			p { .white; }
 		}
-		.homepage-logos { background: #fff; .mb(0px); .p(12px 10%);
+		.homepage-logos { background: #fff; .mb(0px); .p(20px 10%);
 			p { .roboto-light; .em; .grey; .size(11px); .lh(14px); .tl; .m(0px); }
 		}
 	}
@@ -222,14 +222,16 @@ p { .mb(18px); }
 
 // Breadcrumb
 
-.breadcrumb { .p(10px 0 10px 13%); .h(20px); .m(0px); 
+.breadcrumb { .p(10px 0 10px 12%); .h(20px); .m(0px); 
 	li { .size(10px); .roboto-light; .em; .upper; 
 		a { .blue; }
 	}
 	@media (max-width:720px) { .p(10px 4%); }
 }
 .page-node-2 .breadcrumb,
-.section-blog .breadcrumb {.p(10px 0 10px 8%); }
+.section-blog .breadcrumb { background: transparent; .fl; .abs; z-index: 99; .p(20px 8% 0);
+	li { .white; }
+}
 
 
 // Main content styles
@@ -240,7 +242,7 @@ p { .mb(18px); }
 	a { .blue; 
 		&.button { .white; }
 	}
-	.tabs-primary { .m(0px 13%); border-bottom: none; .pb(0px); background: none;
+	.tabs-primary { .m(0px 12%); border-bottom: none; .pb(0px); background: none;
 		li.tabs-primary__tab { .list-none; .radius(0px); border: none; .m(0 5px 0 0);
 			a.tabs-primary__tab-link { .bg-blue; .p(6px 12px); text-shadow: none; .radius(0px); .roboto-med; .ls(0px); border: none;
 				&:hover { background: @dkblue; }
@@ -252,11 +254,11 @@ p { .mb(18px); }
 			}
 		}
 	}
-	.field-name-body { .m(50px 13%);
+	.field-name-body { .m(50px 12%);
 		a { .blue; 
 			&.button { .white; }
 		}
-		img { .w100; .h(auto); }
+		img { max-width: 100%; .h(auto); }
 		li { .list-none; .pl(30px); .ml(0px); background: url("../images/leaf-bullet-blue.png") no-repeat left 5px; .lh(1.5em); }
 	}
 	.view-file-download { .m(0 8% 30px); 
@@ -277,7 +279,7 @@ p { .mb(18px); }
 		&.consulting { background: url("../images/meeting.jpg") no-repeat center center; background-size: cover; .pt(250px); }
 		&.events { background: url("../images/event.jpg") no-repeat center center; background-size: cover; .pt(230px); }
 	}
-	.block-block { .p(50px 13%);
+	.block-block { .p(50px 12%);
 		table { border: none; .w(100%);
 			td { .p(0 25px 0 0); .vtop; border: none; 
 				img { .m0; }
@@ -319,7 +321,7 @@ p { .mb(18px); }
 	.design-thinking-list { 
 		.block-content { .p(20px 290px 20px 0); background: url("../images/icons/idea-aqua.svg") no-repeat right center; background-size: 250px auto; }
 	}
-	.courses { .white; background: url("../images/design-thinking-bg.jpg") no-repeat center center; background-size: cover; .p(60px 35% 60px 8%);
+	.courses { .white; background: url("../images/design-thinking-bg.jpg") no-repeat center center; background-size: cover; .p(60px 35% 60px 12%);
 		.block-content { .p(20px 40px); background: rgba(0,0,0,0.8); 
 			table {
 				td { .w(50%); .p(0 20px 0 0); }
@@ -339,7 +341,7 @@ p { .mb(18px); }
 	.innovation-at-scale { background: url("../images/your-next-event.jpg") no-repeat right center; background-size: 45% auto; 
 		.block-content { .pr(50%); }
 	}
-	.contact { background: url("../images/dkgrey.gif") repeat-x center 180px; .p(20px 13% 40px);
+	.contact { background: url("../images/dkgrey.gif") repeat-x center 180px; .p(20px 12% 40px);
 		.block-content {
 			p, a, h2, h3, h4 { .serif !important; .bold; .size(30px); .black; .td-none; }	
 		}
@@ -377,10 +379,10 @@ p { .mb(18px); }
 			p, a { .roboto-med; }
 		}
 	}
-	.experience-change { background: url("../images/experience-change.jpg") no-repeat center center; background-size: cover; .p(60px 50% 60px 8%);
+	.experience-change { background: url("../images/experience-change.jpg") no-repeat center center; background-size: cover; .p(60px 45% 60px 12%);
 		.block-content { background: rgba(0,0,0,0.8); .white; .p(20px 55px); }
 	}
-	.culture-building-events { background: url("../images/culture-building-events.jpg") no-repeat center center; background-size: cover; .p(60px 50% 60px 8%);
+	.culture-building-events { background: url("../images/culture-building-events.jpg") no-repeat center center; background-size: cover; .p(60px 45% 60px 12%);
 		.block-content { background: rgba(0,0,0,0.8); .white; .p(20px 55px); 
 			li { background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px; }
 		}
@@ -495,7 +497,7 @@ p { .mb(18px); }
 }
 .section-contact-us #main { background: url("../images/can-phone.jpg") no-repeat center top; background-size: cover; .pb(100px);
 	#header {
-		.region-header .view-header-image .header-content { .p(120px 13% 140px 13%);
+		.region-header .view-header-image .header-content { .p(120px 12% 140px 12%);
 			h1 { .tc; .mt(0px); }
 		}
 		.breadcrumb { .hide; }
@@ -569,7 +571,7 @@ p { .mb(18px); }
 			}
 		}
 	}
-	.homepage-bottom { .p(30px 13% 75px); background: #fff;
+	.homepage-bottom { .p(30px 12% 75px); background: #fff;
 		.block-content { background: url("../images/venn-horizontal-black.png") no-repeat right center; background-size: 45% auto; .p(20px 48% 20px 0); }
 	}
 	@media (max-width: 1079px) { .ml(180px); }

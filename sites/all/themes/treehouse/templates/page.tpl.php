@@ -10,6 +10,8 @@
 
 <div id="page">
 
+
+
   <div id="navigation" role="navigation">
 
     <?php print render($page['navigation']); ?>
@@ -18,11 +20,20 @@
 
   <div id="main" class="group">
   	<header class="header" id="header" role="banner">
-	  	<?php print render($page['header']); ?>
 	  	<?php print $breadcrumb; ?>
+	  	<?php print render($page['header']); ?>
   	</header>
   	
     <div id="content" class="column group" role="main">
+      
+      <?php 
+	      if(drupal_is_front_page()): ?>
+		    <video autoplay loop poster="/sites/all/themes/treehouse/video/video-poster.jpg" id="bgvid">
+			  	<source src="/sites/all/themes/treehouse/video/TreeHouse-Home.webm" type="video/webm">
+			  	<source src="/sites/all/themes/treehouse/video/TreeHouse-Home.mp4" type="video/mp4">
+			</video>
+		    <div id="video-overlay"></div>
+	  <?php endif; ?>
       
       <?php
       // Render the sidebars to see if there's anything in them.

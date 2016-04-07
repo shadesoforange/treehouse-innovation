@@ -907,10 +907,10 @@ p {
   padding: 0px;
 }
 #header .region-header .view-header-image .header-content {
-  padding: 150px 13% 20px 13%;
+  padding: 150px 12% 20px 12%;
 }
 #header .region-header .view-header-image .header-content h1 {
-  margin-bottom: 10px;
+  margin: 0 0 10px;
   text-align: left;
 }
 #header .region-header .view-header-image .header-content p {
@@ -920,7 +920,7 @@ p {
   font-weight: 400;
 }
 #header .region-header .view-header-image .short-header-1 .header-content {
-  padding: 80px 13% 20px 13%;
+  padding: 80px 12% 20px 12%;
 }
 @media (max-width: 1079px) {
   #header {
@@ -963,7 +963,7 @@ p {
   }
 }
 .node-type-case-study #header .region-header .view-header-image .header-content {
-  padding: 150px 13% 20px 13%;
+  padding: 150px 12% 20px 12%;
 }
 @media (max-width: 720px) {
   .node-type-case-study #header .region-header .view-header-image .header-content {
@@ -1005,7 +1005,7 @@ p {
   text-align: center;
 }
 .front #content .field-name-body {
-  margin: 0 13%;
+  margin: 0 12%;
   padding: 200px 0px 0px;
 }
 .front #content .node-page {
@@ -1040,7 +1040,7 @@ p {
 .front #content .homepage-logos {
   background: #fff;
   margin-bottom: 0px;
-  padding: 12px 10%;
+  padding: 20px 10%;
 }
 .front #content .homepage-logos p {
   font-family: 'Roboto', sans-serif;
@@ -1099,7 +1099,7 @@ p {
   z-index: 10;
 }
 .breadcrumb {
-  padding: 10px 0 10px 13%;
+  padding: 10px 0 10px 12%;
   height: 20px;
   margin: 0px;
 }
@@ -1120,7 +1120,15 @@ p {
 }
 .page-node-2 .breadcrumb,
 .section-blog .breadcrumb {
-  padding: 10px 0 10px 8%;
+  background: transparent;
+  float: left;
+  position: absolute;
+  z-index: 99;
+  padding: 20px 8% 0;
+}
+.page-node-2 .breadcrumb li,
+.section-blog .breadcrumb li {
+  color: #ffffff;
 }
 #main {
   width: 100%;
@@ -1144,7 +1152,7 @@ p {
   color: #ffffff;
 }
 #content .tabs-primary {
-  margin: 0px 13%;
+  margin: 0px 12%;
   border-bottom: none;
   padding-bottom: 0px;
   background: none;
@@ -1191,7 +1199,7 @@ p {
   background: #21394f;
 }
 #content .field-name-body {
-  margin: 50px 13%;
+  margin: 50px 12%;
 }
 #content .field-name-body a {
   color: #47a9e1;
@@ -1200,7 +1208,7 @@ p {
   color: #ffffff;
 }
 #content .field-name-body img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 #content .field-name-body li {
@@ -1334,7 +1342,7 @@ p {
   padding-top: 230px;
 }
 #content .block-block {
-  padding: 50px 13%;
+  padding: 50px 12%;
 }
 #content .block-block table {
   border: none;
@@ -1440,7 +1448,7 @@ p {
   color: #ffffff;
   background: url("../images/design-thinking-bg.jpg") no-repeat center center;
   background-size: cover;
-  padding: 60px 35% 60px 8%;
+  padding: 60px 35% 60px 12%;
 }
 #content .courses .block-content {
   padding: 20px 40px;
@@ -1488,7 +1496,7 @@ p {
 }
 #content .contact {
   background: url("../images/dkgrey.gif") repeat-x center 180px;
-  padding: 20px 13% 40px;
+  padding: 20px 12% 40px;
 }
 #content .contact .block-content p,
 #content .contact .block-content a,
@@ -1602,7 +1610,7 @@ p {
 #content .experience-change {
   background: url("../images/experience-change.jpg") no-repeat center center;
   background-size: cover;
-  padding: 60px 50% 60px 8%;
+  padding: 60px 45% 60px 12%;
 }
 #content .experience-change .block-content {
   background: rgba(0, 0, 0, 0.8);
@@ -1612,7 +1620,7 @@ p {
 #content .culture-building-events {
   background: url("../images/culture-building-events.jpg") no-repeat center center;
   background-size: cover;
-  padding: 60px 50% 60px 8%;
+  padding: 60px 45% 60px 12%;
 }
 #content .culture-building-events .block-content {
   background: rgba(0, 0, 0, 0.8);
@@ -1892,7 +1900,7 @@ p {
   padding-bottom: 100px;
 }
 .section-contact-us #main #header .region-header .view-header-image .header-content {
-  padding: 120px 13% 140px 13%;
+  padding: 120px 12% 140px 12%;
 }
 .section-contact-us #main #header .region-header .view-header-image .header-content h1 {
   text-align: center;
@@ -2126,7 +2134,7 @@ p {
   color: #ffffff;
 }
 #content-lower .homepage-bottom {
-  padding: 30px 13% 75px;
+  padding: 30px 12% 75px;
   background: #fff;
 }
 #content-lower .homepage-bottom .block-content {
