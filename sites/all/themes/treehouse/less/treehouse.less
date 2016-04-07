@@ -24,68 +24,68 @@ p { .mb(18px); }
 
 // Navigation
 
-#navigation { .w(220px); .h(100%); .fix; z-index: 100; top: 0px; bottom: 0px; background: #222 /* url("../images/bg-navigation.jpg") no-repeat center top */; overflow: visible; 
+#navigation { .w(220px); .h(100%); .fix; z-index: 100; top: 0px; bottom: 0px; background: @paper /* url("../images/bg-navigation.jpg") no-repeat center top */; overflow: visible; 
 	.region-navigation { .h(auto); overflow: visible; }
-	#logo { .w(220px); .h(220px); background: url("../images/treehouse-logo-white.svg") no-repeat center center; background-size: 140px 140px; .block; .m0; }
+	#logo { .w(220px); .h(220px); background: url("../images/treehouse-logo-dkgrey.svg") no-repeat center center; background-size: 140px 140px; .block; .m0; }
 	.mobile-menu { .hide; }
 	.mobile-nav { .hide; .pt(38px); .rel; z-index: 9;
 		.block-content { .p(10px 5% 0px); 
 			ul.menu { 
 				li { .list-none; .tl; .p0; .m0; .fn;
-					a { .white; .roboto; .block; .p(6px 0); .tl; .size(15px);
-						&:visited { .white; }
+					a { .dkgrey; .roboto; .block; .p(6px 0); .tl; .size(15px);
+						&:visited { .dkgrey; }
 					}
 					&.last { border-bottom: none; }
 				}
 			}
 		}
 	}
-	#mobile-menu-trigger { .fl; .abs; left: 2%; top: 0; z-index: 99; .p(25px 10px 23px 34px); background: url("../images/mobile-menu-white.svg") no-repeat left center; background-size: 30px 30px; .roboto; .ls(2px); .upper; .size(12px); .lh(12px); .white; .block; }
+	#mobile-menu-trigger { .fl; .abs; left: 2%; top: 0; z-index: 99; .p(25px 10px 23px 34px); background: url("../images/mobile-menu.svg") no-repeat left center; background-size: 30px 30px; .roboto; .ls(2px); .upper; .size(12px); .lh(12px); .dkgrey; .block; }
 	.block-nice-menus { .w(100%); .p0; .m0; .rel; z-index: 9999;
 		h2.block-title { .hide; }
 		ul.nice-menu-right { .m0; .p0; .w(100%); border-top: none;
 			li { .list-none; .p0; .block; .fn; .m0; border: none; background: transparent; .w(100%);
-				a { .roboto; .size(15px); .lh(18px); .ltgrey; .block; .p(9px 18px); 
-					&:visited { .ltgrey; }
-					&:hover { .white; background: #333; }
+				a { .roboto; .size(14px); .lh(18px); .dkgrey; .block; .p(10px 0); .m(0 20px); .upper; .tc; .ls(0.5px); border-bottom: 1px solid #d4d1cc; -webkit-transition: background-color 0.5s, -webkit-transform 0.5s; transition: background-color 0.5s, transform 0.5s;
+					&:visited { .dkgrey; }
+					&:hover { .black; background-color: rgba(0,0,0,0.1); }
 				}
 				&.menuparent { background: url("../images/arrow-white.svg") no-repeat 215px 10px; background-size: 15px 15px; 
 					a { 
-						&:hover { background: #333; .white; }
+						&:hover { .black; }
 					}
 					ul { left: 220px; z-index: 9999; .w(200px); .p(5px 0 15px); background: @blue; border: none;
 						li { border-bottom: none; background: transparent;
-							a { .roboto; .white; .size(15px); .lh(18px); .p(9px 20px); .tt-none; background: transparent;
+							a { .roboto; .dkgrey; .size(15px); .lh(18px); .p(9px 20px); .tt-none; background: transparent;
 								&.active { }
-								&:visited { .white; }
-								&:hover { .white; background: @dkblue; }
+								&:visited { .dkgrey; }
+								&:hover { .black; background: @dkblue; }
 							}
 						}
 					}
 				}
 				&.active-trail a {
-					&.learning { border-left: 10px solid @aqua; .p(9px 18px 9px 8px); .white; .bold; }
-					&.consulting { border-left: 10px solid @blue; .p(9px 18px 9px 8px); .white; .bold; }
-					&.events { border-left: 10px solid @magenta; .p(9px 18px 9px 8px); .white; .bold; }
-					&.case-studies { border-left: 10px solid @orange; .p(9px 18px 9px 8px); .white; .bold; }
-					&.team { border-left: 10px solid @green; .p(9px 18px 9px 8px); .white; .bold; }
-					&.about { border-left: 10px solid @yellow; .p(9px 18px 9px 8px); .white; .bold; }
-					&.blog { border-left: 10px solid @red; .p(9px 18px 9px 8px); .white; .bold; }
-					&.contact { border-left: 10px solid @dkblue; .p(9px 18px 9px 8px); .white; .bold; }
-					&.methods { border-left: 10px solid @blue; .p(9px 18px 9px 8px); .white; .bold; }
+					&.learning { background-color: @aqua; .white; .bold; }
+					&.consulting { background-color: @blue;  .white; .bold; }
+					&.events { background-color: @magenta;  .white; .bold; }
+					&.case-studies { background-color: @orange;  .white; .bold; }
+					&.team { background-color: @green;  .white; .bold; }
+					&.about { background-color: @yellow;  .white; .bold; }
+					&.blog { background-color: @red;  .white; .bold; }
+					&.contact { background-color: @dkblue;  .white; .bold; }
+					&.methods { background-color: @blue;  .white; .bold; }
 				}
 				&.menu-464 { .hide; }
 			}
 		}
 	}
-	.social-contact { .m(15px 20px 0px); .ltgrey; .size(12px); 
+	.social-contact { .m(0 30px); .dkgrey; .size(12px); .tc; .abs; bottom: 60px;
 		p { .mt(0px); .size(12px); .lh(17px); }
-		a { .ltgrey; 
-			&:visited { .ltgrey; }
+		a { .dkgrey; 
+			&:visited { .dkgrey; }
 		}
-		img { .pr(10px); }
+		img { .p(0 3px); }
 	}
-	.back-to-top { .abs; bottom: 0px; left: 20px; .hide; }
+	.back-to-top { .abs; bottom: 0px; left: 55px; .hide; }
 	@media (max-width: 1079px) { .w(180px); 
 		#logo { .w(180px); .h(180px); background-size: 120px 120px; }
 		.block-nice-menus { .w(180px); 
@@ -103,7 +103,7 @@ p { .mb(18px); }
 			p { .size(10px); .lh(15px); }
 		}
 	}
-	@media (max-width: 720px) { .rel; .w(100%); .h(auto); bottom: auto; top: 0px; .h(auto); .tc; background: #222;
+	@media (max-width: 720px) { .rel; .w(100%); .h(auto); bottom: auto; top: 0px; .h(auto); .tc;
 		#logo { .w(60px); .h(60px); background-size: 48px 48px; background-position: center center; .m(0px auto); } 
 		.block-nice-menus { .hide; }
 		.mobile-menu { .show; }
@@ -181,40 +181,29 @@ p { .mb(18px); }
 // Front Page Styles
 
 .front {
-	#content { .rel; z-index: 1; background: url("../images/treehouse-home.jpg") no-repeat center center; background-size: cover; .tc;
+	#bgvid { .fix; top: 0px; left: 0px; width: auto; height: auto; min-width: 100%; min-height: 100%; z-index: -100; background: url("../video/video-poster.jpg"); }
+	#video-overlay { .fix; top: 0px; left: 0px; width: auto; height: auto; min-width: 100%; min-height: 100%; z-index: -99; background: rgba(0,0,0,0.65); }
+	#main { background: transparent; }
+	#content { background: transparent; /* url("../images/treehouse-home.jpg") no-repeat center center; background-size: cover; */ .tc;
+		.field-name-body { .m(0 13%); .p(200px 0px 0px); }
 		.node-page { .m0; }
-		h1 { .white; .script; .size(42px); .lh(45px); max-width: 750px; .m(0 auto 20px); }
-		h2, h3 { .white; .size(20px); .roboto-bold; .lh(23px); }
-		p { .white; .roboto; .size(16px); .lh(19px); 
-			a { .white; }
+		h1 { .white; .script; .size(50px); .lh(55px); max-width: 700px; .m(0 auto); }
+		.services { .m(0px auto 40px); max-width: 700px; .pt(0px); .pb(150px);
+			h2, h3 { .white; .roboto-light; .mb(30px); .size(20px); .lh(28px); }
+			p { .white; }
 		}
-		.services { .p(30px 13% 80px);
-			table {
-				td { .w(33.33%); .p(0px 15px); }
-			}
-			.top { min-height: 160px; }
-			h2, h3 { .m(0 0 12px); }
-			p { .m(0 0 12px); }
-			img { .w(auto); .h(auto); }
-			&.mobile { .pb(40px);
-				table {
-					td { .w(auto); min-width: 40px; .p(0 6px 15px); .vtop; .tc;  
-						img { .w(auto); .h(auto); }
-						p { .size(13px); .lh(17px); .tl; }
-						h2, h3 { .tl; }
-					}
-				}
-			}
-		}
-		.field-name-body { .m(0 13%); .p(150px 0 0); }
-		.homepage-logos { background: #fff; .mb(0px); .p(20px 10%); 
+		.homepage-logos { background: #fff; .mb(0px); .p(12px 10%);
 			p { .roboto-light; .em; .grey; .size(11px); .lh(14px); .tl; .m(0px); }
 		}
 	}
 	@media (max-width: 1079px) {
 		#content {
-			.field-name-body { .p(100px 0 0); .m(0 5%); }
-			.services { .p(40px 5%); }
+			.field-name-body { .p(100px 0 0); .m(0 10%); }
+			.services { .p(40px 5%); 
+				h2, h3 { .size(16px); .lh(25px); }
+				img { .w(33%); .h(auto); }
+			}
+			h1 { .size(40px); .lh(44px); }
 		}
 	}
 	@media (max-width:720px) { 
@@ -226,6 +215,8 @@ p { .mb(18px); }
 			.homepage-logos { .p(20px 0); }
 		}
 	}
+	#content-lower { .rel; z-index: 10; }
+	#footer { .rel; z-index: 10; }
 }
 
 
@@ -239,6 +230,7 @@ p { .mb(18px); }
 }
 .page-node-2 .breadcrumb,
 .section-blog .breadcrumb {.p(10px 0 10px 8%); }
+
 
 // Main content styles
 
@@ -266,15 +258,6 @@ p { .mb(18px); }
 		}
 		img { .w100; .h(auto); }
 		li { .list-none; .pl(30px); .ml(0px); background: url("../images/leaf-bullet-blue.png") no-repeat left 5px; .lh(1.5em); }
-	}
-	.block-webform { .m(40px 5%);
-		h2.block-title { .hide; }
-		label { .roboto-med; .size(14px); }
-		input { background: #fff; .radius(3px); border: 1px solid #ccc; .p(10px); .size(16px); .lh(16px); max-width: 400px;
-			&.form-submit { .bg-blue; -webkit-appearance: none; .p(10px 25px); border: none; .radius(3px); }
-		}
-		textarea { background: #fff; .radius(3px); border: 1px solid #ccc; .p(10px); .size(16px); .lh(24px); max-width: 400px; }
-		.form-item, .webform-component { max-width: 400px; }
 	}
 	.view-file-download { .m(0 8% 30px); 
 		.views-row { .p(20px 0); .mb(50px); 
@@ -362,7 +345,7 @@ p { .mb(18px); }
 		}
 	}
 	.about-name { background: url("../images/fog-mountains.jpg") no-repeat center center; background-size: cover; 
-		.block-content { .pr(55%); background: url("../images/treehouse-logo-white.svg") no-repeat right center; background-size: 40% auto; .white; }
+		.block-content { .pr(55%); background: url("../images/treehouse-logo-dkgrey.svg") no-repeat right center; background-size: 40% auto; .white; }
 	}
 	.values { background: url("../images/stump.jpg") no-repeat center bottom; background-size: auto 200px; .pb(200px); 
 		table {
@@ -415,7 +398,7 @@ p { .mb(18px); }
 	.notes-on-board { background: url("../images/notes-on-board.jpg") no-repeat center center; background-size: cover; }
 	.notes-on-board { background: url("../images/notes-on-board.jpg") no-repeat center center; background-size: cover; }
 	@media (min-width: 1400px) {
-		.about-name .block-content { background: url("../images/treehouse-logo-white.svg") no-repeat right center; background-size: auto 100%; }
+		.about-name .block-content { background: url("../images/treehouse-logo-dkgrey.svg") no-repeat right center; background-size: auto 100%; }
 	}
 	@media (max-width: 1079px) { .ml(180px); }
 	@media (max-width: 720px) { .ml(0px); 
@@ -510,6 +493,51 @@ p { .mb(18px); }
 		li { background: url("../images/leaf-bullet-magenta.png") no-repeat left 5px; }
 	}
 }
+.section-contact-us #main { background: url("../images/can-phone.jpg") no-repeat center top; background-size: cover; .pb(80px);
+	#header {
+		.region-header .view-header-image .header-content { .p(120px 13% 140px 13%);
+			h1 { .tc; .mt(0px); }
+		}
+		.breadcrumb { .hide; }
+	}
+	#content { /* background: url("../images/bg-contact.png") no-repeat center top; */ .pb(80px); }
+	.contact-phone { background: rgba(30,30,30,0.83); .m(0 15%); .p0; 
+		.block-content { .tc; 
+			h3 { .white; .m(0px 0px 20px); }
+			p { .aqua; .mb(0px); .ls(1px); .roboto-bold; .em; }
+		}
+	}
+	.block-webform { background: rgba(30,30,30,0.83); .m(0 15%);
+		
+		h2.block-title { .hide; }
+		label { .roboto-med; .size(14px); }
+		.form-item { .m(0 0 15px); }
+		input { background: @paper; .radius(3px); border: 1px solid #ccc; .p(10px); .size(16px); .lh(16px); max-width: 300px;
+			&.form-submit { .bg-blue; -webkit-appearance: none; .p(10px 25px); border: none; .radius(3px); .inline-block; }
+		}
+		textarea { background: #fff; .radius(3px); border: 1px solid #ccc; .p(10px); .size(16px); .lh(24px); max-width: 300px; max-height: 100px; }
+		.form-actions {
+			.tc; 
+		}
+		.form-item, .webform-component { max-width: 300px; }
+	}
+	@media (max-width:720px) { background: url("../images/can-phone.jpg") no-repeat center -40px; background-size: 200% auto;
+		#header {
+			.region-header .view-header-image .header-content { .p(40px 0 80px);
+				h1 { .tc; .mt(0px); }
+			}
+		}
+		#content { background: #ece9e3; 
+			.contact-phone { .w(92%); .m(0px 4%); .fn; 
+				.block-content { .w(100%); .p(20px 0 0); .m0; }
+			}
+			.block-webform { .w(92%); .m(0px 4%); .fn; 
+				.block-content { .w(100%); .p(20px 0 0); .m0; }
+				.form-item, .webform-component, input, textarea { max-width: 100%; }
+			}
+		}	
+	}
+}
 
 
 // Lower Content
@@ -537,7 +565,7 @@ p { .mb(18px); }
 			}
 		}
 	}
-	.homepage-bottom { .p(50px 13% 75px); background: #f0f0f0;
+	.homepage-bottom { .p(30px 13% 75px); background: #fff;
 		.block-content { background: url("../images/venn-horizontal-black.png") no-repeat right center; background-size: 45% auto; .p(20px 48% 20px 0); }
 	}
 	@media (max-width: 1079px) { .ml(180px); }
@@ -805,7 +833,7 @@ a.button,
 
 // Footer
 
-#footer { .w(auto); .ml(220px); .ltgrey; background: url("../images/bg-footer.png") no-repeat right center;
+#footer { .w(auto); .ml(220px); .ltgrey; background: #333 url("../images/bg-footer.png") no-repeat right center;
 	.block-menu-block { .m(0 8%); .pt(40px);
 		ul { .m0; .p0;
 			li { .list-none; .fl; .w(22%); .m(0 1.5% 8px); border-bottom: 1px solid rgba(255,255,255,0.2);
