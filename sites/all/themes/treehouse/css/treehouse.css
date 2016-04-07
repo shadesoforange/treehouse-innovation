@@ -38,8 +38,8 @@
 .orange {
   color: #ef7436;
 }
-.almostblack {
-  color: #141414;
+.paper {
+  color: #ece9e3;
 }
 .bg-blue {
   color: #fff;
@@ -1487,7 +1487,7 @@ p {
   padding-right: 50%;
 }
 #content .contact {
-  background: url("../images/grey.gif") repeat-x center 180px;
+  background: url("../images/dkgrey.gif") repeat-x center 180px;
   padding: 20px 13% 40px;
 }
 #content .contact .block-content p,
@@ -1889,7 +1889,7 @@ p {
 .section-contact-us #main {
   background: url("../images/can-phone.jpg") no-repeat center top;
   background-size: cover;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 }
 .section-contact-us #main #header .region-header .view-header-image .header-content {
   padding: 120px 13% 140px 13%;
@@ -1901,33 +1901,37 @@ p {
 .section-contact-us #main #header .breadcrumb {
   display: none;
 }
-.section-contact-us #main #content {
-  /* background: url("../images/bg-contact.png") no-repeat center top; */
-  padding-bottom: 80px;
-}
 .section-contact-us #main .contact-phone {
-  background: rgba(30, 30, 30, 0.83);
   margin: 0 15%;
   padding: 0px;
+  background: rgba(51, 51, 51, 0.9);
 }
 .section-contact-us #main .contact-phone .block-content {
+  padding: 40px 30px 0;
+  /* background: url("../images/phone.png") no-repeat left center; */
   text-align: center;
+  width: auto;
 }
 .section-contact-us #main .contact-phone .block-content h3 {
   color: #ffffff;
-  margin: 0px 0px 20px;
+  margin: 0px;
 }
-.section-contact-us #main .contact-phone .block-content p {
+.section-contact-us #main .contact-phone .block-content h3 span {
   color: #44b7a9;
-  margin-bottom: 0px;
-  letter-spacing: 1px;
+  font-size: 0.8em;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-style: italic;
+  letter-spacing: 1px;
+  padding: 0 5px 0 20px;
 }
 .section-contact-us #main .block-webform {
-  background: rgba(30, 30, 30, 0.83);
+  background: rgba(51, 51, 51, 0.9);
   margin: 0 15%;
+}
+.section-contact-us #main .block-webform .block-content {
+  padding: 40px 10% 40px;
+  width: auto;
 }
 .section-contact-us #main .block-webform h2.block-title {
   display: none;
@@ -1936,11 +1940,16 @@ p {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
+  color: #ece9e3;
 }
-.section-contact-us #main .block-webform .form-item {
-  margin: 0 0 15px;
+.section-contact-us #main .block-webform .webform-component-textfield,
+.section-contact-us #main .block-webform .webform-component-email {
+  margin: 0 2% 15px;
+  width: 46%;
+  float: left;
 }
-.section-contact-us #main .block-webform input {
+.section-contact-us #main .block-webform .webform-component-textfield input,
+.section-contact-us #main .block-webform .webform-component-email input {
   background: #ece9e3;
   border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -1949,7 +1958,25 @@ p {
   padding: 10px;
   font-size: 16px;
   line-height: 16px;
-  max-width: 300px;
+  width: 100%;
+}
+.section-contact-us #main .block-webform .webform-component-textarea {
+  margin: 0 2% 15px;
+  width: 96%;
+}
+.section-contact-us #main .block-webform .webform-component-textarea textarea {
+  background: #ece9e3;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  max-height: 100px;
+}
+.section-contact-us #main .block-webform .webform-component-textarea .grippie {
+  display: none;
 }
 .section-contact-us #main .block-webform input.form-submit {
   color: #fff;
@@ -1962,65 +1989,49 @@ p {
   -moz-border-radius: 3px;
   display: inline-block;
 }
-.section-contact-us #main .block-webform textarea {
-  background: #fff;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  font-size: 16px;
-  line-height: 24px;
-  max-width: 300px;
-  max-height: 100px;
-}
 .section-contact-us #main .block-webform .form-actions {
   text-align: center;
 }
-.section-contact-us #main .block-webform .form-item,
-.section-contact-us #main .block-webform .webform-component {
-  max-width: 300px;
-}
 @media (max-width: 720px) {
   .section-contact-us #main {
-    background: url("../images/can-phone.jpg") no-repeat center -40px;
-    background-size: 200% auto;
+    background: url("../images/can-phone-mobile.jpg") no-repeat center top;
+    background-size: 100% auto;
+    padding-bottom: 0px;
   }
   .section-contact-us #main #header .region-header .view-header-image .header-content {
-    padding: 40px 0 80px;
+    padding: 60px 0 80px;
   }
   .section-contact-us #main #header .region-header .view-header-image .header-content h1 {
     text-align: center;
     margin-top: 0px;
   }
   .section-contact-us #main #content {
-    background: #ece9e3;
+    padding-bottom: 0px;
   }
   .section-contact-us #main #content .contact-phone {
-    width: 92%;
-    margin: 0px 4%;
-    float: none;
+    width: 100%;
+    margin: 0px;
   }
   .section-contact-us #main #content .contact-phone .block-content {
-    width: 100%;
-    padding: 20px 0 0;
-    margin: 0px;
+    padding: 30px 5% 20px;
+    width: 90%;
   }
   .section-contact-us #main #content .block-webform {
-    width: 92%;
-    margin: 0px 4%;
-    float: none;
-  }
-  .section-contact-us #main #content .block-webform .block-content {
     width: 100%;
-    padding: 20px 0 0;
     margin: 0px;
   }
-  .section-contact-us #main #content .block-webform .form-item,
-  .section-contact-us #main #content .block-webform .webform-component,
-  .section-contact-us #main #content .block-webform input,
-  .section-contact-us #main #content .block-webform textarea {
-    max-width: 100%;
+  .section-contact-us #main #content .block-webform .block-content {
+    padding: 0 5% 30px;
+    width: 90%;
+  }
+  .section-contact-us #main #content .block-webform .webform-component-textfield,
+  .section-contact-us #main #content .block-webform .webform-component-email {
+    width: 100%;
+    margin: 0 0 15px;
+  }
+  .section-contact-us #main #content .block-webform .webform-component-textarea {
+    width: 100%;
+    margin: 0 0 15px;
   }
 }
 #content-lower {
@@ -2951,10 +2962,10 @@ a.button.hollow,
   width: auto;
   margin-left: 220px;
   color: #aaaaaa;
-  background: #333333 url("../images/bg-footer.png") no-repeat right center;
+  background: #333333 url("../images/bg-footer.png") no-repeat right 20px;
 }
 #footer .block-menu-block {
-  margin: 0 8%;
+  margin: 0 10%;
   padding-top: 40px;
 }
 #footer .block-menu-block ul {
@@ -2967,17 +2978,17 @@ a.button.hollow,
   list-style-type: none;
   float: left;
   width: 22%;
-  margin: 0 1.5% 8px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 2% 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 #footer .block-menu-block ul li a {
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   display: block;
   margin-bottom: 0px;
   margin: 0 0 8px;
-  font-size: 13px;
+  font-size: 14px;
 }
 #footer .block-menu-block ul li.is-expanded {
   margin-bottom: 30px;
